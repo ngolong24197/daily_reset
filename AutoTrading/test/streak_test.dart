@@ -7,8 +7,8 @@ import 'package:daily_reset/models/streak.dart';
 class MockPersistenceService extends PersistenceService {
   StreakData _streakData = StreakData();
   bool _premium = false;
-  List<String> _favorites = [];
-  Map<String, Set<String>> _completed = {};
+  final List<String> _favorites = [];
+  final Map<String, Set<String>> _completed = {};
   List<int> _seenQuoteIds = [];
   List<int> _seenTriviaIds = [];
   List<Map<String, dynamic>>? _cachedRemoteQuotes;

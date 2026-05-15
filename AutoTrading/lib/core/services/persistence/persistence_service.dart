@@ -1,4 +1,3 @@
-import 'package:hive_ce/hive.dart';
 import 'package:hive_ce_flutter/hive_ce_flutter.dart';
 import '../../../models/streak.dart';
 import '../../../models/mood.dart';

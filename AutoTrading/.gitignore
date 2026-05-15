@@ -44,6 +44,11 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Release signing key (never commit)
+*.jks
+*.keystore
+key.properties
+
 # Claude
 .claude/
 

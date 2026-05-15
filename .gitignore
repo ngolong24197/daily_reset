@@ -1,0 +1,9 @@
+# Large files
+Trading.rar
+venvAI/
+
+# Claude
+.claude/
+
+# Other projects (tracked separately)
+trading-bot/

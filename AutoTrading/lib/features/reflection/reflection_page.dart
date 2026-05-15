@@ -75,13 +75,6 @@ class _ReflectionPageState extends ConsumerState<ReflectionPage> {
     ],
   };
 
-  bool get _isWeekend {
-    final today = DateTime.now();
-    return today.weekday == DateTime.saturday || today.weekday == DateTime.sunday;
-  }
-
-  String get _promptQuestion => _isWeekend ? 'How was your week?' : 'How are you feeling today?';
-
   @override
   void dispose() {
     _journalController.dispose();
@@ -90,10 +83,11 @@ class _ReflectionPageState extends ConsumerState<ReflectionPage> {
 
   @override
   Widget build(BuildContext context) {
+    final today = ref.watch(dateProvider);
+    final isWeekend = today.weekday == DateTime.saturday || today.weekday == DateTime.sunday;
     final progress = ref.watch(dailyProgressProvider);
     final isCompleted = progress.contains('reflection');
     final persistence = ref.read(persistenceProvider);
-    final today = DateTime.now();
     final todayStr = _formatDate(today);
     final yesterday = today.subtract(const Duration(days: 1));
     final yesterdayStr = _formatDate(yesterday);
@@ -108,7 +102,7 @@ class _ReflectionPageState extends ConsumerState<ReflectionPage> {
         body: _ReflectionHistory(
           todayEntry: todayEntry,
           yesterdayEntry: yesterdayEntry,
-          isWeekend: _isWeekend,
+          isWeekend: isWeekend,
         ),
       );
     }
@@ -120,7 +114,7 @@ class _ReflectionPageState extends ConsumerState<ReflectionPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(_promptQuestion, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
+            Text(isWeekend ? 'How was your week?' : 'How are you feeling today?', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
             const SizedBox(height: 16),
             MoodSelector(
               selectedMood: _selectedMood,
@@ -133,7 +127,7 @@ class _ReflectionPageState extends ConsumerState<ReflectionPage> {
                 maxLines: 3,
                 maxLength: 200,
                 decoration: InputDecoration(
-                  hintText: _isWeekend ? 'What made this week memorable? (optional)' : 'Want to add a short note? (optional)',
+                  hintText: isWeekend ? 'What made this week memorable? (optional)' : 'Want to add a short note? (optional)',
                   border: const OutlineInputBorder(),
                 ),
               ),
@@ -193,7 +187,8 @@ class _ReflectionPageState extends ConsumerState<ReflectionPage> {
     ref.read(streakProvider.notifier).updateStreak(today);
 
     // Show templated response
-    final templates = _isWeekend ? _weeklyResponseTemplates[_selectedMood!]! : _dailyResponseTemplates[_selectedMood!]!;
+    final isWeekend = today.weekday == DateTime.saturday || today.weekday == DateTime.sunday;
+    final templates = isWeekend ? _weeklyResponseTemplates[_selectedMood!]! : _dailyResponseTemplates[_selectedMood!]!;
     final dayIndex = today.day % templates.length;
     setState(() => _response = templates[dayIndex]);
   }

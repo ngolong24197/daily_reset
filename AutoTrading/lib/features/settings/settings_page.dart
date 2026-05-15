@@ -6,6 +6,7 @@ import '../../main.dart';
 import '../premium/premium_page.dart';
 import '../favorites/favorites_page.dart';
 import '../reflection/reflection_history_page.dart';
+import 'privacy_policy_page.dart';
 
 class SettingsPage extends ConsumerStatefulWidget {
   const SettingsPage({super.key});
@@ -214,6 +215,12 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
             leading: Icon(Icons.info_outline),
             title: Text('Daily Reset'),
             subtitle: Text('Version 1.0.0'),
+          ),
+          ListTile(
+            leading: const Icon(Icons.policy),
+            title: const Text('Privacy Policy'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PrivacyPolicyPage())),
           ),
         ],
       ),

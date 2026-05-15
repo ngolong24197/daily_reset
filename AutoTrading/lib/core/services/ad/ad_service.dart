@@ -16,8 +16,8 @@ class AdService {
           : 'ca-app-pub-3940256099942544/2435281174';
     }
     return Platform.isAndroid
-        ? 'YOUR_ANDROID_BANNER_AD_ID'
-        : 'YOUR_IOS_BANNER_AD_ID';
+        ? 'ca-app-pub-4165496434380827/6431510150'
+        : 'ca-app-pub-3940256099942544/2435281174';
   }
 
   static String get _interstitialAdUnitId {
@@ -27,8 +27,8 @@ class AdService {
           : 'ca-app-pub-3940256099942544/4411468910';
     }
     return Platform.isAndroid
-        ? 'YOUR_ANDROID_INTERSTITIAL_AD_ID'
-        : 'YOUR_IOS_INTERSTITIAL_AD_ID';
+        ? 'ca-app-pub-4165496434380827/5856795083'
+        : 'ca-app-pub-3940256099942544/4411468910';
   }
 
   Future<void> init() async {

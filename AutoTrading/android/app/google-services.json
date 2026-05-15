@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911962139025",
+    "project_id": "daily-reset-9a1e6",
+    "storage_bucket": "daily-reset-9a1e6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911962139025:android:cd56a044025ac55cf49230",
+        "android_client_info": {
+          "package_name": "com.dailyreset.daily_reset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911962139025-rs43n73bhhmu24n3j7fq1i7j6en89m8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-M30p2SFSvz8DrdASwy6jhtKkNYTFD90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911962139025-rs43n73bhhmu24n3j7fq1i7j6en89m8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

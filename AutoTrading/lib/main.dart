@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'core/constants/app_theme.dart';
 import 'core/providers.dart';
@@ -13,8 +14,16 @@ import 'core/services/notification/notification_service.dart';
 import 'core/services/premium/premium_service.dart';
 import 'features/home/home_page.dart';
 
+/// Call this to force a full app restart (clears all state, re-reads from disk).
+void restartApp() {
+  _restartKey.value++;
+}
+
+final ValueNotifier<int> _restartKey = ValueNotifier(0);
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
   // Initialize all services (parallelized for faster startup)
   final persistence = PersistenceService();
@@ -37,6 +46,9 @@ void main() async {
   final seenQuoteIds = persistence.getSeenQuoteIds();
   final seenTriviaIds = persistence.getSeenTriviaIds();
   content.loadSeenIds(quoteIds: seenQuoteIds, triviaIds: seenTriviaIds);
+
+  // Set install-specific seed so content varies across reinstalls
+  content.setInstallSeed(persistence.installSeed);
 
   // Load cached remote content
   final cachedQuotes = persistence.getCachedRemoteQuotes();
@@ -63,22 +75,79 @@ void main() async {
   // Get initial data
   final today = DateTime.now();
 
-  runApp(ProviderScope(
-    overrides: [
-      persistenceProvider.overrideWithValue(persistence),
-      contentProvider.overrideWithValue(content),
-      streakProvider.overrideWith((ref) => StreakNotifier(persistence)..updateStreak(today)),
-      premiumProvider.overrideWith((ref) => PremiumNotifier(persistence)),
-      dailyProgressProvider.overrideWith(
-        (ref) => DailyProgressNotifier(persistence, today),
-      ),
-      adServiceProvider.overrideWithValue(adService),
-      soundServiceProvider.overrideWithValue(soundService),
-      notificationServiceProvider.overrideWithValue(notificationService),
-      premiumServiceProvider.overrideWithValue(premiumService),
-    ],
-    child: const DailyResetApp(),
+  runApp(_AppRestarter(
+    persistence: persistence,
+    content: content,
+    adService: adService,
+    soundService: soundService,
+    notificationService: notificationService,
+    premiumService: premiumService,
+    today: today,
   ));
+}
+
+class _AppRestarter extends StatefulWidget {
+  final PersistenceService persistence;
+  final ContentService content;
+  final AdService adService;
+  final SoundService soundService;
+  final NotificationService notificationService;
+  final PremiumService premiumService;
+  final DateTime today;
+
+  const _AppRestarter({
+    required this.persistence,
+    required this.content,
+    required this.adService,
+    required this.soundService,
+    required this.notificationService,
+    required this.premiumService,
+    required this.today,
+  });
+
+  @override
+  State<_AppRestarter> createState() => _AppRestarterState();
+}
+
+class _AppRestarterState extends State<_AppRestarter> {
+  int _key = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _restartKey.addListener(_onRestart);
+  }
+
+  @override
+  void dispose() {
+    _restartKey.removeListener(_onRestart);
+    super.dispose();
+  }
+
+  void _onRestart() {
+    setState(() => _key++);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ProviderScope(
+      key: ValueKey(_key),
+      overrides: [
+        persistenceProvider.overrideWithValue(widget.persistence),
+        contentProvider.overrideWithValue(widget.content),
+        streakProvider.overrideWith((ref) => StreakNotifier(widget.persistence)..updateStreak(widget.today)),
+        premiumProvider.overrideWith((ref) => PremiumNotifier(widget.persistence)),
+        dailyProgressProvider.overrideWith(
+          (ref) => DailyProgressNotifier(widget.persistence, widget.today),
+        ),
+        adServiceProvider.overrideWithValue(widget.adService),
+        soundServiceProvider.overrideWithValue(widget.soundService),
+        notificationServiceProvider.overrideWithValue(widget.notificationService),
+        premiumServiceProvider.overrideWithValue(widget.premiumService),
+      ],
+      child: const DailyResetApp(),
+    );
+  }
 }
 
 class DailyResetApp extends ConsumerWidget {

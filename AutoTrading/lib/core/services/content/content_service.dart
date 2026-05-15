@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import '../../../models/quote.dart';
@@ -15,6 +16,7 @@ class ContentService {
   final Set<int> _seenQuoteIds = {};
   final Set<int> _seenTriviaIds = {};
   final DateSeeder _dateSeeder = DateSeeder();
+  int _installSeed = 0;
 
   // Callbacks for persisting seen state
   void Function(int quoteId)? onQuoteSeen;
@@ -25,6 +27,12 @@ class ContentService {
   ContentService.withData({List<Quote>? quotes, List<TriviaQuestion>? trivia}) {
     _quotes = quotes ?? [];
     _trivia = trivia ?? [];
+  }
+
+  /// Set the install-specific seed. Each install gets a different seed,
+  /// so content varies across reinstalls while staying stable within a session.
+  void setInstallSeed(int seed) {
+    _installSeed = seed;
   }
 
   Future<void> init() async {
@@ -54,35 +62,34 @@ class ContentService {
     if (trivia != null) mergeRemoteTrivia(trivia);
   }
 
+  /// Returns the quote for a given date using deterministic date-seeded selection
+  /// combined with an install-specific seed. Same install + same date = same quote.
+  /// Different install = different quote, even on the same date.
   Quote getQuoteForDate(DateTime date) {
     if (_quotes.isEmpty) {
       throw StateError('Quotes not loaded. Call init() first.');
     }
-    final unseen = _quotes.where((q) => !_seenQuoteIds.contains(q.id)).toList();
-    if (unseen.isNotEmpty) {
-      final random = _dateSeeder.randomForFeature(date, 'quote');
-      final shuffled = List<Quote>.from(unseen)..shuffle(random);
-      return shuffled.first;
-    }
-    // All seen — fall back to date-seeded selection
-    final random = _dateSeeder.randomForFeature(date, 'quote');
+    final baseSeed = _dateSeeder.dateSeed(date) ^ _installSeed;
+    final random = Random(baseSeed ^ 'quote'.hashCode);
     final index = random.nextInt(_quotes.length);
     return _quotes[index];
   }
 
-  List<TriviaQuestion> getTriviaForDate(DateTime date, {int? count}) {
+  /// Returns trivia questions for a given date using deterministic date-seeded selection.
+  /// Install seed varies content across reinstalls. Variant shifts seed for replays.
+  List<TriviaQuestion> getTriviaForDate(DateTime date, {int? count, int variant = 0}) {
     if (_trivia.isEmpty) {
       throw StateError('Trivia not loaded. Call init() first.');
     }
-    final random = _dateSeeder.randomForFeature(date, 'trivia');
-
-    final unseen = _trivia.where((t) => !_seenTriviaIds.contains(t.id)).toList();
-    final pool = unseen.isNotEmpty ? unseen : _trivia;
+    final baseSeed = _dateSeeder.dateSeed(date) ^ _installSeed;
+    final random = variant == 0
+        ? Random(baseSeed ^ 'trivia'.hashCode)
+        : Random(baseSeed ^ 'trivia'.hashCode ^ (variant * 7919));
 
     final questionCount = count ?? (1 + random.nextInt(_defaultTriviaCount));
-    final actualCount = questionCount.clamp(1, pool.length);
+    final actualCount = questionCount.clamp(1, _trivia.length);
 
-    final shuffled = List<TriviaQuestion>.from(pool)..shuffle(random);
+    final shuffled = List<TriviaQuestion>.from(_trivia)..shuffle(random);
     return shuffled.take(actualCount).toList();
   }
 
@@ -165,6 +172,10 @@ class ContentService {
 
   List<Quote> getAllQuotes() {
     return List.unmodifiable(_quotes);
+  }
+
+  List<TriviaQuestion> getAllTrivia() {
+    return List.unmodifiable(_trivia);
   }
 
   Quote? getQuoteById(int id) {

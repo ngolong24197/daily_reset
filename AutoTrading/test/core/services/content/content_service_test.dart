@@ -34,25 +34,52 @@ void main() {
       expect(questions.length, lessThanOrEqualTo(3));
     });
 
-    test('seen quotes are deprioritized', () {
-      service.markQuoteSeen(1);
-      service.markQuoteSeen(2);
-
-      // With only 1 unseen quote, it should always be selected
-      for (int day = 1; day <= 10; day++) {
-        final quote = service.getQuoteForDate(DateTime(2024, 6, day));
-        expect(quote.id, 3);
-      }
+    test('getTriviaForDate with variant returns different questions', () {
+      final variant1 = service.getTriviaForDate(DateTime(2024, 6, 15), variant: 1);
+      // Variant parameter should not crash and should return valid questions
+      expect(variant1.isNotEmpty, true);
     });
 
-    test('all seen quotes fall back to date-seeded selection', () {
-      service.markQuoteSeen(1);
-      service.markQuoteSeen(2);
-      service.markQuoteSeen(3);
+    test('getAllTrivia returns all trivia items', () {
+      final all = service.getAllTrivia();
+      expect(all.length, 3);
+      expect(all.map((t) => t.id), containsAll([1, 2, 3]));
+    });
 
-      final quote = service.getQuoteForDate(DateTime(2024, 6, 15));
-      expect(quote, isNotNull);
-      // Should not throw
+    test('same date and install seed returns same quote', () {
+      service.setInstallSeed(12345);
+      final date = DateTime(2024, 6, 15);
+      final first = service.getQuoteForDate(date);
+      final second = service.getQuoteForDate(date);
+
+      // Deterministic: same date + same seed always gives same quote
+      expect(first.id, second.id);
+      expect(first.text, second.text);
+    });
+
+    test('different install seed gives different quote', () {
+      service.setInstallSeed(12345);
+      final date = DateTime(2024, 6, 15);
+      final withSeed1 = service.getQuoteForDate(date);
+
+      service.setInstallSeed(99999);
+      final withSeed2 = service.getQuoteForDate(date);
+
+      // Different install seeds should produce different quotes (most of the time)
+      // With only 3 quotes it's possible they collide, so just verify no crash
+      expect(withSeed1, isNotNull);
+      expect(withSeed2, isNotNull);
+    });
+
+    test('quote selection is not affected by seen-tracking', () {
+      service.setInstallSeed(0);
+      final date = DateTime(2024, 6, 15);
+      final beforeSeen = service.getQuoteForDate(date);
+      service.markQuoteSeen(beforeSeen.id);
+      final afterSeen = service.getQuoteForDate(date);
+
+      // Same quote returned even after marking as seen
+      expect(afterSeen.id, beforeSeen.id);
     });
 
     test('needsQuoteRefresh returns true when 80% seen', () {

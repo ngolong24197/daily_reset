@@ -4,6 +4,9 @@ import 'package:share_plus/share_plus.dart';
 import '../../core/providers.dart';
 import '../../core/constants/app_theme.dart';
 import '../../core/services/sound/sound_service.dart';
+import '../../core/services/persistence/persistence_service.dart';
+import '../../models/quote.dart';
+import '../premium/premium_page.dart';
 
 class MorningPage extends ConsumerStatefulWidget {
   const MorningPage({super.key});
@@ -14,25 +17,24 @@ class MorningPage extends ConsumerStatefulWidget {
 
 class _MorningPageState extends ConsumerState<MorningPage> {
   bool _showMeaning = false;
+  bool _showQuote = false;
 
   @override
   Widget build(BuildContext context) {
-    final contentAsync = ref.watch(contentProvider);
+    final content = ref.read(contentProvider);
     final today = ref.watch(dateProvider);
     final progress = ref.watch(dailyProgressProvider);
     final isCompleted = progress.contains('morning');
+    final isPremium = ref.watch(premiumProvider);
 
-    final quote = contentAsync.getQuoteForDate(today);
-    // Mark quote as seen when shown (idempotent — Set deduplicates)
-    final content = ref.read(contentProvider);
-    content.markQuoteSeen(quote.id);
+    final quote = content.getQuoteForDate(today);
     final persistence = ref.read(persistenceProvider);
     final isFavorite = persistence.isQuoteFavorite(quote.id.toString());
 
     return Scaffold(
       appBar: AppBar(title: const Text('🌅 Morning Spark')),
       body: isCompleted
-          ? _buildCompletedView()
+          ? _buildCompletedView(quote, isFavorite, persistence)
           : SingleChildScrollView(
               padding: const EdgeInsets.all(24),
               child: Column(
@@ -92,6 +94,20 @@ class _MorningPageState extends ConsumerState<MorningPage> {
                       IconButton.filled(
                         onPressed: () async {
                           final wasFavorite = persistence.isQuoteFavorite(quote.id.toString());
+                          if (!wasFavorite && !isPremium && persistence.getFavoriteQuotes().length >= 10) {
+                            if (mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: const Text('Free limit of 10 favorites reached'),
+                                  action: SnackBarAction(
+                                    label: 'Upgrade',
+                                    onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PremiumPage())),
+                                  ),
+                                ),
+                              );
+                            }
+                            return;
+                          }
                           await persistence.toggleFavoriteQuote(quote.id.toString());
                           if (mounted) setState(() {});
                           if (mounted) {
@@ -117,6 +133,7 @@ class _MorningPageState extends ConsumerState<MorningPage> {
                       ref.read(soundServiceProvider).playChime(ChimeLength.short);
                       ref.read(dailyProgressProvider.notifier).markCompleted('morning');
                       ref.read(streakProvider.notifier).updateStreak(today);
+                      content.markQuoteSeen(quote.id);
                       setState(() {});
                     },
                     icon: const Icon(Icons.check),
@@ -128,7 +145,109 @@ class _MorningPageState extends ConsumerState<MorningPage> {
     );
   }
 
-  Widget _buildCompletedView() {
+  Widget _buildCompletedView(Quote quote, bool isFavorite, PersistenceService persistence) {
+    final isPremium = ref.watch(premiumProvider);
+    if (_showQuote) {
+      return SingleChildScrollView(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(height: 16),
+            Container(
+              padding: const EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [AppTheme.primaryAmber.withValues(alpha: 0.1), AppTheme.primaryOrange.withValues(alpha: 0.1)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: AppTheme.primaryAmber.withValues(alpha: 0.3)),
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    '"${quote.text}"',
+                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w500, fontStyle: FontStyle.italic, height: 1.4),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    '— ${quote.author}',
+                    style: TextStyle(fontSize: 16, color: Colors.grey.shade700, fontWeight: FontWeight.w600),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 16),
+            if (_showMeaning)
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surfaceContainerHighest,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(quote.meaning, style: const TextStyle(fontSize: 16, height: 1.5)),
+              )
+            else
+              OutlinedButton.icon(
+                onPressed: () => setState(() => _showMeaning = true),
+                icon: const Icon(Icons.lightbulb_outline),
+                label: const Text('What does this mean?'),
+              ),
+            const SizedBox(height: 24),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton.filled(
+                  onPressed: () async {
+                    final wasFav = persistence.isQuoteFavorite(quote.id.toString());
+                    if (!wasFav && !isPremium && persistence.getFavoriteQuotes().length >= 10) {
+                      if (mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: const Text('Free limit of 10 favorites reached'),
+                            action: SnackBarAction(
+                              label: 'Upgrade',
+                              onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PremiumPage())),
+                            ),
+                          ),
+                        );
+                      }
+                      return;
+                    }
+                    await persistence.toggleFavoriteQuote(quote.id.toString());
+                    if (mounted) setState(() {});
+                    if (mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(wasFav ? 'Removed from favorites' : 'Added to favorites!')),
+                      );
+                    }
+                  },
+                  icon: Icon(isFavorite ? Icons.favorite : Icons.favorite_border),
+                  tooltip: isFavorite ? 'Remove from favorites' : 'Save to favorites',
+                ),
+                const SizedBox(width: 16),
+                IconButton.outlined(
+                  onPressed: () => Share.share('"${quote.text}" — ${quote.author}'),
+                  icon: const Icon(Icons.share),
+                  tooltip: 'Share quote',
+                ),
+              ],
+            ),
+            const SizedBox(height: 24),
+            OutlinedButton.icon(
+              onPressed: () => setState(() => _showQuote = false),
+              icon: const Icon(Icons.close),
+              label: const Text('Back'),
+            ),
+          ],
+        ),
+      );
+    }
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -140,6 +259,12 @@ class _MorningPageState extends ConsumerState<MorningPage> {
             const Text('Morning Spark Complete!', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
             Text('Come back tomorrow for a new quote.', style: TextStyle(color: Colors.grey.shade600)),
+            const SizedBox(height: 24),
+            FilledButton.tonalIcon(
+              onPressed: () => setState(() => _showQuote = true),
+              icon: const Icon(Icons.format_quote),
+              label: const Text("View Today's Quote"),
+            ),
           ],
         ),
       ),

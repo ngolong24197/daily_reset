@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'services/persistence/persistence_service.dart';
 import 'services/content/content_service.dart';
@@ -6,6 +7,8 @@ import 'services/ad/ad_service.dart';
 import 'services/sound/sound_service.dart';
 import 'services/notification/notification_service.dart';
 import 'services/premium/premium_service.dart';
+import 'services/auth/auth_service.dart';
+import 'services/cloud/cloud_backup_service.dart';
 import '../models/streak.dart';
 
 final premiumServiceProvider = Provider<PremiumService>((ref) {
@@ -49,6 +52,18 @@ final notificationServiceProvider = Provider<NotificationService>((ref) {
 });
 
 final milestoneReachedProvider = StateProvider<int?>((ref) => null);
+
+final authServiceProvider = Provider<AuthService>((ref) {
+  return AuthService();
+});
+
+final authStateProvider = StreamProvider<User?>((ref) {
+  return FirebaseAuth.instance.authStateChanges();
+});
+
+final cloudBackupServiceProvider = Provider<CloudBackupService>((ref) {
+  return CloudBackupService();
+});
 
 class StreakNotifier extends StateNotifier<StreakData> {
   final PersistenceService _persistence;

@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:hive_ce_flutter/hive_ce_flutter.dart';
 import '../../../models/streak.dart';
 import '../../../models/mood.dart';
@@ -23,6 +24,7 @@ class PersistenceService {
     return StreakData.fromJson(Map<String, dynamic>.from(data as Map));
   }
 
+  Box<dynamic> get streakBox => _streakBox;
   Box<dynamic> get moodBox => _moodBox;
   Box<dynamic> get settingsBox => _settingsBox;
   Box<dynamic> get premiumBox => _premiumBox;
@@ -38,7 +40,16 @@ class PersistenceService {
     _premiumBox = await _openBoxSafe(premiumBoxName);
     _seenContentBox = await _openBoxSafe(seenContentBoxName);
     _remoteContentBox = await _openBoxSafe(remoteContentBoxName);
+
+    // Generate install seed on first launch (persists across sessions)
+    if (!_settingsBox.containsKey('installSeed')) {
+      await _settingsBox.put('installSeed', Random().nextInt(1 << 32));
+    }
   }
+
+  /// Unique random seed generated on first install. Different per install,
+  /// stable across sessions. Used to vary content selection per install.
+  int get installSeed => _settingsBox.get('installSeed', defaultValue: 0) as int;
 
   Future<Box<dynamic>> _openBoxSafe(String name) async {
     try {
@@ -161,5 +172,24 @@ class PersistenceService {
 
   Future<void> setCachedRemoteTrivia(List<Map<String, dynamic>> trivia) async {
     await _remoteContentBox.put('trivia', trivia);
+  }
+
+  // --- Quiz result methods ---
+
+  /// Saves the last quiz result for a given date.
+  /// Format: { 'questionIds': [1,2,3], 'selectedAnswers': [0,2,1], 'score': 2 }
+  Future<void> saveQuizResult(String date, List<int> questionIds, List<int> selectedAnswers, int score) async {
+    await _settingsBox.put('quizResult_$date', {
+      'questionIds': questionIds,
+      'selectedAnswers': selectedAnswers,
+      'score': score,
+    });
+  }
+
+  /// Returns the last quiz result for a date, or null if none exists.
+  Map<String, dynamic>? getQuizResult(String date) {
+    final data = _settingsBox.get('quizResult_$date');
+    if (data == null) return null;
+    return Map<String, dynamic>.from(data as Map);
   }
 }

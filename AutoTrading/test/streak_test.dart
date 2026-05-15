@@ -104,6 +104,14 @@ class MockPersistenceService extends PersistenceService {
   Future<void> setCachedRemoteTrivia(List<Map<String, dynamic>> trivia) async {
     _cachedRemoteTrivia = trivia;
   }
+
+  // --- Quiz result methods ---
+
+  @override
+  Map<String, dynamic>? getQuizResult(String date) => null;
+
+  @override
+  Future<void> saveQuizResult(String date, List<int> questionIds, List<int> selectedAnswers, int score) async {}
 }
 
 void main() {

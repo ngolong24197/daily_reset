@@ -19,4 +19,12 @@ class DateSeeder {
     final featureHash = feature.hashCode;
     return Random(baseSeed ^ featureHash);
   }
+
+  /// Returns a deterministic Random for a feature variant (used for replays).
+  /// Each variant produces a different shuffle for the same date.
+  Random randomForFeatureVariant(DateTime date, String feature, int variant) {
+    final baseSeed = dateSeed(date);
+    final featureHash = feature.hashCode;
+    return Random(baseSeed ^ featureHash ^ (variant * 7919));
+  }
 }

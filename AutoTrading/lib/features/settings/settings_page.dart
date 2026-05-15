@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:file_picker/file_picker.dart';
 import '../../core/providers.dart';
-import '../../core/services/backup/backup_service.dart';
 import '../../core/services/notification/notification_service.dart';
+import '../../main.dart';
 import '../premium/premium_page.dart';
+import '../favorites/favorites_page.dart';
+import '../reflection/reflection_history_page.dart';
 
 class SettingsPage extends ConsumerStatefulWidget {
   const SettingsPage({super.key});
@@ -14,14 +15,53 @@ class SettingsPage extends ConsumerStatefulWidget {
 }
 
 class _SettingsPageState extends ConsumerState<SettingsPage> {
-  bool _isExporting = false;
-  bool _isImporting = false;
   bool _isRefreshing = false;
+  bool _isSyncing = false;
+
+  String _formatTime(int hour, int minute) {
+    final period = hour >= 12 ? 'PM' : 'AM';
+    final displayHour = hour == 0 ? 12 : (hour > 12 ? hour - 12 : hour);
+    return '$displayHour:${minute.toString().padLeft(2, '0')} $period';
+  }
+
+  Future<void> _pickTime(BuildContext context, int currentHour, int currentMinute, String type) async {
+    final picked = await showTimePicker(
+      context: context,
+      initialTime: TimeOfDay(hour: currentHour, minute: currentMinute),
+    );
+    if (picked == null) return;
+
+    final hour = picked.hour;
+    final minute = picked.minute;
+    final persistence = ref.read(persistenceProvider);
+    final notificationService = ref.read(notificationServiceProvider);
+
+    if (type == 'morning') {
+      await persistence.settingsBox.put('morningNotificationHour', hour);
+      await persistence.settingsBox.put('morningNotificationMinute', minute);
+      await notificationService.scheduleMorningReminder(NotificationTime(hour: hour, minute: minute));
+    } else {
+      await persistence.settingsBox.put('reflectionNotificationHour', hour);
+      await persistence.settingsBox.put('reflectionNotificationMinute', minute);
+      await notificationService.scheduleReflectionReminder(NotificationTime(hour: hour, minute: minute));
+    }
+    if (mounted) setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
     final isPremium = ref.watch(premiumProvider);
+    final authState = ref.watch(authStateProvider);
+    final isLoggedIn = authState.value != null;
+    final user = authState.value;
     final persistence = ref.read(persistenceProvider);
+
+    final morningEnabled = persistence.settingsBox.get('morningNotification', defaultValue: true) as bool;
+    final reflectionEnabled = persistence.settingsBox.get('eveningNotification', defaultValue: true) as bool;
+    final morningHour = persistence.settingsBox.get('morningNotificationHour', defaultValue: 8) as int;
+    final morningMinute = persistence.settingsBox.get('morningNotificationMinute', defaultValue: 0) as int;
+    final reflectionHour = persistence.settingsBox.get('reflectionNotificationHour', defaultValue: 21) as int;
+    final reflectionMinute = persistence.settingsBox.get('reflectionNotificationMinute', defaultValue: 0) as int;
 
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
@@ -33,24 +73,89 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
             child: ListTile(
               leading: Icon(isPremium ? Icons.verified : Icons.lock_outline),
               title: Text(isPremium ? 'Premium Active' : 'Upgrade to Premium'),
-              subtitle: Text(isPremium ? 'No ads, encrypted backup' : '\$2 one-time purchase'),
+              subtitle: Text(isPremium ? 'No ads, unlimited favorites' : '\$2 one-time purchase'),
               trailing: isPremium ? null : const Icon(Icons.chevron_right),
               onTap: isPremium ? null : () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PremiumPage())),
             ),
+          ),
+
+          // Account
+          const _SectionHeader(title: 'Account'),
+          if (isLoggedIn && user != null)
+            ListTile(
+              leading: CircleAvatar(
+                backgroundImage: user.photoURL != null ? NetworkImage(user.photoURL!) : null,
+                child: user.photoURL == null ? const Icon(Icons.person) : null,
+              ),
+              title: Text(user.displayName ?? 'User'),
+              subtitle: Text(user.email ?? ''),
+              trailing: TextButton(
+                onPressed: _signOut,
+                child: const Text('Sign Out'),
+              ),
+            )
+          else
+            ListTile(
+              leading: const Icon(Icons.login),
+              title: const Text('Sign in with Google'),
+              subtitle: const Text('Backup favorites & reflections to cloud'),
+              onTap: _signIn,
+            ),
+
+          // Cloud backup (only when logged in)
+          if (isLoggedIn) ...[
+            ListTile(
+              leading: _isSyncing
+                  ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(strokeWidth: 2))
+                  : const Icon(Icons.cloud_upload),
+              title: const Text('Backup to Cloud'),
+              subtitle: const Text('Upload favorites & reflections'),
+              enabled: !_isSyncing,
+              onTap: _backupToCloud,
+            ),
+            ListTile(
+              leading: _isSyncing
+                  ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(strokeWidth: 2))
+                  : const Icon(Icons.cloud_download),
+              title: const Text('Restore from Cloud'),
+              subtitle: const Text('Download cloud data to this device'),
+              enabled: !_isSyncing,
+              onTap: _restoreFromCloud,
+            ),
+          ],
+
+          // History
+          const _SectionHeader(title: 'History'),
+          ListTile(
+            leading: const Icon(Icons.favorite),
+            title: const Text('Favorite Quotes'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const FavoritesPage())),
+          ),
+          ListTile(
+            leading: const Icon(Icons.history),
+            title: const Text('Reflection History'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ReflectionHistoryPage())),
           ),
 
           // Notifications
           const _SectionHeader(title: 'Notifications'),
           SwitchListTile(
             title: const Text('Morning Reminder'),
-            subtitle: const Text('8:00 AM'),
-            value: persistence.settingsBox.get('morningNotification', defaultValue: true) as bool,
+            subtitle: morningEnabled
+                ? GestureDetector(
+                    onTap: () => _pickTime(context, morningHour, morningMinute, 'morning'),
+                    child: Text(_formatTime(morningHour, morningMinute), style: const TextStyle(decoration: TextDecoration.underline)),
+                  )
+                : const Text('Off'),
+            value: morningEnabled,
             onChanged: (val) async {
               await persistence.settingsBox.put('morningNotification', val);
               final notificationService = ref.read(notificationServiceProvider);
               if (val) {
                 await notificationService.scheduleMorningReminder(
-                  const NotificationTime(hour: 8, minute: 0),
+                  NotificationTime(hour: morningHour, minute: morningMinute),
                 );
               } else {
                 await notificationService.cancelMorningReminder();
@@ -60,37 +165,25 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
           ),
           SwitchListTile(
             title: const Text('Reflection Reminder'),
-            subtitle: const Text('9:00 PM'),
-            value: persistence.settingsBox.get('eveningNotification', defaultValue: true) as bool,
+            subtitle: reflectionEnabled
+                ? GestureDetector(
+                    onTap: () => _pickTime(context, reflectionHour, reflectionMinute, 'reflection'),
+                    child: Text(_formatTime(reflectionHour, reflectionMinute), style: const TextStyle(decoration: TextDecoration.underline)),
+                  )
+                : const Text('Off'),
+            value: reflectionEnabled,
             onChanged: (val) async {
               await persistence.settingsBox.put('eveningNotification', val);
               final notificationService = ref.read(notificationServiceProvider);
               if (val) {
                 await notificationService.scheduleReflectionReminder(
-                  const NotificationTime(hour: 21, minute: 0),
+                  NotificationTime(hour: reflectionHour, minute: reflectionMinute),
                 );
               } else {
                 await notificationService.cancelReflectionReminder();
               }
               if (mounted) setState(() {});
             },
-          ),
-
-          // Backup
-          const _SectionHeader(title: 'Data'),
-          ListTile(
-            leading: const Icon(Icons.backup),
-            title: const Text('Export Backup'),
-            subtitle: Text(isPremium ? 'Encrypted backup file' : 'Premium feature'),
-            enabled: isPremium && !_isExporting,
-            onTap: isPremium ? () => _exportBackup(context) : null,
-          ),
-          ListTile(
-            leading: const Icon(Icons.restore),
-            title: const Text('Import Backup'),
-            subtitle: Text(isPremium ? 'Restore from file' : 'Premium feature'),
-            enabled: isPremium && !_isImporting,
-            onTap: isPremium ? () => _importBackup(context) : null,
           ),
 
           // Content
@@ -127,27 +220,62 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
     );
   }
 
-  Future<void> _exportBackup(BuildContext context) async {
-    final password = await _showPasswordDialog(context, title: 'Set Backup Password');
-    if (password == null || password.length < 8) {
+  Future<void> _signIn() async {
+    try {
+      final authService = ref.read(authServiceProvider);
+      await authService.signInWithGoogle();
+      if (mounted) setState(() {});
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Password must be at least 8 characters')),
+          const SnackBar(content: Text('Sign in failed. Please try again.')),
         );
       }
-      return;
     }
+  }
 
-    setState(() => _isExporting = true);
+  Future<void> _signOut() async {
+    try {
+      final authService = ref.read(authServiceProvider);
+      await authService.signOut();
+      if (mounted) setState(() {});
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Sign out failed. Please try again.')),
+        );
+      }
+    }
+  }
+
+  Future<void> _backupToCloud() async {
+    setState(() => _isSyncing = true);
     try {
       final persistence = ref.read(persistenceProvider);
-      final backupService = BackupService(persistence);
-      final filePath = await backupService.exportBackup(password);
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Backup saved to: $filePath')),
-        );
-      }
+      final cloudService = ref.read(cloudBackupServiceProvider);
+
+      final favoriteIds = persistence.getFavoriteQuotes();
+      final reflections = persistence.moodBox.keys.map((key) {
+        final data = persistence.moodBox.get(key);
+        if (data == null) return null;
+        final map = Map<String, dynamic>.from(data as Map);
+        return <String, dynamic>{
+          'date': key.toString(),
+          'mood': map['mood'],
+          'journalText': map['journalText'],
+          'createdAt': map['createdAt'],
+        };
+      }).whereType<Map<String, dynamic>>().toList();
+
+      final success = await cloudService.uploadAll(
+        favoriteQuoteIds: favoriteIds,
+        reflections: reflections,
+      );
+
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(success ? 'Backup uploaded successfully!' : 'Backup failed. Please try again.')),
+      );
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -155,38 +283,51 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
         );
       }
     } finally {
-      if (mounted) setState(() => _isExporting = false);
+      if (mounted) setState(() => _isSyncing = false);
     }
   }
 
-  Future<void> _importBackup(BuildContext context) async {
-    final result = await FilePicker.platform.pickFiles(
-      type: FileType.custom,
-      allowedExtensions: ['drb'],
-    );
-    if (result == null || result.files.single.path == null) return;
-
-    final password = await _showPasswordDialog(context, title: 'Enter Backup Password');
-    if (password == null) return;
-
-    setState(() => _isImporting = true);
+  Future<void> _restoreFromCloud() async {
+    setState(() => _isSyncing = true);
     try {
-      final persistence = ref.read(persistenceProvider);
-      final backupService = BackupService(persistence);
-      final success = await backupService.importBackup(password, result.files.single.path!);
-      if (mounted) {
-        if (success) {
-          // Refresh providers with restored data
-          ref.read(streakProvider.notifier).updateStreak(DateTime.now());
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Backup restored successfully!')),
-          );
-        } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Restore failed. Wrong password or corrupted file.')),
-          );
-        }
+      final cloudService = ref.read(cloudBackupServiceProvider);
+      final result = await cloudService.downloadAll();
+
+      if (!mounted) return;
+
+      if (!result.success) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Restore failed. Please try again.')),
+        );
+        return;
       }
+
+      final persistence = ref.read(persistenceProvider);
+
+      // Restore favorites
+      if (result.favoriteQuoteIds.isNotEmpty) {
+        final existing = persistence.getFavoriteQuotes();
+        final merged = {...existing, ...result.favoriteQuoteIds}.toList();
+        await persistence.settingsBox.put('favoriteQuotes', merged);
+      }
+
+      // Restore reflections
+      for (final entry in result.reflections) {
+        final date = entry['date'] as String;
+        final moodIndex = entry['mood'] as int;
+        await persistence.moodBox.put(date, {
+          'id': date,
+          'date': date,
+          'mood': moodIndex,
+          'journalText': entry['journalText'] ?? '',
+          'createdAt': entry['createdAt'] ?? DateTime.now().toIso8601String(),
+        });
+      }
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Restored ${result.favoriteQuoteIds.length} favorites and ${result.reflections.length} reflections.')),
+      );
+      if (mounted) setState(() {});
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -194,35 +335,8 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
         );
       }
     } finally {
-      if (mounted) setState(() => _isImporting = false);
+      if (mounted) setState(() => _isSyncing = false);
     }
-  }
-
-  Future<String?> _showPasswordDialog(BuildContext context, {required String title}) async {
-    final controller = TextEditingController();
-    final result = await showDialog<String>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: Text(title),
-        content: TextField(
-          controller: controller,
-          obscureText: true,
-          decoration: const InputDecoration(
-            hintText: 'Enter password (min 8 characters)',
-            border: OutlineInputBorder(),
-          ),
-        ),
-        actions: [
-          TextButton(onPressed: () => Navigator.of(ctx).pop(null), child: const Text('Cancel')),
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(controller.text),
-            child: const Text('OK'),
-          ),
-        ],
-      ),
-    );
-    controller.dispose();
-    return result;
   }
 
   Future<void> _refreshContent() async {
@@ -257,50 +371,57 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
     }
   }
 
-  void _clearCache(BuildContext context) {
-    showDialog(
+  Future<void> _clearCache(BuildContext context) async {
+    final confirm = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Clear Cache?'),
-        content: const Text('This will clear cached data for past days. Your current streak and preferences will be kept.'),
+        title: const Text('Reset App?'),
+        content: const Text('This will delete all your progress — streak, moods, completed features, seen content, and quiz history. The app will start fresh. This cannot be undone.'),
         actions: [
-          TextButton(onPressed: () => Navigator.of(ctx).pop(), child: const Text('Cancel')),
+          TextButton(onPressed: () => Navigator.of(ctx).pop(false), child: const Text('Cancel')),
           TextButton(
-            onPressed: () async {
-              final persistence = ref.read(persistenceProvider);
-              // Clear completed features from past days (keep today)
-              final today = DateTime.now();
-              final todayStr = '${today.year.toString().padLeft(4, '0')}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
-              final keys = persistence.settingsBox.keys
-                  .where((k) => k.toString().startsWith('completed_') && k.toString() != 'completed_$todayStr')
-                  .toList();
-              for (final key in keys) {
-                await persistence.settingsBox.delete(key);
-              }
-              // Clear mood entries older than 30 days
-              final cutoff = today.subtract(const Duration(days: 30));
-              final moodKeys = persistence.moodBox.keys.toList();
-              for (final key in moodKeys) {
-                final keyStr = key.toString();
-                if (keyStr.length == 10) {
-                  try {
-                    final date = DateTime.parse(keyStr);
-                    if (date.isBefore(cutoff)) {
-                      await persistence.moodBox.delete(key);
-                    }
-                  } catch (_) {}
-                }
-              }
-              Navigator.of(ctx).pop();
-              if (mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Cache cleared')));
-              }
-            },
-            child: const Text('Clear'),
+            onPressed: () => Navigator.of(ctx).pop(true),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: const Text('Reset'),
           ),
         ],
       ),
     );
+    if (confirm != true) return;
+
+    final persistence = ref.read(persistenceProvider);
+
+    // Clear streak
+    await persistence.streakBox.clear();
+
+    // Clear moods
+    await persistence.moodBox.clear();
+
+    // Clear settings (completed features, favorites, quiz results, notification times)
+    await persistence.settingsBox.clear();
+    // Restore notification defaults
+    await persistence.settingsBox.put('morningNotification', true);
+    await persistence.settingsBox.put('eveningNotification', true);
+    await persistence.settingsBox.put('morningNotificationHour', 8);
+    await persistence.settingsBox.put('morningNotificationMinute', 0);
+    await persistence.settingsBox.put('reflectionNotificationHour', 21);
+    await persistence.settingsBox.put('reflectionNotificationMinute', 0);
+
+    // Clear seen content
+    await persistence.seenContentBox.clear();
+
+    // Clear remote content cache
+    await persistence.remoteContentBox.clear();
+
+    // Re-schedule notifications with default times
+    final notificationService = ref.read(notificationServiceProvider);
+    await notificationService.scheduleMorningReminder(const NotificationTime(hour: 8, minute: 0));
+    await notificationService.scheduleReflectionReminder(const NotificationTime(hour: 21, minute: 0));
+
+    // Restart the app to reflect all changes
+    if (mounted) {
+      restartApp();
+    }
   }
 }
 

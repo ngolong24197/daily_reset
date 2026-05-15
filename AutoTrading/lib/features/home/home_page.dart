@@ -7,6 +7,7 @@ import '../../core/constants/app_theme.dart';
 import '../morning/morning_page.dart';
 import '../brain_kick/brain_kick_page.dart';
 import '../reflection/reflection_page.dart';
+import '../favorites/favorites_page.dart';
 import '../settings/settings_page.dart';
 
 class HomePage extends ConsumerStatefulWidget {
@@ -92,6 +93,11 @@ class _HomePageState extends ConsumerState<HomePage> {
         appBar: AppBar(
           title: const Text('Daily Reset'),
           actions: [
+            IconButton(
+              icon: const Icon(Icons.favorite),
+              onPressed: () => _navigateTo(context, const FavoritesPage()),
+              tooltip: 'Favorites',
+            ),
             IconButton(
               icon: const Icon(Icons.settings),
               onPressed: () => _navigateTo(context, const SettingsPage()),

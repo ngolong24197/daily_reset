@@ -46,8 +46,7 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
             value: persistence.settingsBox.get('morningNotification', defaultValue: true) as bool,
             onChanged: (val) async {
               await persistence.settingsBox.put('morningNotification', val);
-              final notificationService = NotificationService();
-              await notificationService.init();
+              final notificationService = ref.read(notificationServiceProvider);
               if (val) {
                 await notificationService.scheduleMorningReminder(
                   const NotificationTime(hour: 8, minute: 0),
@@ -64,8 +63,7 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
             value: persistence.settingsBox.get('eveningNotification', defaultValue: true) as bool,
             onChanged: (val) async {
               await persistence.settingsBox.put('eveningNotification', val);
-              final notificationService = NotificationService();
-              await notificationService.init();
+              final notificationService = ref.read(notificationServiceProvider);
               if (val) {
                 await notificationService.scheduleReflectionReminder(
                   const NotificationTime(hour: 21, minute: 0),

@@ -4,6 +4,7 @@ import 'services/persistence/persistence_service.dart';
 import 'services/content/content_service.dart';
 import 'services/ad/ad_service.dart';
 import 'services/sound/sound_service.dart';
+import 'services/notification/notification_service.dart';
 import '../models/streak.dart';
 
 final persistenceProvider = Provider<PersistenceService>((ref) {
@@ -36,6 +37,10 @@ final adServiceProvider = Provider<AdService>((ref) {
 
 final soundServiceProvider = Provider<SoundService>((ref) {
   throw UnimplementedError('SoundService must be overridden');
+});
+
+final notificationServiceProvider = Provider<NotificationService>((ref) {
+  throw UnimplementedError('NotificationService must be overridden');
 });
 
 class StreakNotifier extends StateNotifier<StreakData> {

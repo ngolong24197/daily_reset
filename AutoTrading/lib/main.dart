@@ -7,6 +7,7 @@ import 'core/services/persistence/persistence_service.dart';
 import 'core/services/content/content_service.dart';
 import 'core/services/ad/ad_service.dart';
 import 'core/services/sound/sound_service.dart';
+import 'core/services/notification/notification_service.dart';
 import 'core/services/premium/premium_service.dart';
 import 'features/home/home_page.dart';
 
@@ -18,6 +19,7 @@ void main() async {
   final content = ContentService();
   final adService = AdService();
   final soundService = SoundService();
+  final notificationService = NotificationService();
   final premiumService = PremiumService(persistence);
 
   await Future.wait([
@@ -25,6 +27,7 @@ void main() async {
     content.init(),
     adService.init(),
     soundService.init(),
+    notificationService.init(),
     premiumService.init(),
   ]);
 
@@ -42,6 +45,7 @@ void main() async {
       ),
       adServiceProvider.overrideWithValue(adService),
       soundServiceProvider.overrideWithValue(soundService),
+      notificationServiceProvider.overrideWithValue(notificationService),
     ],
     child: const DailyResetApp(),
   ));

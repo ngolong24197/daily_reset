@@ -9,6 +9,10 @@ class MockPersistenceService extends PersistenceService {
   bool _premium = false;
   List<String> _favorites = [];
   Map<String, Set<String>> _completed = {};
+  List<int> _seenQuoteIds = [];
+  List<int> _seenTriviaIds = [];
+  List<Map<String, dynamic>>? _cachedRemoteQuotes;
+  List<Map<String, dynamic>>? _cachedRemoteTrivia;
 
   @override
   StreakData get streak => _streakData;
@@ -47,6 +51,58 @@ class MockPersistenceService extends PersistenceService {
   Future<void> markFeatureCompleted(String date, String feature) async {
     _completed.putIfAbsent(date, () => {});
     _completed[date]!.add(feature);
+  }
+
+  // --- Seen-content methods ---
+
+  @override
+  List<int> getSeenQuoteIds() => _seenQuoteIds;
+
+  @override
+  Future<void> addSeenQuoteId(int id) async {
+    if (!_seenQuoteIds.contains(id)) {
+      _seenQuoteIds.add(id);
+    }
+  }
+
+  @override
+  Future<void> setSeenQuoteIds(List<int> ids) async {
+    _seenQuoteIds = ids;
+  }
+
+  @override
+  List<int> getSeenTriviaIds() => _seenTriviaIds;
+
+  @override
+  Future<void> addSeenTriviaIds(List<int> newIds) async {
+    for (final id in newIds) {
+      if (!_seenTriviaIds.contains(id)) {
+        _seenTriviaIds.add(id);
+      }
+    }
+  }
+
+  @override
+  Future<void> setSeenTriviaIds(List<int> ids) async {
+    _seenTriviaIds = ids;
+  }
+
+  // --- Remote-content cache methods ---
+
+  @override
+  List<Map<String, dynamic>>? getCachedRemoteQuotes() => _cachedRemoteQuotes;
+
+  @override
+  Future<void> setCachedRemoteQuotes(List<Map<String, dynamic>> quotes) async {
+    _cachedRemoteQuotes = quotes;
+  }
+
+  @override
+  List<Map<String, dynamic>>? getCachedRemoteTrivia() => _cachedRemoteTrivia;
+
+  @override
+  Future<void> setCachedRemoteTrivia(List<Map<String, dynamic>> trivia) async {
+    _cachedRemoteTrivia = trivia;
   }
 }
 

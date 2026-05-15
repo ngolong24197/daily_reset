@@ -1,0 +1,73 @@
+name: daily_reset
+description: "Lightweight daily habit app — morning spark, brain kick, and daily reflection."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.4.0
+
+  # Local storage
+  hive_ce: ^2.0.0
+  hive_ce_flutter: ^2.0.0
+
+  # Ads & purchases
+  google_mobile_ads: ^5.1.0
+  in_app_purchase: ^3.2.0
+
+  # Notifications
+  flutter_local_notifications: ^17.2.0
+  timezone: ^0.9.4
+  flutter_timezone: ^5.0.0
+
+  # Media
+  audioplayers: ^5.2.0
+  lottie: ^3.1.0
+
+  # Home widget
+  home_widget: ^0.9.0
+
+  # Crypto (backup encryption)
+  pointycastle: ^3.9.0
+
+  # File picking (backup import/export)
+  file_picker: ^8.0.0
+
+  # Background tasks (widget update)
+  workmanager: ^0.6.0
+
+  # Sharing
+  share_plus: ^7.0.0
+
+  # Utilities
+  intl: ^0.19.0
+  path_provider: ^2.1.0
+  uuid: ^4.0.0
+  shared_preferences: ^2.2.0
+  vibration: ^2.0.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_ce_generator: ^1.11.0
+  build_runner: ^2.4.0
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/quotes.json
+    - assets/data/trivia.json
+    - assets/sounds/chime_short.mp3
+    - assets/sounds/chime_medium.mp3
+    - assets/sounds/chime_long.mp3
+    - assets/animations/streak_fire.json

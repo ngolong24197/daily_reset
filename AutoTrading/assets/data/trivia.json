@@ -2,7 +2,12 @@
   {
     "id": 1,
     "question": "What is the chemical symbol for gold?",
-    "options": ["Go", "Gd", "Au", "Ag"],
+    "options": [
+      "Go",
+      "Gd",
+      "Au",
+      "Ag"
+    ],
     "correctIndex": 2,
     "explanation": "Au comes from the Latin word 'aurum', meaning gold.",
     "category": "science"
@@ -10,7 +15,12 @@
   {
     "id": 2,
     "question": "What planet is known as the Red Planet?",
-    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
     "correctIndex": 1,
     "explanation": "Mars appears red due to iron oxide (rust) on its surface.",
     "category": "science"
@@ -18,7 +28,12 @@
   {
     "id": 3,
     "question": "What is the powerhouse of the cell?",
-    "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi apparatus"],
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria",
+      "Golgi apparatus"
+    ],
     "correctIndex": 2,
     "explanation": "Mitochondria generate most of the cell's supply of ATP, used as chemical energy.",
     "category": "science"
@@ -26,7 +41,12 @@
   {
     "id": 4,
     "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
-    "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
     "correctIndex": 2,
     "explanation": "Plants absorb carbon dioxide and use it with water and sunlight to produce glucose and oxygen.",
     "category": "science"
@@ -34,7 +54,12 @@
   {
     "id": 5,
     "question": "What is the chemical formula for table salt?",
-    "options": ["NaCl", "KCl", "CaCl2", "NaOH"],
+    "options": [
+      "NaCl",
+      "KCl",
+      "CaCl2",
+      "NaOH"
+    ],
     "correctIndex": 0,
     "explanation": "Table salt is sodium chloride, composed of sodium (Na) and chlorine (Cl) ions.",
     "category": "science"
@@ -42,7 +67,12 @@
   {
     "id": 6,
     "question": "How many bones are in the adult human body?",
-    "options": ["186", "206", "216", "256"],
+    "options": [
+      "186",
+      "206",
+      "216",
+      "256"
+    ],
     "correctIndex": 1,
     "explanation": "Adults have 206 bones, though babies are born with roughly 270 that fuse over time.",
     "category": "science"
@@ -50,7 +80,12 @@
   {
     "id": 7,
     "question": "What is the speed of light in a vacuum approximately?",
-    "options": ["300,000 km/s", "150,000 km/s", "500,000 km/s", "1,000,000 km/s"],
+    "options": [
+      "300,000 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
     "correctIndex": 0,
     "explanation": "Light travels at approximately 299,792 km/s in a vacuum, commonly rounded to 300,000 km/s.",
     "category": "science"
@@ -58,7 +93,12 @@
   {
     "id": 8,
     "question": "What element has the atomic number 1?",
-    "options": ["Helium", "Hydrogen", "Lithium", "Carbon"],
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Lithium",
+      "Carbon"
+    ],
     "correctIndex": 1,
     "explanation": "Hydrogen has one proton in its nucleus, giving it atomic number 1. It is the most abundant element in the universe.",
     "category": "science"
@@ -66,7 +106,12 @@
   {
     "id": 9,
     "question": "What type of animal is a Komodo dragon?",
-    "options": ["Amphibian", "Mammal", "Lizard", "Snake"],
+    "options": [
+      "Amphibian",
+      "Mammal",
+      "Lizard",
+      "Snake"
+    ],
     "correctIndex": 2,
     "explanation": "The Komodo dragon is the largest living species of lizard, found in the Indonesian islands.",
     "category": "science"
@@ -74,7 +119,12 @@
   {
     "id": 10,
     "question": "What is the most abundant gas in Earth's atmosphere?",
-    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Argon"
+    ],
     "correctIndex": 2,
     "explanation": "Nitrogen makes up about 78% of Earth's atmosphere by volume.",
     "category": "science"
@@ -82,7 +132,12 @@
   {
     "id": 11,
     "question": "What is the hardest natural substance on Earth?",
-    "options": ["Quartz", "Topaz", "Diamond", "Corundum"],
+    "options": [
+      "Quartz",
+      "Topaz",
+      "Diamond",
+      "Corundum"
+    ],
     "correctIndex": 2,
     "explanation": "Diamond rates 10 on the Mohs hardness scale, making it the hardest known natural material.",
     "category": "science"
@@ -90,7 +145,12 @@
   {
     "id": 12,
     "question": "Which organ is responsible for filtering blood in the human body?",
-    "options": ["Liver", "Kidneys", "Spleen", "Heart"],
+    "options": [
+      "Liver",
+      "Kidneys",
+      "Spleen",
+      "Heart"
+    ],
     "correctIndex": 1,
     "explanation": "The kidneys filter waste and excess fluid from the blood, producing urine.",
     "category": "science"
@@ -98,7 +158,12 @@
   {
     "id": 13,
     "question": "What is the chemical symbol for iron?",
-    "options": ["Ir", "Fe", "In", "Io"],
+    "options": [
+      "Ir",
+      "Fe",
+      "In",
+      "Io"
+    ],
     "correctIndex": 1,
     "explanation": "Fe comes from the Latin word 'ferrum', meaning iron.",
     "category": "science"
@@ -106,7 +171,12 @@
   {
     "id": 14,
     "question": "How long does it take for light from the Sun to reach Earth?",
-    "options": ["About 1 minute", "About 8 minutes", "About 30 minutes", "About 1 hour"],
+    "options": [
+      "About 1 minute",
+      "About 8 minutes",
+      "About 30 minutes",
+      "About 1 hour"
+    ],
     "correctIndex": 1,
     "explanation": "Sunlight takes approximately 8 minutes and 20 seconds to travel from the Sun to Earth.",
     "category": "science"
@@ -114,7 +184,12 @@
   {
     "id": 15,
     "question": "What is the largest organ of the human body?",
-    "options": ["Liver", "Brain", "Skin", "Lungs"],
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Lungs"
+    ],
     "correctIndex": 2,
     "explanation": "The skin is the largest organ, covering about 1.5 to 2 square meters in adults.",
     "category": "science"
@@ -122,7 +197,12 @@
   {
     "id": 16,
     "question": "What particle in an atom has no electric charge?",
-    "options": ["Proton", "Electron", "Neutron", "Positron"],
+    "options": [
+      "Proton",
+      "Electron",
+      "Neutron",
+      "Positron"
+    ],
     "correctIndex": 2,
     "explanation": "Neutrons have no electric charge, while protons are positive and electrons are negative.",
     "category": "science"
@@ -130,7 +210,12 @@
   {
     "id": 17,
     "question": "Which vitamin is produced when human skin is exposed to sunlight?",
-    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin D"
+    ],
     "correctIndex": 3,
     "explanation": "Ultraviolet B radiation in sunlight triggers vitamin D synthesis in the skin.",
     "category": "science"
@@ -138,7 +223,12 @@
   {
     "id": 18,
     "question": "What is the boiling point of water at standard atmospheric pressure?",
-    "options": ["90 degrees C", "100 degrees C", "110 degrees C", "120 degrees C"],
+    "options": [
+      "90 degrees C",
+      "100 degrees C",
+      "110 degrees C",
+      "120 degrees C"
+    ],
     "correctIndex": 1,
     "explanation": "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at standard atmospheric pressure.",
     "category": "science"
@@ -146,7 +236,12 @@
   {
     "id": 19,
     "question": "Which planet in our solar system has the most moons?",
-    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
     "correctIndex": 1,
     "explanation": "As of recent counts, Saturn has over 140 confirmed moons, surpassing Jupiter.",
     "category": "science"
@@ -154,7 +249,12 @@
   {
     "id": 20,
     "question": "What is the process by which plants lose water vapor through their leaves?",
-    "options": ["Respiration", "Transpiration", "Evaporation", "Condensation"],
+    "options": [
+      "Respiration",
+      "Transpiration",
+      "Evaporation",
+      "Condensation"
+    ],
     "correctIndex": 1,
     "explanation": "Transpiration is the movement of water from roots through the plant and its exit as vapor from leaves.",
     "category": "science"
@@ -162,7 +262,12 @@
   {
     "id": 21,
     "question": "What blood type is known as the universal donor?",
-    "options": ["Type A", "Type B", "Type AB", "Type O negative"],
+    "options": [
+      "Type A",
+      "Type B",
+      "Type AB",
+      "Type O negative"
+    ],
     "correctIndex": 3,
     "explanation": "Type O negative blood lacks A, B, and Rh antigens, making it safe for transfusion to any blood type.",
     "category": "science"
@@ -170,7 +275,12 @@
   {
     "id": 22,
     "question": "What is the main component of the Sun?",
-    "options": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Oxygen",
+      "Carbon"
+    ],
     "correctIndex": 1,
     "explanation": "The Sun is composed of about 73% hydrogen by mass, which fuels nuclear fusion in its core.",
     "category": "science"
@@ -178,7 +288,12 @@
   {
     "id": 23,
     "question": "Which scientist developed the theory of general relativity?",
-    "options": ["Isaac Newton", "Niels Bohr", "Albert Einstein", "Stephen Hawking"],
+    "options": [
+      "Isaac Newton",
+      "Niels Bohr",
+      "Albert Einstein",
+      "Stephen Hawking"
+    ],
     "correctIndex": 2,
     "explanation": "Albert Einstein published his theory of general relativity in 1915, describing gravity as spacetime curvature.",
     "category": "science"
@@ -186,7 +301,12 @@
   {
     "id": 24,
     "question": "What is the pH value of pure water at 25 degrees Celsius?",
-    "options": ["5", "7", "9", "14"],
+    "options": [
+      "5",
+      "7",
+      "9",
+      "14"
+    ],
     "correctIndex": 1,
     "explanation": "Pure water has a neutral pH of 7, balanced between acidic and alkaline.",
     "category": "science"
@@ -194,7 +314,12 @@
   {
     "id": 25,
     "question": "What is the smallest bone in the human body?",
-    "options": ["Stapes", "Incus", "Malleus", "Phalanx"],
+    "options": [
+      "Stapes",
+      "Incus",
+      "Malleus",
+      "Phalanx"
+    ],
     "correctIndex": 0,
     "explanation": "The stapes (stirrup bone) in the middle ear is only about 3 mm long, making it the smallest bone in the body.",
     "category": "science"
@@ -202,7 +327,12 @@
   {
     "id": 26,
     "question": "In what year did World War II end?",
-    "options": ["1943", "1944", "1945", "1946"],
+    "options": [
+      "1943",
+      "1944",
+      "1945",
+      "1946"
+    ],
     "correctIndex": 2,
     "explanation": "World War II ended in 1945 with Germany surrendering in May and Japan in September.",
     "category": "history"
@@ -210,7 +340,12 @@
   {
     "id": 27,
     "question": "Who was the first President of the United States?",
-    "options": ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
+    "options": [
+      "Thomas Jefferson",
+      "John Adams",
+      "George Washington",
+      "Benjamin Franklin"
+    ],
     "correctIndex": 2,
     "explanation": "George Washington served as the first U.S. President from 1789 to 1797.",
     "category": "history"
@@ -218,7 +353,12 @@
   {
     "id": 28,
     "question": "The ancient city of Rome was built on how many hills?",
-    "options": ["Five", "Six", "Seven", "Eight"],
+    "options": [
+      "Five",
+      "Six",
+      "Seven",
+      "Eight"
+    ],
     "correctIndex": 2,
     "explanation": "Rome was traditionally built on seven hills: Aventine, Caelian, Capitoline, Esquiline, Palatine, Quirinal, and Viminal.",
     "category": "history"
@@ -226,7 +366,12 @@
   {
     "id": 29,
     "question": "Who painted the ceiling of the Sistine Chapel?",
-    "options": ["Leonardo da Vinci", "Raphael", "Michelangelo", "Donatello"],
+    "options": [
+      "Leonardo da Vinci",
+      "Raphael",
+      "Michelangelo",
+      "Donatello"
+    ],
     "correctIndex": 2,
     "explanation": "Michelangelo painted the Sistine Chapel ceiling between 1508 and 1512.",
     "category": "history"
@@ -234,7 +379,12 @@
   {
     "id": 30,
     "question": "What year did the Titanic sink?",
-    "options": ["1910", "1912", "1914", "1916"],
+    "options": [
+      "1910",
+      "1912",
+      "1914",
+      "1916"
+    ],
     "correctIndex": 1,
     "explanation": "The RMS Titanic sank on April 15, 1912, after hitting an iceberg during its maiden voyage.",
     "category": "history"
@@ -242,7 +392,12 @@
   {
     "id": 31,
     "question": "Which empire was ruled by Genghis Khan?",
-    "options": ["Ottoman Empire", "Roman Empire", "Mongol Empire", "Persian Empire"],
+    "options": [
+      "Ottoman Empire",
+      "Roman Empire",
+      "Mongol Empire",
+      "Persian Empire"
+    ],
     "correctIndex": 2,
     "explanation": "Genghis Khan founded and ruled the Mongol Empire, which became the largest contiguous land empire in history.",
     "category": "history"
@@ -250,7 +405,12 @@
   {
     "id": 32,
     "question": "What was the name of the ship the Pilgrims sailed on to America in 1620?",
-    "options": ["Santa Maria", "Mayflower", "Victoria", "Endeavour"],
+    "options": [
+      "Santa Maria",
+      "Mayflower",
+      "Victoria",
+      "Endeavour"
+    ],
     "correctIndex": 1,
     "explanation": "The Pilgrims traveled on the Mayflower, landing at Plymouth Rock in December 1620.",
     "category": "history"
@@ -258,7 +418,12 @@
   {
     "id": 33,
     "question": "Who discovered penicillin?",
-    "options": ["Louis Pasteur", "Alexander Fleming", "Joseph Lister", "Robert Koch"],
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Joseph Lister",
+      "Robert Koch"
+    ],
     "correctIndex": 1,
     "explanation": "Alexander Fleming discovered penicillin in 1928 when he noticed mold killing bacteria in his petri dishes.",
     "category": "history"
@@ -266,7 +431,12 @@
   {
     "id": 34,
     "question": "In which year did the Berlin Wall fall?",
-    "options": ["1987", "1988", "1989", "1990"],
+    "options": [
+      "1987",
+      "1988",
+      "1989",
+      "1990"
+    ],
     "correctIndex": 2,
     "explanation": "The Berlin Wall fell on November 9, 1989, marking a pivotal moment in the end of the Cold War.",
     "category": "history"
@@ -274,7 +444,12 @@
   {
     "id": 35,
     "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
-    "options": ["Bessie Coleman", "Amelia Earhart", "Harriet Quimby", "Jacqueline Cochran"],
+    "options": [
+      "Bessie Coleman",
+      "Amelia Earhart",
+      "Harriet Quimby",
+      "Jacqueline Cochran"
+    ],
     "correctIndex": 1,
     "explanation": "Amelia Earhart completed her solo transatlantic flight on May 20-21, 1932.",
     "category": "history"
@@ -282,7 +457,12 @@
   {
     "id": 36,
     "question": "What ancient civilization built the Machu Picchu complex?",
-    "options": ["Aztec", "Maya", "Inca", "Olmec"],
+    "options": [
+      "Aztec",
+      "Maya",
+      "Inca",
+      "Olmec"
+    ],
     "correctIndex": 2,
     "explanation": "Machu Picchu was built by the Inca civilization in the 15th century as an estate for Emperor Pachacuti.",
     "category": "history"
@@ -290,7 +470,12 @@
   {
     "id": 37,
     "question": "Who wrote the Declaration of Independence?",
-    "options": ["Benjamin Franklin", "John Adams", "Thomas Jefferson", "James Madison"],
+    "options": [
+      "Benjamin Franklin",
+      "John Adams",
+      "Thomas Jefferson",
+      "James Madison"
+    ],
     "correctIndex": 2,
     "explanation": "Thomas Jefferson was the principal author of the Declaration of Independence in 1776.",
     "category": "history"
@@ -298,7 +483,12 @@
   {
     "id": 38,
     "question": "Which war was fought between the North and South regions of the United States?",
-    "options": ["Revolutionary War", "War of 1812", "American Civil War", "Spanish-American War"],
+    "options": [
+      "Revolutionary War",
+      "War of 1812",
+      "American Civil War",
+      "Spanish-American War"
+    ],
     "correctIndex": 2,
     "explanation": "The American Civil War (1861-1865) was fought between Union states in the North and Confederate states in the South.",
     "category": "history"
@@ -306,7 +496,12 @@
   {
     "id": 39,
     "question": "Who was the last pharaoh of ancient Egypt?",
-    "options": ["Nefertiti", "Cleopatra VII", "Hatshepsut", "Ramesses II"],
+    "options": [
+      "Nefertiti",
+      "Cleopatra VII",
+      "Hatshepsut",
+      "Ramesses II"
+    ],
     "correctIndex": 1,
     "explanation": "Cleopatra VII was the last active ruler of the Ptolemaic Kingdom of Egypt before it became a Roman province.",
     "category": "history"
@@ -314,7 +509,12 @@
   {
     "id": 40,
     "question": "The Magna Carta was signed in which country?",
-    "options": ["France", "England", "Spain", "Germany"],
+    "options": [
+      "France",
+      "England",
+      "Spain",
+      "Germany"
+    ],
     "correctIndex": 1,
     "explanation": "The Magna Carta was sealed by King John of England in 1215 at Runnymede.",
     "category": "history"
@@ -322,7 +522,12 @@
   {
     "id": 41,
     "question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
-    "options": ["Joseph Stalin", "Leonid Brezhnev", "Nikita Khrushchev", "Mikhail Gorbachev"],
+    "options": [
+      "Joseph Stalin",
+      "Leonid Brezhnev",
+      "Nikita Khrushchev",
+      "Mikhail Gorbachev"
+    ],
     "correctIndex": 2,
     "explanation": "Nikita Khrushchev led the Soviet Union during the 1962 Cuban Missile Crisis, negotiating with President Kennedy.",
     "category": "history"
@@ -330,7 +535,12 @@
   {
     "id": 42,
     "question": "What was the primary cause of the Black Death in medieval Europe?",
-    "options": ["Cholera bacteria", "Yersinia pestis bacteria", "Malaria parasites", "Smallpox virus"],
+    "options": [
+      "Cholera bacteria",
+      "Yersinia pestis bacteria",
+      "Malaria parasites",
+      "Smallpox virus"
+    ],
     "correctIndex": 1,
     "explanation": "The Black Death was caused by Yersinia pestis, transmitted by fleas on rats, killing an estimated 30-60% of Europe's population.",
     "category": "history"
@@ -338,7 +548,12 @@
   {
     "id": 43,
     "question": "Which country was first to grant women the right to vote nationally?",
-    "options": ["United States", "United Kingdom", "New Zealand", "Australia"],
+    "options": [
+      "United States",
+      "United Kingdom",
+      "New Zealand",
+      "Australia"
+    ],
     "correctIndex": 2,
     "explanation": "New Zealand became the first self-governing country to grant all women the right to vote in 1893.",
     "category": "history"
@@ -346,7 +561,12 @@
   {
     "id": 44,
     "question": "Who was the first human to journey into outer space?",
-    "options": ["Alan Shepard", "Yuri Gagarin", "John Glenn", "Neil Armstrong"],
+    "options": [
+      "Alan Shepard",
+      "Yuri Gagarin",
+      "John Glenn",
+      "Neil Armstrong"
+    ],
     "correctIndex": 1,
     "explanation": "Soviet cosmonaut Yuri Gagarin became the first human in space on April 12, 1961, aboard Vostok 1.",
     "category": "history"
@@ -354,7 +574,12 @@
   {
     "id": 45,
     "question": "The French Revolution began in which year?",
-    "options": ["1776", "1789", "1799", "1804"],
+    "options": [
+      "1776",
+      "1789",
+      "1799",
+      "1804"
+    ],
     "correctIndex": 1,
     "explanation": "The French Revolution began in 1789 with the storming of the Bastille on July 14.",
     "category": "history"
@@ -362,7 +587,12 @@
   {
     "id": 46,
     "question": "What ancient wonder was located in Alexandria, Egypt?",
-    "options": ["Hanging Gardens", "Colossus of Rhodes", "Lighthouse of Alexandria", "Temple of Artemis"],
+    "options": [
+      "Hanging Gardens",
+      "Colossus of Rhodes",
+      "Lighthouse of Alexandria",
+      "Temple of Artemis"
+    ],
     "correctIndex": 2,
     "explanation": "The Lighthouse of Alexandria (Pharos) was one of the Seven Wonders of the Ancient World, built around 280 BC.",
     "category": "history"
@@ -370,7 +600,12 @@
   {
     "id": 47,
     "question": "Which treaty ended World War I?",
-    "options": ["Treaty of Paris", "Treaty of Versailles", "Treaty of Ghent", "Treaty of Tordesillas"],
+    "options": [
+      "Treaty of Paris",
+      "Treaty of Versailles",
+      "Treaty of Ghent",
+      "Treaty of Tordesillas"
+    ],
     "correctIndex": 1,
     "explanation": "The Treaty of Versailles was signed on June 28, 1919, officially ending World War I.",
     "category": "history"
@@ -378,7 +613,12 @@
   {
     "id": 48,
     "question": "Who was the first Emperor of Rome?",
-    "options": ["Julius Caesar", "Augustus", "Nero", "Tiberius"],
+    "options": [
+      "Julius Caesar",
+      "Augustus",
+      "Nero",
+      "Tiberius"
+    ],
     "correctIndex": 1,
     "explanation": "Augustus (born Octavian) became the first Roman Emperor in 27 BC, founding the Roman Principate.",
     "category": "history"
@@ -386,7 +626,12 @@
   {
     "id": 49,
     "question": "What was the name of the political and social movement that sought to abolish slavery?",
-    "options": ["Suffrage Movement", "Abolitionist Movement", "Temperance Movement", "Progressive Movement"],
+    "options": [
+      "Suffrage Movement",
+      "Abolitionist Movement",
+      "Temperance Movement",
+      "Progressive Movement"
+    ],
     "correctIndex": 1,
     "explanation": "The Abolitionist Movement was active from the late 18th century through the American Civil War to end slavery.",
     "category": "history"
@@ -394,7 +639,12 @@
   {
     "id": 50,
     "question": "Which civilization is credited with inventing writing?",
-    "options": ["Egyptian", "Sumerian", "Chinese", "Indus Valley"],
+    "options": [
+      "Egyptian",
+      "Sumerian",
+      "Chinese",
+      "Indus Valley"
+    ],
     "correctIndex": 1,
     "explanation": "The Sumerians of Mesopotamia developed cuneiform writing around 3400-3200 BC, the earliest known writing system.",
     "category": "history"
@@ -402,7 +652,12 @@
   {
     "id": 51,
     "question": "What is the largest desert in the world?",
-    "options": ["Sahara", "Arabian", "Antarctic", "Gobi"],
+    "options": [
+      "Sahara",
+      "Arabian",
+      "Antarctic",
+      "Gobi"
+    ],
     "correctIndex": 2,
     "explanation": "Antarctica is technically the world's largest desert, as a desert is defined by low precipitation, not temperature.",
     "category": "geography"
@@ -410,7 +665,12 @@
   {
     "id": 52,
     "question": "Which river is the longest in the world?",
-    "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "options": [
+      "Amazon",
+      "Nile",
+      "Yangtze",
+      "Mississippi"
+    ],
     "correctIndex": 1,
     "explanation": "The Nile River is approximately 6,650 km long, making it the longest river in the world.",
     "category": "geography"
@@ -418,7 +678,12 @@
   {
     "id": 53,
     "question": "What is the smallest country in the world by area?",
-    "options": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+    "options": [
+      "Monaco",
+      "San Marino",
+      "Vatican City",
+      "Liechtenstein"
+    ],
     "correctIndex": 2,
     "explanation": "Vatican City covers about 0.44 square kilometers, making it the smallest internationally recognized independent state.",
     "category": "geography"
@@ -426,7 +691,12 @@
   {
     "id": 54,
     "question": "Mount Everest is located on the border of which two countries?",
-    "options": ["India and China", "Nepal and China", "Nepal and India", "Bhutan and China"],
+    "options": [
+      "India and China",
+      "Nepal and China",
+      "Nepal and India",
+      "Bhutan and China"
+    ],
     "correctIndex": 1,
     "explanation": "Mount Everest sits on the border between Nepal and Tibet (an autonomous region of China).",
     "category": "geography"
@@ -434,7 +704,12 @@
   {
     "id": 55,
     "question": "Which continent has the most countries?",
-    "options": ["Asia", "Europe", "Africa", "South America"],
+    "options": [
+      "Asia",
+      "Europe",
+      "Africa",
+      "South America"
+    ],
     "correctIndex": 2,
     "explanation": "Africa has 54 recognized countries, more than any other continent.",
     "category": "geography"
@@ -442,7 +717,12 @@
   {
     "id": 56,
     "question": "What is the capital city of Australia?",
-    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
     "correctIndex": 2,
     "explanation": "Canberra is the capital of Australia, chosen as a compromise between the rival cities of Sydney and Melbourne.",
     "category": "geography"
@@ -450,7 +730,12 @@
   {
     "id": 57,
     "question": "Which ocean is the largest by area?",
-    "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+    "options": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ],
     "correctIndex": 2,
     "explanation": "The Pacific Ocean covers about 165.25 million square kilometers, larger than all land area combined.",
     "category": "geography"
@@ -458,7 +743,12 @@
   {
     "id": 58,
     "question": "What country has the most natural lakes?",
-    "options": ["United States", "Russia", "Canada", "Finland"],
+    "options": [
+      "United States",
+      "Russia",
+      "Canada",
+      "Finland"
+    ],
     "correctIndex": 2,
     "explanation": "Canada has over 800,000 lakes, containing roughly 60% of the world's total lakes.",
     "category": "geography"
@@ -466,7 +756,12 @@
   {
     "id": 59,
     "question": "What is the driest inhabited continent?",
-    "options": ["Africa", "Asia", "Australia", "South America"],
+    "options": [
+      "Africa",
+      "Asia",
+      "Australia",
+      "South America"
+    ],
     "correctIndex": 2,
     "explanation": "Australia is the driest inhabited continent, with about 80% of its land receiving less than 600 mm of rain annually.",
     "category": "geography"
@@ -474,7 +769,12 @@
   {
     "id": 60,
     "question": "Which strait separates Europe from Africa?",
-    "options": ["Strait of Hormuz", "Strait of Malacca", "Strait of Gibraltar", "Bosporus"],
+    "options": [
+      "Strait of Hormuz",
+      "Strait of Malacca",
+      "Strait of Gibraltar",
+      "Bosporus"
+    ],
     "correctIndex": 2,
     "explanation": "The Strait of Gibraltar, only about 14 km wide at its narrowest point, separates Spain (Europe) from Morocco (Africa).",
     "category": "geography"
@@ -482,7 +782,12 @@
   {
     "id": 61,
     "question": "What is the longest mountain range in the world?",
-    "options": ["Himalayas", "Rocky Mountains", "Andes", "Alps"],
+    "options": [
+      "Himalayas",
+      "Rocky Mountains",
+      "Andes",
+      "Alps"
+    ],
     "correctIndex": 2,
     "explanation": "The Andes mountain range stretches about 7,000 km along the western coast of South America.",
     "category": "geography"
@@ -490,7 +795,12 @@
   {
     "id": 62,
     "question": "Which country is both in Europe and Asia?",
-    "options": ["Egypt", "Turkey", "Russia", "Both B and C"],
+    "options": [
+      "Egypt",
+      "Turkey",
+      "Russia",
+      "Both B and C"
+    ],
     "correctIndex": 3,
     "explanation": "Both Turkey and Russia have territory in Europe and Asia, straddling two continents.",
     "category": "geography"
@@ -498,7 +808,12 @@
   {
     "id": 63,
     "question": "What is the deepest point in the world's oceans?",
-    "options": ["Tonga Trench", "Mariana Trench", "Puerto Rico Trench", "Java Trench"],
+    "options": [
+      "Tonga Trench",
+      "Mariana Trench",
+      "Puerto Rico Trench",
+      "Java Trench"
+    ],
     "correctIndex": 1,
     "explanation": "The Mariana Trench's Challenger Deep reaches about 10,935 meters below sea level.",
     "category": "geography"
@@ -506,7 +821,12 @@
   {
     "id": 64,
     "question": "Which African country was formerly known as Abyssinia?",
-    "options": ["Somalia", "Ethiopia", "Eritrea", "Sudan"],
+    "options": [
+      "Somalia",
+      "Ethiopia",
+      "Eritrea",
+      "Sudan"
+    ],
     "correctIndex": 1,
     "explanation": "Ethiopia was historically known as Abyssinia in European records until the 20th century.",
     "category": "geography"
@@ -514,7 +834,12 @@
   {
     "id": 65,
     "question": "What country contains the most time zones?",
-    "options": ["Russia", "United States", "France", "China"],
+    "options": [
+      "Russia",
+      "United States",
+      "France",
+      "China"
+    ],
     "correctIndex": 2,
     "explanation": "France spans 12 time zones due to its overseas territories across the globe, more than any other country.",
     "category": "geography"
@@ -522,7 +847,12 @@
   {
     "id": 66,
     "question": "Which is the largest island in the world?",
-    "options": ["Borneo", "Madagascar", "Greenland", "New Guinea"],
+    "options": [
+      "Borneo",
+      "Madagascar",
+      "Greenland",
+      "New Guinea"
+    ],
     "correctIndex": 2,
     "explanation": "Greenland is the world's largest island at about 2.16 million square kilometers.",
     "category": "geography"
@@ -530,7 +860,12 @@
   {
     "id": 67,
     "question": "What is the capital of Brazil?",
-    "options": ["Rio de Janeiro", "Sao Paulo", "Brasilia", "Salvador"],
+    "options": [
+      "Rio de Janeiro",
+      "Sao Paulo",
+      "Brasilia",
+      "Salvador"
+    ],
     "correctIndex": 2,
     "explanation": "Brasilia became Brazil's capital in 1960, a planned city built specifically to serve as the national capital.",
     "category": "geography"
@@ -538,7 +873,12 @@
   {
     "id": 68,
     "question": "Which sea is bordered by Europe to the north and Africa to the south?",
-    "options": ["Red Sea", "Mediterranean Sea", "Black Sea", "Caspian Sea"],
+    "options": [
+      "Red Sea",
+      "Mediterranean Sea",
+      "Black Sea",
+      "Caspian Sea"
+    ],
     "correctIndex": 1,
     "explanation": "The Mediterranean Sea lies between Southern Europe and Northern Africa.",
     "category": "geography"
@@ -546,7 +886,12 @@
   {
     "id": 69,
     "question": "Through how many countries does the Amazon River flow?",
-    "options": ["3", "5", "7", "9"],
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
     "correctIndex": 3,
     "explanation": "The Amazon River flows through 9 countries: Brazil, Peru, Colombia, Bolivia, Ecuador, Venezuela, Guyana, Suriname, and French Guiana.",
     "category": "geography"
@@ -554,7 +899,12 @@
   {
     "id": 70,
     "question": "What is the largest country by area in South America?",
-    "options": ["Argentina", "Colombia", "Brazil", "Peru"],
+    "options": [
+      "Argentina",
+      "Colombia",
+      "Brazil",
+      "Peru"
+    ],
     "correctIndex": 2,
     "explanation": "Brazil covers about 8.5 million square kilometers, making it the largest country in South America and the fifth largest globally.",
     "category": "geography"
@@ -562,7 +912,12 @@
   {
     "id": 71,
     "question": "Which country is known as the Land of the Rising Sun?",
-    "options": ["China", "South Korea", "Japan", "Thailand"],
+    "options": [
+      "China",
+      "South Korea",
+      "Japan",
+      "Thailand"
+    ],
     "correctIndex": 2,
     "explanation": "Japan is called the Land of the Rising Sun because its name in Japanese (Nihon) means 'origin of the sun.'",
     "category": "geography"
@@ -570,7 +925,12 @@
   {
     "id": 72,
     "question": "What is the most populated city in the world?",
-    "options": ["Delhi", "Shanghai", "Tokyo", "Sao Paulo"],
+    "options": [
+      "Delhi",
+      "Shanghai",
+      "Tokyo",
+      "Sao Paulo"
+    ],
     "correctIndex": 2,
     "explanation": "Tokyo's greater metropolitan area is the most populous in the world, with over 37 million residents.",
     "category": "geography"
@@ -578,7 +938,12 @@
   {
     "id": 73,
     "question": "Which European country has the most UNESCO World Heritage Sites?",
-    "options": ["France", "Spain", "Italy", "Germany"],
+    "options": [
+      "France",
+      "Spain",
+      "Italy",
+      "Germany"
+    ],
     "correctIndex": 2,
     "explanation": "Italy has the most UNESCO World Heritage Sites of any country in the world, with nearly 60 listed sites.",
     "category": "geography"
@@ -586,7 +951,12 @@
   {
     "id": 74,
     "question": "Lake Baikal, the world's deepest lake, is located in which country?",
-    "options": ["Mongolia", "Russia", "Kazakhstan", "China"],
+    "options": [
+      "Mongolia",
+      "Russia",
+      "Kazakhstan",
+      "China"
+    ],
     "correctIndex": 1,
     "explanation": "Lake Baikal in Siberia, Russia, is the deepest lake in the world at 1,642 meters and contains about 20% of the world's unfrozen freshwater.",
     "category": "geography"
@@ -594,7 +964,12 @@
   {
     "id": 75,
     "question": "What is the only country that crosses both the equator and the Tropic of Capricorn?",
-    "options": ["Indonesia", "Democratic Republic of the Congo", "Brazil", "Kenya"],
+    "options": [
+      "Indonesia",
+      "Democratic Republic of the Congo",
+      "Brazil",
+      "Kenya"
+    ],
     "correctIndex": 2,
     "explanation": "Brazil is the only country crossed by both the equator and the Tropic of Capricorn, due to its vast north-south extent.",
     "category": "geography"
@@ -602,7 +977,12 @@
   {
     "id": 76,
     "question": "Who directed the movie 'Jaws'?",
-    "options": ["Martin Scorsese", "Steven Spielberg", "Francis Ford Coppola", "Ridley Scott"],
+    "options": [
+      "Martin Scorsese",
+      "Steven Spielberg",
+      "Francis Ford Coppola",
+      "Ridley Scott"
+    ],
     "correctIndex": 1,
     "explanation": "Steven Spielberg directed 'Jaws' in 1975, which is considered the first summer blockbuster.",
     "category": "pop_culture"
@@ -610,7 +990,12 @@
   {
     "id": 77,
     "question": "What band released the album 'Abbey Road'?",
-    "options": ["The Rolling Stones", "The Who", "The Beatles", "Led Zeppelin"],
+    "options": [
+      "The Rolling Stones",
+      "The Who",
+      "The Beatles",
+      "Led Zeppelin"
+    ],
     "correctIndex": 2,
     "explanation": "The Beatles released 'Abbey Road' in 1969, their penultimate studio album.",
     "category": "pop_culture"
@@ -618,7 +1003,12 @@
   {
     "id": 78,
     "question": "In the TV show 'Breaking Bad', what is Walter White's alter ego?",
-    "options": ["Heisenberg", "The Chemist", "Mr. White", "Blue Sky"],
+    "options": [
+      "Heisenberg",
+      "The Chemist",
+      "Mr. White",
+      "Blue Sky"
+    ],
     "correctIndex": 0,
     "explanation": "Walter White adopts the name Heisenberg, inspired by the physicist Werner Heisenberg's uncertainty principle.",
     "category": "pop_culture"
@@ -626,7 +1016,12 @@
   {
     "id": 79,
     "question": "Who played Jack Dawson in the 1997 film 'Titanic'?",
-    "options": ["Brad Pitt", "Leonardo DiCaprio", "Matt Damon", "Johnny Depp"],
+    "options": [
+      "Brad Pitt",
+      "Leonardo DiCaprio",
+      "Matt Damon",
+      "Johnny Depp"
+    ],
     "correctIndex": 1,
     "explanation": "Leonardo DiCaprio played Jack Dawson, which propelled him to international stardom.",
     "category": "pop_culture"
@@ -634,7 +1029,12 @@
   {
     "id": 80,
     "question": "What is the name of the fictional country in 'Black Panther'?",
-    "options": ["Zamunda", "Wakanda", "Genovia", "Latveria"],
+    "options": [
+      "Zamunda",
+      "Wakanda",
+      "Genovia",
+      "Latveria"
+    ],
     "correctIndex": 1,
     "explanation": "Wakanda is the technologically advanced African nation ruled by the Black Panther in Marvel Comics and films.",
     "category": "pop_culture"
@@ -642,7 +1042,12 @@
   {
     "id": 81,
     "question": "Which video game franchise features a character named Mario?",
-    "options": ["Sonic", "Super Mario", "Zelda", "Donkey Kong"],
+    "options": [
+      "Sonic",
+      "Super Mario",
+      "Zelda",
+      "Donkey Kong"
+    ],
     "correctIndex": 1,
     "explanation": "Mario first appeared in Donkey Kong (1981) but is best known as the star of the Super Mario franchise.",
     "category": "pop_culture"
@@ -650,7 +1055,12 @@
   {
     "id": 82,
     "question": "Who wrote the 'Harry Potter' book series?",
-    "options": ["J.R.R. Tolkien", "J.K. Rowling", "C.S. Lewis", "George R.R. Martin"],
+    "options": [
+      "J.R.R. Tolkien",
+      "J.K. Rowling",
+      "C.S. Lewis",
+      "George R.R. Martin"
+    ],
     "correctIndex": 1,
     "explanation": "J.K. Rowling wrote the seven Harry Potter books, published between 1997 and 2007.",
     "category": "pop_culture"
@@ -658,7 +1068,12 @@
   {
     "id": 83,
     "question": "What year was the first iPhone released?",
-    "options": ["2005", "2006", "2007", "2008"],
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
     "correctIndex": 2,
     "explanation": "Apple released the first iPhone on June 29, 2007, revolutionizing the smartphone industry.",
     "category": "pop_culture"
@@ -666,7 +1081,12 @@
   {
     "id": 84,
     "question": "Which TV show features a character named Walter White as a chemistry teacher turned meth cook?",
-    "options": ["The Wire", "Breaking Bad", "Better Call Saul", "Ozark"],
+    "options": [
+      "The Wire",
+      "Breaking Bad",
+      "Better Call Saul",
+      "Ozark"
+    ],
     "correctIndex": 1,
     "explanation": "Breaking Bad (2008-2013) follows Walter White's transformation from a mild-mannered chemistry teacher to a drug kingpin.",
     "category": "pop_culture"
@@ -674,7 +1094,12 @@
   {
     "id": 85,
     "question": "What is the highest-grossing film of all time (not adjusted for inflation)?",
-    "options": ["Avengers: Endgame", "Avatar", "Titanic", "Star Wars: The Force Awakens"],
+    "options": [
+      "Avengers: Endgame",
+      "Avatar",
+      "Titanic",
+      "Star Wars: The Force Awakens"
+    ],
     "correctIndex": 1,
     "explanation": "Avatar (2009) holds the record for highest worldwide box office gross at over $2.9 billion.",
     "category": "pop_culture"
@@ -682,7 +1107,12 @@
   {
     "id": 86,
     "question": "Which singer is known as the 'Queen of Pop'?",
-    "options": ["Whitney Houston", "Madonna", "Beyonce", "Lady Gaga"],
+    "options": [
+      "Whitney Houston",
+      "Madonna",
+      "Beyonce",
+      "Lady Gaga"
+    ],
     "correctIndex": 1,
     "explanation": "Madonna has been called the Queen of Pop since the 1980s for her influence on music and pop culture.",
     "category": "pop_culture"
@@ -690,7 +1120,12 @@
   {
     "id": 87,
     "question": "In the 'Star Wars' franchise, what is the name of Han Solo's ship?",
-    "options": ["Star Destroyer", "Millennium Falcon", "X-Wing", "TIE Fighter"],
+    "options": [
+      "Star Destroyer",
+      "Millennium Falcon",
+      "X-Wing",
+      "TIE Fighter"
+    ],
     "correctIndex": 1,
     "explanation": "The Millennium Falcon is Han Solo's iconic YT-1300 freighter, famous for making the Kessel Run in 12 parsecs.",
     "category": "pop_culture"
@@ -698,7 +1133,12 @@
   {
     "id": 88,
     "question": "Who played the character of Iron Man in the Marvel Cinematic Universe?",
-    "options": ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
     "correctIndex": 1,
     "explanation": "Robert Downey Jr. played Tony Stark / Iron Man, starting with Iron Man in 2008 through Avengers: Endgame in 2019.",
     "category": "pop_culture"
@@ -706,7 +1146,12 @@
   {
     "id": 89,
     "question": "What animated film features a clownfish named Nemo?",
-    "options": ["Shark Tale", "Finding Nemo", "The Little Mermaid", "Moana"],
+    "options": [
+      "Shark Tale",
+      "Finding Nemo",
+      "The Little Mermaid",
+      "Moana"
+    ],
     "correctIndex": 1,
     "explanation": "Finding Nemo (2003) is a Pixar film about a clownfish named Nemo who is captured and his father's journey to find him.",
     "category": "pop_culture"
@@ -714,7 +1159,12 @@
   {
     "id": 90,
     "question": "Which band performed the hit song 'Bohemian Rhapsody'?",
-    "options": ["The Beatles", "Led Zeppelin", "Queen", "Pink Floyd"],
+    "options": [
+      "The Beatles",
+      "Led Zeppelin",
+      "Queen",
+      "Pink Floyd"
+    ],
     "correctIndex": 2,
     "explanation": "Queen released 'Bohemian Rhapsody' in 1975, written by Freddie Mercury, on the album 'A Night at the Opera.'",
     "category": "pop_culture"
@@ -722,7 +1172,12 @@
   {
     "id": 91,
     "question": "What is the name of the fictional wizarding school in 'Harry Potter'?",
-    "options": ["Beauxbatons", "Durmstrang", "Hogwarts", "Ilvermorny"],
+    "options": [
+      "Beauxbatons",
+      "Durmstrang",
+      "Hogwarts",
+      "Ilvermorny"
+    ],
     "correctIndex": 2,
     "explanation": "Hogwarts School of Witchcraft and Wizardry is the primary setting for the Harry Potter series.",
     "category": "pop_culture"
@@ -730,7 +1185,12 @@
   {
     "id": 92,
     "question": "Which streaming platform released the series 'Stranger Things'?",
-    "options": ["Amazon Prime", "Hulu", "Netflix", "Disney+"],
+    "options": [
+      "Amazon Prime",
+      "Hulu",
+      "Netflix",
+      "Disney+"
+    ],
     "correctIndex": 2,
     "explanation": "Netflix released 'Stranger Things' in 2016, and it became one of the platform's most popular original series.",
     "category": "pop_culture"
@@ -738,7 +1198,12 @@
   {
     "id": 93,
     "question": "Who is the creator of the animated series 'The Simpsons'?",
-    "options": ["Seth MacFarlane", "Matt Groening", "Trey Parker", "Mike Judge"],
+    "options": [
+      "Seth MacFarlane",
+      "Matt Groening",
+      "Trey Parker",
+      "Mike Judge"
+    ],
     "correctIndex": 1,
     "explanation": "Matt Groening created The Simpsons, which debuted as a series in 1989 and is the longest-running animated show in US history.",
     "category": "pop_culture"
@@ -746,7 +1211,12 @@
   {
     "id": 94,
     "question": "What sport does Tiger Woods play professionally?",
-    "options": ["Tennis", "Golf", "Basketball", "Baseball"],
+    "options": [
+      "Tennis",
+      "Golf",
+      "Basketball",
+      "Baseball"
+    ],
     "correctIndex": 1,
     "explanation": "Tiger Woods is one of the most successful golfers of all time, with 15 major championship wins.",
     "category": "pop_culture"
@@ -754,7 +1224,12 @@
   {
     "id": 95,
     "question": "In the TV show 'Friends', what is the name of Ross and Rachel's daughter?",
-    "options": ["Emma", "Emily", "Erica", "Ellie"],
+    "options": [
+      "Emma",
+      "Emily",
+      "Erica",
+      "Ellie"
+    ],
     "correctIndex": 0,
     "explanation": "Ross and Rachel named their daughter Emma, a name Ross had originally picked from a list in the hospital.",
     "category": "pop_culture"
@@ -762,7 +1237,12 @@
   {
     "id": 96,
     "question": "What video game franchise is known for the character Link?",
-    "options": ["Final Fantasy", "The Legend of Zelda", "Dragon Quest", "Kingdom Hearts"],
+    "options": [
+      "Final Fantasy",
+      "The Legend of Zelda",
+      "Dragon Quest",
+      "Kingdom Hearts"
+    ],
     "correctIndex": 1,
     "explanation": "Link is the protagonist of Nintendo's The Legend of Zelda franchise, first appearing in 1986.",
     "category": "pop_culture"
@@ -770,7 +1250,12 @@
   {
     "id": 97,
     "question": "Who played the character Neo in 'The Matrix'?",
-    "options": ["Will Smith", "Keanu Reeves", "Brad Pitt", "Tom Cruise"],
+    "options": [
+      "Will Smith",
+      "Keanu Reeves",
+      "Brad Pitt",
+      "Tom Cruise"
+    ],
     "correctIndex": 1,
     "explanation": "Keanu Reeves played Neo (Thomas Anderson) in The Matrix trilogy, starting with the original film in 1999.",
     "category": "pop_culture"
@@ -778,7 +1263,12 @@
   {
     "id": 98,
     "question": "What pop singer's real name is Stefani Joanne Angelina Germanotta?",
-    "options": ["Adele", "Lady Gaga", "Rihanna", "Beyonce"],
+    "options": [
+      "Adele",
+      "Lady Gaga",
+      "Rihanna",
+      "Beyonce"
+    ],
     "correctIndex": 1,
     "explanation": "Lady Gaga's birth name is Stefani Joanne Angelina Germanotta. She adopted her stage name from the Queen song 'Radio Ga Ga.'",
     "category": "pop_culture"
@@ -786,7 +1276,12 @@
   {
     "id": 99,
     "question": "Which franchise includes the fictional character Darth Vader?",
-    "options": ["Star Trek", "Star Wars", "Battlestar Galactica", "Stargate"],
+    "options": [
+      "Star Trek",
+      "Star Wars",
+      "Battlestar Galactica",
+      "Stargate"
+    ],
     "correctIndex": 1,
     "explanation": "Darth Vader is the iconic Sith lord from the Star Wars franchise, originally a Jedi named Anakin Skywalker.",
     "category": "pop_culture"
@@ -794,9 +1289,2614 @@
   {
     "id": 100,
     "question": "What is the name of the fictional superhero team led by Nick Fury in the Marvel Cinematic Universe?",
-    "options": ["X-Men", "Justice League", "The Avengers", "Fantastic Four"],
+    "options": [
+      "X-Men",
+      "Justice League",
+      "The Avengers",
+      "Fantastic Four"
+    ],
     "correctIndex": 2,
     "explanation": "The Avengers, assembled by Nick Fury, include heroes like Iron Man, Captain America, Thor, and the Hulk.",
     "category": "pop_culture"
+  },
+  {
+    "id": 101,
+    "question": "Which planet has the most moons in our solar system?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "correctIndex": 1,
+    "explanation": "Saturn has over 140 confirmed moons, surpassing Jupiter's count as of recent discoveries.",
+    "category": "science"
+  },
+  {
+    "id": 102,
+    "question": "What is the hardest natural substance on Earth?",
+    "options": [
+      "Gold",
+      "Iron",
+      "Diamond",
+      "Quartz"
+    ],
+    "correctIndex": 2,
+    "explanation": "Diamond scores 10 on the Mohs hardness scale, making it the hardest known natural material.",
+    "category": "science"
+  },
+  {
+    "id": 103,
+    "question": "Which element has the chemical symbol 'Au'?",
+    "options": [
+      "Silver",
+      "Gold",
+      "Aluminum",
+      "Argon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Au comes from the Latin word 'aurum', meaning gold.",
+    "category": "science"
+  },
+  {
+    "id": 104,
+    "question": "What is the largest organ in the human body?",
+    "options": [
+      "Liver",
+      "Brain",
+      "Skin",
+      "Heart"
+    ],
+    "correctIndex": 2,
+    "explanation": "The skin is the largest organ, covering about 20 square feet in adults.",
+    "category": "science"
+  },
+  {
+    "id": 105,
+    "question": "Which gas makes up approximately 78% of Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Argon"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nitrogen makes up about 78% of the atmosphere, while oxygen is about 21%.",
+    "category": "science"
+  },
+  {
+    "id": 106,
+    "question": "How many bones are in the adult human body?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "256"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adults have 206 bones. Babies are born with about 270, but many fuse as they grow.",
+    "category": "science"
+  },
+  {
+    "id": 107,
+    "question": "What is the speed of light in a vacuum (approximately)?",
+    "options": [
+      "300,000 km/s",
+      "150,000 km/s",
+      "600,000 km/s",
+      "30,000 km/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Light travels at approximately 299,792 km/s in a vacuum, often rounded to 300,000 km/s.",
+    "category": "science"
+  },
+  {
+    "id": 108,
+    "question": "Which blood type is known as the universal donor?",
+    "options": [
+      "A+",
+      "B-",
+      "AB+",
+      "O-"
+    ],
+    "correctIndex": 3,
+    "explanation": "O- blood has no A, B, or Rh antigens, making it safe for transfusion to any blood type.",
+    "category": "science"
+  },
+  {
+    "id": 109,
+    "question": "What is the smallest bone in the human body?",
+    "options": [
+      "Stapes",
+      "Incus",
+      "Malleus",
+      "Phalange"
+    ],
+    "correctIndex": 0,
+    "explanation": "The stapes (stirrup bone) in the middle ear is only about 3mm long.",
+    "category": "science"
+  },
+  {
+    "id": 110,
+    "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Mercury",
+      "Jupiter"
+    ],
+    "correctIndex": 1,
+    "explanation": "Venus appears brightly near the horizon just before sunrise or after sunset.",
+    "category": "science"
+  },
+  {
+    "id": 111,
+    "question": "What year did World War I begin?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "correctIndex": 1,
+    "explanation": "WWI began in 1914 after the assassination of Archduke Franz Ferdinand.",
+    "category": "history"
+  },
+  {
+    "id": 112,
+    "question": "Which ancient civilization built the Machu Picchu complex?",
+    "options": [
+      "Aztec",
+      "Maya",
+      "Inca",
+      "Olmec"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Inca built Machu Picchu in the 15th century as an estate for Emperor Pachacuti.",
+    "category": "history"
+  },
+  {
+    "id": 113,
+    "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+    "options": [
+      "Bessie Coleman",
+      "Amelia Earhart",
+      "Harriet Quimby",
+      "Jacqueline Cochran"
+    ],
+    "correctIndex": 1,
+    "explanation": "Amelia Earhart accomplished this feat in 1932, flying from Newfoundland to Northern Ireland.",
+    "category": "history"
+  },
+  {
+    "id": 114,
+    "question": "The Berlin Wall fell in which year?",
+    "options": [
+      "1987",
+      "1989",
+      "1991",
+      "1993"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Berlin Wall fell on November 9, 1989, marking the beginning of German reunification.",
+    "category": "history"
+  },
+  {
+    "id": 115,
+    "question": "Which empire was ruled by Genghis Khan?",
+    "options": [
+      "Ottoman Empire",
+      "Roman Empire",
+      "Mongol Empire",
+      "Persian Empire"
+    ],
+    "correctIndex": 2,
+    "explanation": "Genghis Khan founded the Mongol Empire in 1206, which became the largest contiguous land empire.",
+    "category": "history"
+  },
+  {
+    "id": 116,
+    "question": "What was the name of the ship on which the Pilgrims sailed to America?",
+    "options": [
+      "Mayflower",
+      "Santa Maria",
+      "Victoria",
+      "Endeavour"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Mayflower carried the Pilgrims from England to Plymouth, Massachusetts in 1620.",
+    "category": "history"
+  },
+  {
+    "id": 117,
+    "question": "Which country was formerly known as Persia?",
+    "options": [
+      "Iraq",
+      "Iran",
+      "Turkey",
+      "Afghanistan"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iran was known as Persia until 1935, when Reza Shah requested the international community use Iran.",
+    "category": "history"
+  },
+  {
+    "id": 118,
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "options": [
+      "Leonardo da Vinci",
+      "Raphael",
+      "Michelangelo",
+      "Donatello"
+    ],
+    "correctIndex": 2,
+    "explanation": "Michelangelo painted the Sistine Chapel ceiling between 1508 and 1512.",
+    "category": "history"
+  },
+  {
+    "id": 119,
+    "question": "What ancient wonder was located in Alexandria, Egypt?",
+    "options": [
+      "Hanging Gardens",
+      "Colossus",
+      "Great Lighthouse",
+      "Temple of Artemis"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Lighthouse of Alexandria (Pharos) was one of the Seven Wonders of the Ancient World.",
+    "category": "history"
+  },
+  {
+    "id": 120,
+    "question": "In which year did the French Revolution begin?",
+    "options": [
+      "1776",
+      "1789",
+      "1799",
+      "1804"
+    ],
+    "correctIndex": 1,
+    "explanation": "The French Revolution began in 1789 with the storming of the Bastille on July 14.",
+    "category": "history"
+  },
+  {
+    "id": 121,
+    "question": "Which is the longest river in the world?",
+    "options": [
+      "Amazon",
+      "Nile",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Nile River stretches approximately 6,650 km through northeastern Africa.",
+    "category": "geography"
+  },
+  {
+    "id": 122,
+    "question": "What is the smallest country in the world by area?",
+    "options": [
+      "Monaco",
+      "Vatican City",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vatican City is only 0.44 square kilometers, making it the smallest country by area.",
+    "category": "geography"
+  },
+  {
+    "id": 123,
+    "question": "Which desert is the largest hot desert in the world?",
+    "options": [
+      "Gobi",
+      "Kalahari",
+      "Sahara",
+      "Arabian"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Sahara Desert covers about 9.2 million square kilometers across North Africa.",
+    "category": "geography"
+  },
+  {
+    "id": 124,
+    "question": "What is the capital of Australia?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
+    "correctIndex": 2,
+    "explanation": "Canberra is the capital, chosen as a compromise between rivals Sydney and Melbourne.",
+    "category": "geography"
+  },
+  {
+    "id": 125,
+    "question": "Which ocean is the deepest?",
+    "options": [
+      "Atlantic",
+      "Indian",
+      "Pacific",
+      "Arctic"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Pacific Ocean contains the Mariana Trench, the deepest point on Earth at about 11,000 meters.",
+    "category": "geography"
+  },
+  {
+    "id": 126,
+    "question": "Mount Everest is located on the border of which two countries?",
+    "options": [
+      "India and China",
+      "Nepal and China",
+      "Nepal and India",
+      "Tibet and Bhutan"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mount Everest sits on the border between Nepal and Tibet (China).",
+    "category": "geography"
+  },
+  {
+    "id": 127,
+    "question": "What is the largest island in the world?",
+    "options": [
+      "Borneo",
+      "Madagascar",
+      "Greenland",
+      "New Guinea"
+    ],
+    "correctIndex": 2,
+    "explanation": "Greenland is the world's largest island at about 2.16 million square kilometers.",
+    "category": "geography"
+  },
+  {
+    "id": 128,
+    "question": "Which African country has the largest population?",
+    "options": [
+      "Ethiopia",
+      "Egypt",
+      "Nigeria",
+      "South Africa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nigeria has the largest population in Africa with over 220 million people.",
+    "category": "geography"
+  },
+  {
+    "id": 129,
+    "question": "What is the driest continent on Earth?",
+    "options": [
+      "Africa",
+      "Australia",
+      "Antarctica",
+      "South America"
+    ],
+    "correctIndex": 2,
+    "explanation": "Antarctica is technically the driest continent, as most of it receives almost no precipitation.",
+    "category": "geography"
+  },
+  {
+    "id": 130,
+    "question": "Which strait separates Europe from Africa?",
+    "options": [
+      "Strait of Hormuz",
+      "Strait of Gibraltar",
+      "Strait of Malacca",
+      "Bosphorus"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Strait of Gibraltar separates Spain (Europe) from Morocco (Africa) by about 14 km.",
+    "category": "geography"
+  },
+  {
+    "id": 131,
+    "question": "Which band released the album 'Abbey Road'?",
+    "options": [
+      "The Rolling Stones",
+      "The Beatles",
+      "Pink Floyd",
+      "Led Zeppelin"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Beatles released Abbey Road in 1969, their second-to-last album.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 132,
+    "question": "What year was the first iPhone released?",
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apple released the first iPhone on June 29, 2007.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 133,
+    "question": "Which movie features the quote 'Here's looking at you, kid'?",
+    "options": [
+      "Gone with the Wind",
+      "Casablanca",
+      "The Godfather",
+      "Citizen Kane"
+    ],
+    "correctIndex": 1,
+    "explanation": "This iconic line is spoken by Rick (Humphrey Bogart) in the 1942 film Casablanca.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 134,
+    "question": "Who wrote the Harry Potter book series?",
+    "options": [
+      "J.R.R. Tolkien",
+      "J.K. Rowling",
+      "C.S. Lewis",
+      "Stephen King"
+    ],
+    "correctIndex": 1,
+    "explanation": "J.K. Rowling wrote the seven Harry Potter books, published between 1997 and 2007.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 135,
+    "question": "What is the highest-grossing film of all time (unadjusted)?",
+    "options": [
+      "Star Wars: The Force Awakens",
+      "Avengers: Endgame",
+      "Avatar",
+      "Titanic"
+    ],
+    "correctIndex": 2,
+    "explanation": "Avatar (2009) holds the record with over $2.9 billion in worldwide gross.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 136,
+    "question": "Which sport uses the term 'ace'?",
+    "options": [
+      "Basketball",
+      "Tennis",
+      "Soccer",
+      "Hockey"
+    ],
+    "correctIndex": 1,
+    "explanation": "In tennis, an ace is a serve that lands in the service box without the opponent touching it.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 137,
+    "question": "What is the name of Batman's butler?",
+    "options": [
+      "Jarvis",
+      "Alfred",
+      "James",
+      "Bernard"
+    ],
+    "correctIndex": 1,
+    "explanation": "Alfred Pennyworth is Bruce Wayne's loyal butler and father figure in the Batman series.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 138,
+    "question": "Which social media platform was originally called 'Twttr'?",
+    "options": [
+      "Facebook",
+      "Instagram",
+      "Twitter",
+      "TikTok"
+    ],
+    "correctIndex": 2,
+    "explanation": "Twitter was originally called 'twttr' (inspired by Flickr) before adding vowels.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 139,
+    "question": "Who painted the Mona Lisa?",
+    "options": [
+      "Michelangelo",
+      "Raphael",
+      "Leonardo da Vinci",
+      "Caravaggio"
+    ],
+    "correctIndex": 2,
+    "explanation": "Leonardo da Vinci painted the Mona Lisa between 1503 and 1519.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 140,
+    "question": "Which TV show features a character named Walter White?",
+    "options": [
+      "The Wire",
+      "Breaking Bad",
+      "Dexter",
+      "Better Call Saul"
+    ],
+    "correctIndex": 1,
+    "explanation": "Walter White is the main character of Breaking Bad, played by Bryan Cranston.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 141,
+    "question": "What percentage of the Earth's water is fresh water?",
+    "options": [
+      "3%",
+      "10%",
+      "25%",
+      "50%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Only about 3% of Earth's water is fresh, and much of that is locked in ice caps and glaciers.",
+    "category": "nature"
+  },
+  {
+    "id": 142,
+    "question": "Which animal can sleep for up to 3 years?",
+    "options": [
+      "Sloth",
+      "Koala",
+      "Snail",
+      "Bear"
+    ],
+    "correctIndex": 2,
+    "explanation": "Certain snail species can enter a state of estivation (dormancy) for up to 3 years.",
+    "category": "nature"
+  },
+  {
+    "id": 143,
+    "question": "What is the fastest land animal?",
+    "options": [
+      "Lion",
+      "Cheetah",
+      "Pronghorn",
+      "Greyhound"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cheetahs can reach speeds up to 112 km/h (70 mph) in short bursts.",
+    "category": "nature"
+  },
+  {
+    "id": 144,
+    "question": "Which tree can live for thousands of years?",
+    "options": [
+      "Oak",
+      "Sequoia",
+      "Bristlecone Pine",
+      "Redwood"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bristlecone pines can live over 5,000 years, making them the oldest known non-clonal organisms.",
+    "category": "nature"
+  },
+  {
+    "id": 145,
+    "question": "How many hearts does an octopus have?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Octopuses have three hearts: two pump blood to the gills, and one pumps it to the body.",
+    "category": "nature"
+  },
+  {
+    "id": 146,
+    "question": "What is the largest species of shark?",
+    "options": [
+      "Great White",
+      "Hammerhead",
+      "Whale Shark",
+      "Tiger Shark"
+    ],
+    "correctIndex": 2,
+    "explanation": "Whale sharks can grow up to 18 meters long, making them the largest fish in the world.",
+    "category": "nature"
+  },
+  {
+    "id": 147,
+    "question": "Which bird can fly backwards?",
+    "options": [
+      "Eagle",
+      "Hummingbird",
+      "Kingfisher",
+      "Swallow"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hummingbirds can rotate their wings in a figure-8 pattern, enabling them to fly backwards.",
+    "category": "nature"
+  },
+  {
+    "id": 148,
+    "question": "What is the largest flower in the world?",
+    "options": [
+      "Sunflower",
+      "Lotus",
+      "Rafflesia",
+      "Titan Arum"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rafflesia arnoldii can grow up to 1 meter in diameter and is the largest individual flower.",
+    "category": "nature"
+  },
+  {
+    "id": 149,
+    "question": "Which insect can lift 50 times its body weight?",
+    "options": [
+      "Ant",
+      "Beetle",
+      "Grasshopper",
+      "Wasp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ants can carry 10-50 times their body weight depending on the species.",
+    "category": "nature"
+  },
+  {
+    "id": 150,
+    "question": "What is the deepest point in the ocean?",
+    "options": [
+      "Tonga Trench",
+      "Java Trench",
+      "Mariana Trench",
+      "Puerto Rico Trench"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Mariana Trench's Challenger Deep reaches about 10,935 meters below sea level.",
+    "category": "nature"
+  },
+  {
+    "id": 151,
+    "question": "What does CPU stand for in computing?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Utility",
+      "Central Program Update",
+      "Core Processing Underlying"
+    ],
+    "correctIndex": 0,
+    "explanation": "CPU stands for Central Processing Unit, the primary component that executes instructions.",
+    "category": "technology"
+  },
+  {
+    "id": 152,
+    "question": "Who is credited with inventing the World Wide Web?",
+    "options": [
+      "Vint Cerf",
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "Steve Jobs"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tim Berners-Lee invented the World Wide Web in 1989 at CERN.",
+    "category": "technology"
+  },
+  {
+    "id": 153,
+    "question": "What programming language was created by Guido van Rossum?",
+    "options": [
+      "Java",
+      "C++",
+      "Python",
+      "Ruby"
+    ],
+    "correctIndex": 2,
+    "explanation": "Python was created by Guido van Rossum and first released in 1991.",
+    "category": "technology"
+  },
+  {
+    "id": 154,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Home Tool Markup Language",
+      "Hyper Transfer Markup Language"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTML stands for HyperText Markup Language, the standard for creating web pages.",
+    "category": "technology"
+  },
+  {
+    "id": 155,
+    "question": "Which company developed the Android operating system?",
+    "options": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Samsung"
+    ],
+    "correctIndex": 1,
+    "explanation": "Google acquired and further developed Android, which was originally created by Android Inc.",
+    "category": "technology"
+  },
+  {
+    "id": 156,
+    "question": "What year was the first email sent?",
+    "options": [
+      "1965",
+      "1971",
+      "1978",
+      "1983"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ray Tomlinson sent the first email in 1971, also introducing the @ symbol in addresses.",
+    "category": "technology"
+  },
+  {
+    "id": 157,
+    "question": "What does USB stand for?",
+    "options": [
+      "Universal Serial Bus",
+      "Unified System Board",
+      "Universal System Bus",
+      "United Serial Bridge"
+    ],
+    "correctIndex": 0,
+    "explanation": "USB stands for Universal Serial Bus, a standard for connecting peripherals to computers.",
+    "category": "technology"
+  },
+  {
+    "id": 158,
+    "question": "Which technology uses blockchain primarily?",
+    "options": [
+      "Artificial Intelligence",
+      "Cryptocurrency",
+      "Virtual Reality",
+      "Cloud Computing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Blockchain is the underlying technology for cryptocurrencies like Bitcoin.",
+    "category": "technology"
+  },
+  {
+    "id": 159,
+    "question": "What is the name of Amazon's virtual assistant?",
+    "options": [
+      "Siri",
+      "Alexa",
+      "Cortana",
+      "Bixby"
+    ],
+    "correctIndex": 1,
+    "explanation": "Amazon Alexa is the virtual assistant used in Echo and other Amazon devices.",
+    "category": "technology"
+  },
+  {
+    "id": 160,
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "options": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Jane Austen",
+      "Mark Twain"
+    ],
+    "correctIndex": 1,
+    "explanation": "William Shakespeare wrote Romeo and Juliet around 1594-1596.",
+    "category": "literature"
+  },
+  {
+    "id": 161,
+    "question": "What is the first book of the Bible?",
+    "options": [
+      "Exodus",
+      "Genesis",
+      "Leviticus",
+      "Deuteronomy"
+    ],
+    "correctIndex": 1,
+    "explanation": "Genesis is the first book of the Bible, covering creation through Joseph in Egypt.",
+    "category": "literature"
+  },
+  {
+    "id": 162,
+    "question": "Who wrote '1984'?",
+    "options": [
+      "Aldous Huxley",
+      "George Orwell",
+      "Ray Bradbury",
+      "H.G. Wells"
+    ],
+    "correctIndex": 1,
+    "explanation": "George Orwell wrote 1984, published in 1949 as a dystopian novel about totalitarianism.",
+    "category": "literature"
+  },
+  {
+    "id": 163,
+    "question": "Which novel begins with 'Call me Ishmael'?",
+    "options": [
+      "The Great Gatsby",
+      "Moby-Dick",
+      "War and Peace",
+      "Pride and Prejudice"
+    ],
+    "correctIndex": 1,
+    "explanation": "Moby-Dick by Herman Melville opens with this famous line.",
+    "category": "literature"
+  },
+  {
+    "id": 164,
+    "question": "Who wrote 'The Hobbit'?",
+    "options": [
+      "C.S. Lewis",
+      "J.R.R. Tolkien",
+      "George R.R. Martin",
+      "Patrick Rothfuss"
+    ],
+    "correctIndex": 1,
+    "explanation": "J.R.R. Tolkien wrote The Hobbit, published in 1937.",
+    "category": "literature"
+  },
+  {
+    "id": 165,
+    "question": "Which Shakespeare play features the character Prospero?",
+    "options": [
+      "Hamlet",
+      "The Tempest",
+      "Othello",
+      "King Lear"
+    ],
+    "correctIndex": 1,
+    "explanation": "Prospero is the protagonist of The Tempest, a sorcerer and the rightful Duke of Milan.",
+    "category": "literature"
+  },
+  {
+    "id": 166,
+    "question": "What is the longest novel ever published?",
+    "options": [
+      "War and Peace",
+      "In Search of Lost Time",
+      "Les Miserables",
+      "Don Quixote"
+    ],
+    "correctIndex": 1,
+    "explanation": "Marcel Proust's 'In Search of Lost Time' is about 1.2 million words.",
+    "category": "literature"
+  },
+  {
+    "id": 167,
+    "question": "Who wrote 'Pride and Prejudice'?",
+    "options": [
+      "Charlotte Bronte",
+      "Jane Austen",
+      "Emily Bronte",
+      "Mary Shelley"
+    ],
+    "correctIndex": 1,
+    "explanation": "Jane Austen wrote Pride and Prejudice, published in 1813.",
+    "category": "literature"
+  },
+  {
+    "id": 168,
+    "question": "Which sport is played at Wimbledon?",
+    "options": [
+      "Golf",
+      "Cricket",
+      "Tennis",
+      "Rugby"
+    ],
+    "correctIndex": 2,
+    "explanation": "Wimbledon is the oldest tennis tournament in the world, held since 1877.",
+    "category": "sports"
+  },
+  {
+    "id": 169,
+    "question": "How many players are on a standard soccer team on the field?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "A soccer team has 11 players on the field, including the goalkeeper.",
+    "category": "sports"
+  },
+  {
+    "id": 170,
+    "question": "In which sport is the term 'love' used?",
+    "options": [
+      "Basketball",
+      "Tennis",
+      "Golf",
+      "Baseball"
+    ],
+    "correctIndex": 1,
+    "explanation": "In tennis, 'love' means zero points. It comes from the French word 'l'oeuf' (egg).",
+    "category": "sports"
+  },
+  {
+    "id": 171,
+    "question": "Which country has won the most FIFA World Cups?",
+    "options": [
+      "Germany",
+      "Italy",
+      "Argentina",
+      "Brazil"
+    ],
+    "correctIndex": 3,
+    "explanation": "Brazil has won 5 FIFA World Cups (1958, 1962, 1970, 1994, 2002).",
+    "category": "sports"
+  },
+  {
+    "id": 172,
+    "question": "What sport is known as 'the sweet science'?",
+    "options": [
+      "Gymnastics",
+      "Boxing",
+      "Fencing",
+      "Wrestling"
+    ],
+    "correctIndex": 1,
+    "explanation": "Boxing is called 'the sweet science' for its blend of physical skill and tactical thinking.",
+    "category": "sports"
+  },
+  {
+    "id": 173,
+    "question": "How long is a marathon?",
+    "options": [
+      "21.1 km",
+      "30 km",
+      "42.195 km",
+      "50 km"
+    ],
+    "correctIndex": 2,
+    "explanation": "A marathon is 42.195 km (26.219 miles), based on the 1908 London Olympics distance.",
+    "category": "sports"
+  },
+  {
+    "id": 174,
+    "question": "In which Olympic sport would you perform a 'Fosbury Flop'?",
+    "options": [
+      "Long jump",
+      "High jump",
+      "Pole vault",
+      "Triple jump"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Fosbury Flop is a high jump technique invented by Dick Fosbury in the 1960s.",
+    "category": "sports"
+  },
+  {
+    "id": 175,
+    "question": "Which sport uses a shuttlecock?",
+    "options": [
+      "Tennis",
+      "Badminton",
+      "Table Tennis",
+      "Squash"
+    ],
+    "correctIndex": 1,
+    "explanation": "Badminton uses a shuttlecock (also called a birdie), struck with rackets over a net.",
+    "category": "sports"
+  },
+  {
+    "id": 176,
+    "question": "What is the chemical symbol for sodium?",
+    "options": [
+      "So",
+      "Na",
+      "Sd",
+      "Nm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Na comes from the Latin word 'natrium', which is the origin of sodium's symbol.",
+    "category": "science"
+  },
+  {
+    "id": 177,
+    "question": "What is the main gas found in Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nitrogen makes up about 78% of Earth's atmosphere.",
+    "category": "science"
+  },
+  {
+    "id": 178,
+    "question": "What is the boiling point of water at sea level?",
+    "options": [
+      "90°C",
+      "100°C",
+      "110°C",
+      "120°C"
+    ],
+    "correctIndex": 1,
+    "explanation": "Water boils at 100°C (212°F) at standard sea level pressure.",
+    "category": "science"
+  },
+  {
+    "id": 179,
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mars appears red due to iron oxide (rust) on its surface.",
+    "category": "science"
+  },
+  {
+    "id": 180,
+    "question": "What is the largest mammal on Earth?",
+    "options": [
+      "African Elephant",
+      "Blue Whale",
+      "Giraffe",
+      "Hippopotamus"
+    ],
+    "correctIndex": 1,
+    "explanation": "Blue whales can reach up to 30 meters long and weigh up to 200 tonnes.",
+    "category": "science"
+  },
+  {
+    "id": 181,
+    "question": "When was the Declaration of Independence signed?",
+    "options": [
+      "1774",
+      "1776",
+      "1778",
+      "1780"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Declaration of Independence was signed on July 4, 1776.",
+    "category": "history"
+  },
+  {
+    "id": 182,
+    "question": "Which ancient wonder was located in Babylon?",
+    "options": [
+      "Colossus of Rhodes",
+      "Hanging Gardens",
+      "Great Pyramid",
+      "Temple of Artemis"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Hanging Gardens of Babylon were one of the Seven Wonders, though their existence is debated.",
+    "category": "history"
+  },
+  {
+    "id": 183,
+    "question": "Who was the first person to walk on the Moon?",
+    "options": [
+      "Buzz Aldrin",
+      "Neil Armstrong",
+      "John Glenn",
+      "Yuri Gagarin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Neil Armstrong became the first person to walk on the Moon on July 20, 1969.",
+    "category": "history"
+  },
+  {
+    "id": 184,
+    "question": "What was the main cause of the Black Death in medieval Europe?",
+    "options": [
+      "Cholera",
+      "Smallpox",
+      "Bubonic plague",
+      "Typhus"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Black Death was caused by the bacterium Yersinia pestis, spread by fleas on rats.",
+    "category": "history"
+  },
+  {
+    "id": 185,
+    "question": "Which country gifted the Statue of Liberty to the United States?",
+    "options": [
+      "England",
+      "Spain",
+      "France",
+      "Italy"
+    ],
+    "correctIndex": 2,
+    "explanation": "France gifted the Statue of Liberty in 1886 as a symbol of friendship.",
+    "category": "history"
+  },
+  {
+    "id": 186,
+    "question": "What is the capital of Brazil?",
+    "options": [
+      "Rio de Janeiro",
+      "Sao Paulo",
+      "Brasilia",
+      "Salvador"
+    ],
+    "correctIndex": 2,
+    "explanation": "Brasilia became Brazil's capital in 1960, a planned city built in the interior.",
+    "category": "geography"
+  },
+  {
+    "id": 187,
+    "question": "Which country has the most natural lakes?",
+    "options": [
+      "United States",
+      "Russia",
+      "Canada",
+      "Finland"
+    ],
+    "correctIndex": 2,
+    "explanation": "Canada has over 880,000 lakes, containing about 60% of the world's total lakes.",
+    "category": "geography"
+  },
+  {
+    "id": 188,
+    "question": "What is the largest continent by area?",
+    "options": [
+      "Africa",
+      "North America",
+      "Asia",
+      "Europe"
+    ],
+    "correctIndex": 2,
+    "explanation": "Asia is the largest continent, covering about 44.6 million square kilometers.",
+    "category": "geography"
+  },
+  {
+    "id": 189,
+    "question": "Which river flows through Paris?",
+    "options": [
+      "Rhine",
+      "Danube",
+      "Seine",
+      "Thames"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Seine River flows through Paris, France, and is about 777 km long.",
+    "category": "geography"
+  },
+  {
+    "id": 190,
+    "question": "What is the highest mountain in Africa?",
+    "options": [
+      "Mount Kenya",
+      "Mount Kilimanjaro",
+      "Mount Elbert",
+      "Mount Stanley"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mount Kilimanjaro in Tanzania is Africa's highest peak at 5,895 meters.",
+    "category": "geography"
+  },
+  {
+    "id": 191,
+    "question": "Which Disney movie features a character named Simba?",
+    "options": [
+      "Aladdin",
+      "The Lion King",
+      "Tarzan",
+      "Bambi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Simba is the main character in Disney's The Lion King (1994).",
+    "category": "pop_culture"
+  },
+  {
+    "id": 192,
+    "question": "What instrument does a pianist play?",
+    "options": [
+      "Violin",
+      "Guitar",
+      "Piano",
+      "Flute"
+    ],
+    "correctIndex": 2,
+    "explanation": "A pianist plays the piano. The word comes from the Italian 'pianoforte'.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 193,
+    "question": "Which superhero is also known as 'The Man of Steel'?",
+    "options": [
+      "Batman",
+      "Superman",
+      "Iron Man",
+      "Thor"
+    ],
+    "correctIndex": 1,
+    "explanation": "Superman is called 'The Man of Steel' due to his superhuman strength and invulnerability.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 194,
+    "question": "What is the name of the fictional country in Black Panther?",
+    "options": [
+      "Zamunda",
+      "Wakanda",
+      "Genovia",
+      "Latveria"
+    ],
+    "correctIndex": 1,
+    "explanation": "Wakanda is the technologically advanced African nation in Black Panther.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 195,
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      "Venus",
+      "Mercury",
+      "Earth",
+      "Mars"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mercury is the closest planet to the Sun, at an average distance of 58 million km.",
+    "category": "science"
+  },
+  {
+    "id": 196,
+    "question": "What is the most abundant element in the universe?",
+    "options": [
+      "Helium",
+      "Oxygen",
+      "Carbon",
+      "Hydrogen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hydrogen makes up about 75% of the normal matter in the universe.",
+    "category": "science"
+  },
+  {
+    "id": 197,
+    "question": "How many chromosomes do humans have?",
+    "options": [
+      "23",
+      "44",
+      "46",
+      "48"
+    ],
+    "correctIndex": 2,
+    "explanation": "Humans have 46 chromosomes (23 pairs) in most cells.",
+    "category": "science"
+  },
+  {
+    "id": 198,
+    "question": "What is the largest bone in the human body?",
+    "options": [
+      "Tibia",
+      "Femur",
+      "Humerus",
+      "Fibula"
+    ],
+    "correctIndex": 1,
+    "explanation": "The femur (thighbone) is the longest and strongest bone in the human body.",
+    "category": "science"
+  },
+  {
+    "id": 199,
+    "question": "Which vitamin is produced when human skin is exposed to sunlight?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin E"
+    ],
+    "correctIndex": 2,
+    "explanation": "UVB radiation from sunlight triggers vitamin D synthesis in the skin.",
+    "category": "science"
+  },
+  {
+    "id": 200,
+    "question": "What is the process by which plants make food using sunlight?",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Fermentation",
+      "Transpiration"
+    ],
+    "correctIndex": 1,
+    "explanation": "Photosynthesis converts sunlight, water, and CO2 into glucose and oxygen.",
+    "category": "science"
+  },
+  {
+    "id": 201,
+    "question": "What programming language is primarily used for iOS app development?",
+    "options": [
+      "Java",
+      "Swift",
+      "Kotlin",
+      "Python"
+    ],
+    "correctIndex": 1,
+    "explanation": "Swift is Apple's programming language for iOS, macOS, watchOS, and tvOS development.",
+    "category": "technology"
+  },
+  {
+    "id": 202,
+    "question": "What does RAM stand for?",
+    "options": [
+      "Random Access Memory",
+      "Read Access Module",
+      "Rapid Application Memory",
+      "Runtime Allocation Mechanism"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM stands for Random Access Memory, used for temporary data storage during operation.",
+    "category": "technology"
+  },
+  {
+    "id": 203,
+    "question": "Who co-founded Apple with Steve Jobs?",
+    "options": [
+      "Bill Gates",
+      "Steve Wozniak",
+      "Paul Allen",
+      "Larry Page"
+    ],
+    "correctIndex": 1,
+    "explanation": "Steve Wozniak co-founded Apple Computer with Steve Jobs and Ronald Wayne in 1976.",
+    "category": "technology"
+  },
+  {
+    "id": 204,
+    "question": "What year was the first commercial text message sent?",
+    "options": [
+      "1988",
+      "1992",
+      "1996",
+      "2000"
+    ],
+    "correctIndex": 1,
+    "explanation": "The first SMS text message was sent in 1992 by Neil Papworth, reading 'Merry Christmas'.",
+    "category": "technology"
+  },
+  {
+    "id": 205,
+    "question": "Which planet has the Great Red Spot?",
+    "options": [
+      "Mars",
+      "Saturn",
+      "Jupiter",
+      "Neptune"
+    ],
+    "correctIndex": 2,
+    "explanation": "Jupiter's Great Red Spot is a storm that has been raging for at least 350 years.",
+    "category": "science"
+  },
+  {
+    "id": 206,
+    "question": "What is the chemical formula for table salt?",
+    "options": [
+      "NaCl",
+      "KCl",
+      "CaCl2",
+      "NaOH"
+    ],
+    "correctIndex": 0,
+    "explanation": "Table salt is sodium chloride (NaCl), a compound of sodium and chlorine.",
+    "category": "science"
+  },
+  {
+    "id": 207,
+    "question": "How many teeth does an adult human typically have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adults typically have 32 teeth, including wisdom teeth.",
+    "category": "science"
+  },
+  {
+    "id": 208,
+    "question": "What is the largest muscle in the human body?",
+    "options": [
+      "Biceps",
+      "Quadriceps",
+      "Gluteus maximus",
+      "Latissimus dorsi"
+    ],
+    "correctIndex": 2,
+    "explanation": "The gluteus maximus (buttock muscle) is the largest muscle in the human body.",
+    "category": "science"
+  },
+  {
+    "id": 209,
+    "question": "Which element has the atomic number 1?",
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Lithium",
+      "Carbon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hydrogen has atomic number 1, making it the lightest and simplest element.",
+    "category": "science"
+  },
+  {
+    "id": 210,
+    "question": "What type of rock is formed from cooled lava?",
+    "options": [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous",
+      "Limestone"
+    ],
+    "correctIndex": 2,
+    "explanation": "Igneous rocks form when magma or lava cools and solidifies.",
+    "category": "science"
+  },
+  {
+    "id": 211,
+    "question": "Which civilization built the Colosseum in Rome?",
+    "options": [
+      "Greek",
+      "Roman",
+      "Egyptian",
+      "Persian"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Roman Colosseum was built between 70-80 AD during the Flavian dynasty.",
+    "category": "history"
+  },
+  {
+    "id": 212,
+    "question": "What was the last state to join the United States?",
+    "options": [
+      "Alaska",
+      "Hawaii",
+      "Arizona",
+      "New Mexico"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hawaii became the 50th US state on August 21, 1959.",
+    "category": "history"
+  },
+  {
+    "id": 213,
+    "question": "Who was the first Emperor of Rome?",
+    "options": [
+      "Julius Caesar",
+      "Augustus",
+      "Nero",
+      "Tiberius"
+    ],
+    "correctIndex": 1,
+    "explanation": "Augustus (Octavian) became the first Roman Emperor in 27 BC, marking the start of the Roman Empire.",
+    "category": "history"
+  },
+  {
+    "id": 214,
+    "question": "What year did the Titanic sink?",
+    "options": [
+      "1910",
+      "1912",
+      "1914",
+      "1916"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Titanic sank on April 15, 1912, after hitting an iceberg on its maiden voyage.",
+    "category": "history"
+  },
+  {
+    "id": 215,
+    "question": "Which country was first to grant women the right to vote?",
+    "options": [
+      "United States",
+      "United Kingdom",
+      "New Zealand",
+      "Australia"
+    ],
+    "correctIndex": 2,
+    "explanation": "New Zealand became the first self-governing country to grant all women the right to vote in 1893.",
+    "category": "history"
+  },
+  {
+    "id": 216,
+    "question": "What was the primary purpose of the Silk Road?",
+    "options": [
+      "Military conquest",
+      "Trade between East and West",
+      "Religious pilgrimage",
+      "Scientific exchange"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Silk Road was a network of trade routes connecting East Asia with the Mediterranean.",
+    "category": "history"
+  },
+  {
+    "id": 217,
+    "question": "Who discovered penicillin?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Joseph Lister",
+      "Robert Koch"
+    ],
+    "correctIndex": 1,
+    "explanation": "Alexander Fleming discovered penicillin in 1928, revolutionizing the treatment of bacterial infections.",
+    "category": "history"
+  },
+  {
+    "id": 218,
+    "question": "Which war was fought between the North and South in the United States?",
+    "options": [
+      "Revolutionary War",
+      "War of 1812",
+      "Civil War",
+      "Mexican-American War"
+    ],
+    "correctIndex": 2,
+    "explanation": "The American Civil War (1861-1865) was fought between Union (North) and Confederate (South) states.",
+    "category": "history"
+  },
+  {
+    "id": 219,
+    "question": "What is the capital of Canada?",
+    "options": [
+      "Toronto",
+      "Vancouver",
+      "Ottawa",
+      "Montreal"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ottawa is the capital of Canada, chosen by Queen Victoria in 1857.",
+    "category": "geography"
+  },
+  {
+    "id": 220,
+    "question": "Which country has the most time zones?",
+    "options": [
+      "Russia",
+      "United States",
+      "France",
+      "China"
+    ],
+    "correctIndex": 2,
+    "explanation": "France has 12 time zones due to its overseas territories, more than any other country.",
+    "category": "geography"
+  },
+  {
+    "id": 221,
+    "question": "What is the driest inhabited continent?",
+    "options": [
+      "Africa",
+      "Asia",
+      "Australia",
+      "South America"
+    ],
+    "correctIndex": 2,
+    "explanation": "Australia is the driest inhabited continent, with about 35% of its area receiving very little rain.",
+    "category": "geography"
+  },
+  {
+    "id": 222,
+    "question": "Which country is both in Europe and Asia?",
+    "options": [
+      "Russia",
+      "Turkey",
+      "Egypt",
+      "Both A and B"
+    ],
+    "correctIndex": 3,
+    "explanation": "Both Russia and Turkey span Europe and Asia. Russia is the largest transcontinental country.",
+    "category": "geography"
+  },
+  {
+    "id": 223,
+    "question": "What is the largest ocean in the world?",
+    "options": [
+      "Atlantic",
+      "Indian",
+      "Pacific",
+      "Arctic"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Pacific Ocean is the largest, covering about 165.25 million square kilometers.",
+    "category": "geography"
+  },
+  {
+    "id": 224,
+    "question": "Which country is home to the Great Barrier Reef?",
+    "options": [
+      "Indonesia",
+      "Philippines",
+      "Australia",
+      "Fiji"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Great Barrier Reef, the world's largest coral reef system, is located off Australia's coast.",
+    "category": "geography"
+  },
+  {
+    "id": 225,
+    "question": "What is the capital of Japan?",
+    "options": [
+      "Osaka",
+      "Kyoto",
+      "Tokyo",
+      "Yokohama"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tokyo has been Japan's capital since 1868 and is the world's most populous metropolitan area.",
+    "category": "geography"
+  },
+  {
+    "id": 226,
+    "question": "Which TV series features a character named Walter White?",
+    "options": [
+      "The Wire",
+      "Breaking Bad",
+      "Dexter",
+      "Better Call Saul"
+    ],
+    "correctIndex": 1,
+    "explanation": "Walter White is the protagonist of Breaking Bad, played by Bryan Cranston.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 227,
+    "question": "What is the highest-grossing video game franchise of all time?",
+    "options": [
+      "Super Mario",
+      "Pokemon",
+      "Call of Duty",
+      "Minecraft"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pokemon is the highest-grossing media franchise, with video games, cards, and merchandise.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 228,
+    "question": "Which artist painted 'The Starry Night'?",
+    "options": [
+      "Claude Monet",
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Salvador Dali"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vincent van Gogh painted The Starry Night in 1889 while in an asylum in Saint-Remy-de-Provence.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 229,
+    "question": "What is the name of the fictional country in 'The Princess Diaries'?",
+    "options": [
+      "Genovia",
+      "Zamunda",
+      "Latveria",
+      "Sokovia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Genovia is the fictional European country in The Princess Diaries book and film series.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 230,
+    "question": "Which streaming platform originally produced 'Stranger Things'?",
+    "options": [
+      "Hulu",
+      "Amazon Prime",
+      "Netflix",
+      "Disney+"
+    ],
+    "correctIndex": 2,
+    "explanation": "Netflix produced and released Stranger Things, which premiered in July 2016.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 231,
+    "question": "What is the tallest type of grass?",
+    "options": [
+      "Wheat",
+      "Bamboo",
+      "Sugarcane",
+      "Corn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bamboo is a type of grass that can grow over 30 meters tall, making it the tallest grass species.",
+    "category": "nature"
+  },
+  {
+    "id": 232,
+    "question": "How many bones does a shark have?",
+    "options": [
+      "0",
+      "50",
+      "100",
+      "200"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sharks have no bones — their skeleton is made entirely of cartilage.",
+    "category": "nature"
+  },
+  {
+    "id": 233,
+    "question": "Which animal has the longest migration?",
+    "options": [
+      "Monarch butterfly",
+      "Arctic tern",
+      "Humpback whale",
+      "Caribou"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arctic terns migrate about 71,000 km annually, from Arctic to Antarctic and back.",
+    "category": "nature"
+  },
+  {
+    "id": 234,
+    "question": "What is the only mammal capable of true flight?",
+    "options": [
+      "Flying squirrel",
+      "Sugar glider",
+      "Bat",
+      "Colugo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bats are the only mammals capable of sustained flight. Others glide but don't truly fly.",
+    "category": "nature"
+  },
+  {
+    "id": 235,
+    "question": "Which tree produces acorns?",
+    "options": [
+      "Maple",
+      "Pine",
+      "Oak",
+      "Birch"
+    ],
+    "correctIndex": 2,
+    "explanation": "Oak trees produce acorns, which are nuts that serve as food for many animals.",
+    "category": "nature"
+  },
+  {
+    "id": 236,
+    "question": "What is the largest desert in the world?",
+    "options": [
+      "Sahara",
+      "Arabian",
+      "Gobi",
+      "Antarctic"
+    ],
+    "correctIndex": 3,
+    "explanation": "Antarctica is technically the world's largest desert at 14.2 million km², as deserts are defined by low precipitation.",
+    "category": "nature"
+  },
+  {
+    "id": 237,
+    "question": "How long can a crocodile hold its breath underwater?",
+    "options": [
+      "15 minutes",
+      "30 minutes",
+      "1 hour",
+      "2 hours"
+    ],
+    "correctIndex": 2,
+    "explanation": "Crocodiles can typically hold their breath for about 1 hour, though some can last longer.",
+    "category": "nature"
+  },
+  {
+    "id": 238,
+    "question": "What percentage of Earth's water is saltwater?",
+    "options": [
+      "50%",
+      "70%",
+      "97%",
+      "99%"
+    ],
+    "correctIndex": 2,
+    "explanation": "About 97% of Earth's water is saltwater, found in oceans and seas.",
+    "category": "nature"
+  },
+  {
+    "id": 239,
+    "question": "Which is the only planet that rotates clockwise?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Uranus",
+      "Neptune"
+    ],
+    "correctIndex": 1,
+    "explanation": "Venus rotates clockwise (retrograde), opposite to most planets in our solar system.",
+    "category": "science"
+  },
+  {
+    "id": 240,
+    "question": "What is the smallest country by population?",
+    "options": [
+      "Monaco",
+      "Vatican City",
+      "San Marino",
+      "Nauru"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vatican City has about 800 residents, making it the smallest country by both area and population.",
+    "category": "geography"
+  },
+  {
+    "id": 241,
+    "question": "What does DNA stand for?",
+    "options": [
+      "Deoxyribonucleic Acid",
+      "Dinitrogen Acid",
+      "Dynamic Nuclear Acid",
+      "Deoxyribose Nuclear Acid"
+    ],
+    "correctIndex": 0,
+    "explanation": "DNA stands for Deoxyribonucleic Acid, the molecule that carries genetic information.",
+    "category": "science"
+  },
+  {
+    "id": 242,
+    "question": "Which ancient wonder is still standing today?",
+    "options": [
+      "Hanging Gardens of Babylon",
+      "Colossus of Rhodes",
+      "Great Pyramid of Giza",
+      "Temple of Artemis"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Great Pyramid of Giza is the only surviving wonder of the ancient world.",
+    "category": "history"
+  },
+  {
+    "id": 243,
+    "question": "Who invented the telephone?",
+    "options": [
+      "Thomas Edison",
+      "Alexander Graham Bell",
+      "Nikola Tesla",
+      "Guglielmo Marconi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Alexander Graham Bell was granted the first US patent for the telephone in 1876.",
+    "category": "history"
+  },
+  {
+    "id": 244,
+    "question": "What year did the Cold War officially end?",
+    "options": [
+      "1987",
+      "1989",
+      "1991",
+      "1993"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Cold War is generally considered to have ended in 1991 with the dissolution of the Soviet Union.",
+    "category": "history"
+  },
+  {
+    "id": 245,
+    "question": "Which pharaoh's tomb was discovered intact in 1922?",
+    "options": [
+      "Ramesses II",
+      "Cleopatra",
+      "Tutankhamun",
+      "Akhenaten"
+    ],
+    "correctIndex": 2,
+    "explanation": "Howard Carter discovered King Tutankhamun's nearly intact tomb in the Valley of the Kings in 1922.",
+    "category": "history"
+  },
+  {
+    "id": 246,
+    "question": "What is the main language spoken in Brazil?",
+    "options": [
+      "Spanish",
+      "Portuguese",
+      "French",
+      "English"
+    ],
+    "correctIndex": 1,
+    "explanation": "Portuguese is the official language of Brazil, the only Portuguese-speaking country in the Americas.",
+    "category": "geography"
+  },
+  {
+    "id": 247,
+    "question": "Which mountain range contains the Matterhorn?",
+    "options": [
+      "Rockies",
+      "Andes",
+      "Alps",
+      "Himalayas"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Matterhorn is in the Alps, on the border between Switzerland and Italy.",
+    "category": "geography"
+  },
+  {
+    "id": 248,
+    "question": "What is the longest river in Europe?",
+    "options": [
+      "Danube",
+      "Rhine",
+      "Volga",
+      "Thames"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Volga River in Russia is about 3,530 km long, making it Europe's longest river.",
+    "category": "geography"
+  },
+  {
+    "id": 249,
+    "question": "Which country has the most islands?",
+    "options": [
+      "Indonesia",
+      "Philippines",
+      "Sweden",
+      "Canada"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sweden has approximately 267,570 islands, more than any other country.",
+    "category": "geography"
+  },
+  {
+    "id": 250,
+    "question": "What is the capital of South Korea?",
+    "options": [
+      "Busan",
+      "Incheon",
+      "Seoul",
+      "Daegu"
+    ],
+    "correctIndex": 2,
+    "explanation": "Seoul is the capital and largest city of South Korea, with about 10 million residents.",
+    "category": "geography"
+  },
+  {
+    "id": 251,
+    "question": "Who directed the movie 'Jaws'?",
+    "options": [
+      "Martin Scorsese",
+      "Steven Spielberg",
+      "Francis Ford Coppola",
+      "George Lucas"
+    ],
+    "correctIndex": 1,
+    "explanation": "Steven Spielberg directed Jaws, released in 1975, considered the first summer blockbuster.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 252,
+    "question": "What is the most widely spoken language in the world by native speakers?",
+    "options": [
+      "English",
+      "Spanish",
+      "Mandarin Chinese",
+      "Hindi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mandarin Chinese has the most native speakers at about 920 million.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 253,
+    "question": "Which planet is named after the Roman god of war?",
+    "options": [
+      "Jupiter",
+      "Mars",
+      "Saturn",
+      "Neptune"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mars is named after the Roman god of war, corresponding to the Greek god Ares.",
+    "category": "science"
+  },
+  {
+    "id": 254,
+    "question": "What is the strongest muscle in the human body relative to its size?",
+    "options": [
+      "Heart",
+      "Tongue",
+      "Jaw (masseter)",
+      "Thigh (quadriceps)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The masseter (jaw muscle) can exert the most force relative to its size.",
+    "category": "science"
+  },
+  {
+    "id": 255,
+    "question": "Which gas do plants release during photosynthesis?",
+    "options": [
+      "Carbon dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Plants release oxygen as a byproduct of photosynthesis, which converts CO2 and water into glucose.",
+    "category": "science"
+  },
+  {
+    "id": 256,
+    "question": "How many planets in our solar system have rings?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "Four planets have ring systems: Jupiter, Saturn, Uranus, and Neptune.",
+    "category": "science"
+  },
+  {
+    "id": 257,
+    "question": "What is the hardest bone in the human body?",
+    "options": [
+      "Femur",
+      "Jawbone",
+      "Temporal bone",
+      "Shinbone (tibia)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The femur (thighbone) is the strongest bone, able to withstand forces of up to 1,700 pounds per square inch.",
+    "category": "science"
+  },
+  {
+    "id": 258,
+    "question": "What temperature does water boil at in Fahrenheit at sea level?",
+    "options": [
+      "180°F",
+      "200°F",
+      "212°F",
+      "250°F"
+    ],
+    "correctIndex": 2,
+    "explanation": "Water boils at 212°F (100°C) at sea level pressure.",
+    "category": "science"
+  },
+  {
+    "id": 259,
+    "question": "Which organ is responsible for filtering blood?",
+    "options": [
+      "Heart",
+      "Liver",
+      "Kidneys",
+      "Lungs"
+    ],
+    "correctIndex": 2,
+    "explanation": "The kidneys filter about 200 liters of blood daily, removing waste and excess fluid.",
+    "category": "science"
+  },
+  {
+    "id": 260,
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "options": [
+      "Rosalind Franklin",
+      "Marie Curie",
+      "Dorothy Hodgkin",
+      "Lise Meitner"
+    ],
+    "correctIndex": 1,
+    "explanation": "Marie Curie won the Nobel Prize in Physics in 1903 and in Chemistry in 1911.",
+    "category": "history"
+  },
+  {
+    "id": 261,
+    "question": "What was the name of the ship that brought the Pilgrims to America?",
+    "options": [
+      "Santa Maria",
+      "Mayflower",
+      "Endeavour",
+      "Beagle"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Mayflower transported the Pilgrims from England to Plymouth, Massachusetts in 1620.",
+    "category": "history"
+  },
+  {
+    "id": 262,
+    "question": "Which empire was ruled by Suleiman the Magnificent?",
+    "options": [
+      "Persian Empire",
+      "Roman Empire",
+      "Ottoman Empire",
+      "Mughal Empire"
+    ],
+    "correctIndex": 2,
+    "explanation": "Suleiman the Magnificent ruled the Ottoman Empire from 1520 to 1566.",
+    "category": "history"
+  },
+  {
+    "id": 263,
+    "question": "What year did the Berlin Wall fall?",
+    "options": [
+      "1987",
+      "1989",
+      "1991",
+      "1993"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Berlin Wall fell on November 9, 1989, after 28 years of dividing East and West Berlin.",
+    "category": "history"
+  },
+  {
+    "id": 264,
+    "question": "Who was the first person to circumnavigate the globe?",
+    "options": [
+      "Christopher Columbus",
+      "Vasco da Gama",
+      "Ferdinand Magellan",
+      "Francis Drake"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ferdinand Magellan's expedition (completed by Elcano) was the first circumnavigation, 1519-1522.",
+    "category": "history"
+  },
+  {
+    "id": 265,
+    "question": "What is the official currency of Japan?",
+    "options": [
+      "Yuan",
+      "Won",
+      "Yen",
+      "Ringgit"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Japanese Yen has been Japan's official currency since 1871.",
+    "category": "geography"
+  },
+  {
+    "id": 266,
+    "question": "Which country is the largest by land area?",
+    "options": [
+      "Canada",
+      "China",
+      "United States",
+      "Russia"
+    ],
+    "correctIndex": 3,
+    "explanation": "Russia covers about 17.1 million square kilometers, making it the largest country by land area.",
+    "category": "geography"
+  },
+  {
+    "id": 267,
+    "question": "What is the name of the large desert in China?",
+    "options": [
+      "Gobi",
+      "Taklamakan",
+      "Karakum",
+      "Kyzylkum"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Taklamakan Desert in northwest China is one of the world's largest sandy deserts.",
+    "category": "geography"
+  },
+  {
+    "id": 268,
+    "question": "Which European country has the most UNESCO World Heritage Sites?",
+    "options": [
+      "France",
+      "Spain",
+      "Italy",
+      "Germany"
+    ],
+    "correctIndex": 2,
+    "explanation": "Italy has the most UNESCO World Heritage Sites of any country, with over 55 sites.",
+    "category": "geography"
+  },
+  {
+    "id": 269,
+    "question": "What is the smallest continent by land area?",
+    "options": [
+      "Europe",
+      "Antarctica",
+      "Australia",
+      "South America"
+    ],
+    "correctIndex": 2,
+    "explanation": "Australia is the smallest continent at about 8.6 million square kilometers.",
+    "category": "geography"
+  },
+  {
+    "id": 270,
+    "question": "Which African country was formerly known as Gold Coast?",
+    "options": [
+      "Nigeria",
+      "Ghana",
+      "Ivory Coast",
+      "Senegal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ghana was known as the Gold Coast before gaining independence in 1957.",
+    "category": "geography"
+  },
+  {
+    "id": 271,
+    "question": "What band performed 'Bohemian Rhapsody'?",
+    "options": [
+      "The Beatles",
+      "Led Zeppelin",
+      "Queen",
+      "Pink Floyd"
+    ],
+    "correctIndex": 2,
+    "explanation": "Queen released Bohemian Rhapsody in 1975, written by Freddie Mercury.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 272,
+    "question": "In which year was YouTube founded?",
+    "options": [
+      "2003",
+      "2005",
+      "2007",
+      "2009"
+    ],
+    "correctIndex": 1,
+    "explanation": "YouTube was founded in 2005 and the first video was uploaded in April of that year.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 273,
+    "question": "What is the name of Sherlock Holmes' assistant?",
+    "options": [
+      "Watson",
+      "Wilson",
+      "Williams",
+      "Wallace"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dr. John Watson is Sherlock Holmes' loyal companion and the narrator of most Holmes stories.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 274,
+    "question": "Which instrument has 88 keys?",
+    "options": [
+      "Organ",
+      "Piano",
+      "Harpsichord",
+      "Accordion"
+    ],
+    "correctIndex": 1,
+    "explanation": "A standard piano has 88 keys: 52 white and 36 black.",
+    "category": "pop_culture"
+  },
+  {
+    "id": 275,
+    "question": "Who wrote 'The Great Gatsby'?",
+    "options": [
+      "Ernest Hemingway",
+      "F. Scott Fitzgerald",
+      "William Faulkner",
+      "John Steinbeck"
+    ],
+    "correctIndex": 1,
+    "explanation": "F. Scott Fitzgerald wrote The Great Gatsby, published in 1925.",
+    "category": "literature"
+  },
+  {
+    "id": 276,
+    "question": "In which sport would you perform a 'slam dunk'?",
+    "options": [
+      "Volleyball",
+      "Basketball",
+      "Tennis",
+      "Handball"
+    ],
+    "correctIndex": 1,
+    "explanation": "A slam dunk is a basketball shot where the player jumps and scores by putting the ball directly through the hoop.",
+    "category": "sports"
+  },
+  {
+    "id": 277,
+    "question": "How many rings are on the Olympic flag?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Olympic flag has five interlocking rings representing the five continents.",
+    "category": "sports"
+  },
+  {
+    "id": 278,
+    "question": "Which country hosted the first modern Olympics?",
+    "options": [
+      "France",
+      "Italy",
+      "Greece",
+      "United States"
+    ],
+    "correctIndex": 2,
+    "explanation": "Athens, Greece hosted the first modern Olympic Games in 1896.",
+    "category": "sports"
+  },
+  {
+    "id": 279,
+    "question": "What is the diameter of a basketball hoop in inches?",
+    "options": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "A regulation basketball hoop is 18 inches in diameter.",
+    "category": "sports"
+  },
+  {
+    "id": 280,
+    "question": "Who holds the record for most home runs in MLB history?",
+    "options": [
+      "Babe Ruth",
+      "Hank Aaron",
+      "Barry Bonds",
+      "Alex Rodriguez"
+    ],
+    "correctIndex": 2,
+    "explanation": "Barry Bonds holds the MLB career home run record with 762.",
+    "category": "sports"
+  },
+  {
+    "id": 281,
+    "question": "What does GPU stand for?",
+    "options": [
+      "General Processing Unit",
+      "Graphics Processing Unit",
+      "Global Power Unit",
+      "Graphics Performance Utility"
+    ],
+    "correctIndex": 1,
+    "explanation": "GPU stands for Graphics Processing Unit, specialized for rendering images and video.",
+    "category": "technology"
+  },
+  {
+    "id": 282,
+    "question": "Which company created the iPhone?",
+    "options": [
+      "Samsung",
+      "Google",
+      "Apple",
+      "Microsoft"
+    ],
+    "correctIndex": 2,
+    "explanation": "Apple created the iPhone, with the first model released on June 29, 2007.",
+    "category": "technology"
+  },
+  {
+    "id": 283,
+    "question": "What year was the World Wide Web invented?",
+    "options": [
+      "1985",
+      "1989",
+      "1993",
+      "1995"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tim Berners-Lee invented the World Wide Web in 1989 at CERN.",
+    "category": "technology"
+  },
+  {
+    "id": 284,
+    "question": "What does 'HTTP' stand for?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "High Tech Transfer Protocol",
+      "Hyper Transfer Text Protocol",
+      "Home Tool Text Protocol"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTTP stands for HyperText Transfer Protocol, the foundation of web data communication.",
+    "category": "technology"
+  },
+  {
+    "id": 285,
+    "question": "Which planet has the most moons?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "correctIndex": 1,
+    "explanation": "Saturn has over 140 confirmed moons, surpassing Jupiter as of recent discoveries.",
+    "category": "science"
+  },
+  {
+    "id": 286,
+    "question": "What is the study of fungi called?",
+    "options": [
+      "Botany",
+      "Mycology",
+      "Virology",
+      "Zoology"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mycology is the study of fungi, from the Greek 'mykes' meaning fungus.",
+    "category": "science"
+  },
+  {
+    "id": 287,
+    "question": "What is the atomic number of carbon?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carbon has atomic number 6, meaning it has 6 protons in its nucleus.",
+    "category": "science"
+  },
+  {
+    "id": 288,
+    "question": "How many chromosomes does a dog have?",
+    "options": [
+      "38",
+      "46",
+      "78",
+      "64"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dogs have 78 chromosomes (39 pairs), compared to 46 in humans.",
+    "category": "science"
+  },
+  {
+    "id": 289,
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Argon"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nitrogen makes up approximately 78% of Earth's atmosphere.",
+    "category": "science"
+  },
+  {
+    "id": 290,
+    "question": "Which war was fought between the Union and the Confederacy?",
+    "options": [
+      "Revolutionary War",
+      "War of 1812",
+      "American Civil War",
+      "Spanish-American War"
+    ],
+    "correctIndex": 2,
+    "explanation": "The American Civil War (1861-1865) was fought between the Union (North) and Confederacy (South).",
+    "category": "history"
+  },
+  {
+    "id": 291,
+    "question": "Who was the first woman to fly solo across the Atlantic?",
+    "options": [
+      "Bessie Coleman",
+      "Amelia Earhart",
+      "Harriet Quimby",
+      "Jacqueline Cochran"
+    ],
+    "correctIndex": 1,
+    "explanation": "Amelia Earhart became the first woman to fly solo across the Atlantic in 1932.",
+    "category": "history"
+  },
+  {
+    "id": 292,
+    "question": "What was the ancient name for Istanbul?",
+    "options": [
+      "Ankara",
+      "Constantinople",
+      "Byzantium",
+      "Ephesus"
+    ],
+    "correctIndex": 1,
+    "explanation": "Istanbul was known as Constantinople until 1930, named after Roman Emperor Constantine.",
+    "category": "history"
+  },
+  {
+    "id": 293,
+    "question": "Who wrote 'The Art of War'?",
+    "options": [
+      "Confucius",
+      "Lao Tzu",
+      "Sun Tzu",
+      "Miyamoto Musashi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sun Tzu wrote The Art of War, an ancient Chinese military treatise from the 5th century BC.",
+    "category": "history"
+  },
+  {
+    "id": 294,
+    "question": "Which country gifted the Statue of Liberty to the USA?",
+    "options": [
+      "England",
+      "Spain",
+      "France",
+      "Italy"
+    ],
+    "correctIndex": 2,
+    "explanation": "France gave the Statue of Liberty to the United States in 1886.",
+    "category": "history"
+  },
+  {
+    "id": 295,
+    "question": "What is the currency of the United Kingdom?",
+    "options": [
+      "Euro",
+      "Pound sterling",
+      "Franc",
+      "Krone"
+    ],
+    "correctIndex": 1,
+    "explanation": "The pound sterling (GBP) is the official currency of the United Kingdom.",
+    "category": "geography"
+  },
+  {
+    "id": 296,
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": [
+      "China",
+      "Japan",
+      "South Korea",
+      "Thailand"
+    ],
+    "correctIndex": 1,
+    "explanation": "Japan is called the Land of the Rising Sun because it's located where the sun rises earliest.",
+    "category": "geography"
+  },
+  {
+    "id": 297,
+    "question": "What is the deepest lake in the world?",
+    "options": [
+      "Lake Superior",
+      "Lake Victoria",
+      "Lake Baikal",
+      "Lake Tanganyika"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lake Baikal in Russia is the deepest lake at 1,642 meters (5,387 feet).",
+    "category": "geography"
+  },
+  {
+    "id": 298,
+    "question": "Which country has the longest coastline?",
+    "options": [
+      "Australia",
+      "Russia",
+      "Indonesia",
+      "Canada"
+    ],
+    "correctIndex": 3,
+    "explanation": "Canada has the longest coastline at approximately 202,080 km.",
+    "category": "geography"
+  },
+  {
+    "id": 299,
+    "question": "What is the capital of New Zealand?",
+    "options": [
+      "Auckland",
+      "Wellington",
+      "Christchurch",
+      "Queenstown"
+    ],
+    "correctIndex": 1,
+    "explanation": "Wellington is the capital of New Zealand, the world's southernmost capital city.",
+    "category": "geography"
+  },
+  {
+    "id": 300,
+    "question": "Which animal is known as the 'King of the Jungle'?",
+    "options": [
+      "Tiger",
+      "Lion",
+      "Elephant",
+      "Gorilla"
+    ],
+    "correctIndex": 1,
+    "explanation": "The lion is known as the King of the Jungle, though lions actually live in savannas and grasslands.",
+    "category": "nature"
   }
 ]

@@ -1,52 +1,1802 @@
 [
-  {"id": 1, "text": "The only way to do great work is to love what you do.", "author": "Steve Jobs", "meaning": "Passion fuels excellence. When you genuinely enjoy your work, dedication comes naturally and quality follows."},
-  {"id": 2, "text": "In the middle of difficulty lies opportunity.", "author": "Albert Einstein", "meaning": "Challenges are disguised chances to grow. Every obstacle carries within it the seed of a new beginning."},
-  {"id": 3, "text": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius", "meaning": "Consistency beats speed. Progress at any pace is still progress — quitting is the only true failure."},
-  {"id": 4, "text": "The future belongs to those who believe in the beauty of their dreams.", "author": "Eleanor Roosevelt", "meaning": "Vision and belief are prerequisites for achievement. Dare to dream, then dare to pursue it."},
-  {"id": 5, "text": "What you get by achieving your goals is not as important as what you become.", "author": "Zig Ziglar", "meaning": "The journey transforms you more than the destination. Growth happens in the striving."},
-  {"id": 6, "text": "Believe you can and you're halfway there.", "author": "Theodore Roosevelt", "meaning": "Self-belief is the foundation of all achievement. Your mindset sets the ceiling for your possibilities."},
-  {"id": 7, "text": "The best time to plant a tree was 20 years ago. The second best time is now.", "author": "Chinese Proverb", "meaning": "Don't let past inaction paralyze you. Start today regardless of when you should have begun."},
-  {"id": 8, "text": "Your limitation — it's only your imagination.", "author": "Unknown", "meaning": "Most barriers are mental, not physical. The stories you tell yourself about what's possible define your reality."},
-  {"id": 9, "text": "Don't watch the clock; do what it does. Keep going.", "author": "Sam Levenson", "meaning": "Momentum is everything. Instead of tracking time, use it. Stay in motion and results will follow."},
-  {"id": 10, "text": "Everything you've ever wanted is on the other side of fear.", "author": "George Addair", "meaning": "Fear marks the boundary of your comfort zone. Step through it and you'll find what you're looking for."},
-  {"id": 11, "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill", "meaning": "Neither victory nor defeat is permanent. What matters is the resilience to keep moving forward."},
-  {"id": 12, "text": "Hardships often prepare ordinary people for an extraordinary destiny.", "author": "C.S. Lewis", "meaning": "Struggles are training grounds. The difficulties you face today build the strength you'll need tomorrow."},
-  {"id": 13, "text": "The mind is everything. What you think you become.", "author": "Buddha", "meaning": "Thoughts shape reality. Cultivate a positive inner dialogue and watch your outer world transform."},
-  {"id": 14, "text": "Strive not to be a success, but rather to be of value.", "author": "Albert Einstein", "meaning": "Impact over status. When you focus on contributing, recognition follows naturally."},
-  {"id": 15, "text": "The only impossible journey is the one you never begin.", "author": "Tony Robbins", "meaning": "Starting is the hardest and most important step. Once in motion, paths reveal themselves."},
-  {"id": 16, "text": "Life is what happens when you're busy making other plans.", "author": "John Lennon", "meaning": "Be present. The moments you miss while planning the future are the ones you'll wish you had back."},
-  {"id": 17, "text": "You miss 100% of the shots you don't take.", "author": "Wayne Gretzky", "meaning": "Inaction guarantees failure. Take the shot — you can't score from the sidelines."},
-  {"id": 18, "text": "Whether you think you can or you think you can't, you're right.", "author": "Henry Ford", "meaning": "Your beliefs become self-fulfilling prophecies. Choose the belief that empowers you."},
-  {"id": 19, "text": "I have not failed. I've just found 10,000 ways that won't work.", "author": "Thomas Edison", "meaning": "Reframe failure as learning. Each attempt, even unsuccessful, narrows the path to success."},
-  {"id": 20, "text": "The secret of getting ahead is getting started.", "author": "Mark Twain", "meaning": "Overthinking kills momentum. Begin imperfectly and refine as you go."},
-  {"id": 21, "text": "It is during our darkest moments that we must focus to see the light.", "author": "Aristotle", "meaning": "Hardship demands sharper focus, not surrender. The way forward reveals itself to those who look."},
-  {"id": 22, "text": "Do what you can, with what you have, where you are.", "author": "Theodore Roosevelt", "meaning": "Perfect conditions never arrive. Start with your current resources and location — that's enough."},
-  {"id": 23, "text": "Happiness is not something ready-made. It comes from your own actions.", "author": "Dalai Lama", "meaning": "Joy is a verb, not a noun. Create it through intentional choices, not passive waiting."},
-  {"id": 24, "text": "If you want to lift yourself up, lift up someone else.", "author": "Booker T. Washington", "meaning": "Service elevates both giver and receiver. Helping others is the most reliable path to fulfillment."},
-  {"id": 25, "text": "The only person you are destined to become is the person you decide to be.", "author": "Ralph Waldo Emerson", "meaning": "You are not defined by circumstances but by choices. Intentional self-creation is your greatest power."},
-  {"id": 26, "text": "Go confidently in the direction of your dreams. Live the life you have imagined.", "author": "Henry David Thoreau", "meaning": "Boldness attracts opportunity. Don't wait for permission to pursue the life you envision."},
-  {"id": 27, "text": "When you reach the end of your rope, tie a knot in it and hang on.", "author": "Franklin D. Roosevelt", "meaning": "Persistence at the edge of quitting is what separates survivors from those who give up."},
-  {"id": 28, "text": "Nothing is impossible, the word itself says 'I'm possible'!", "author": "Audrey Hepburn", "meaning": "A playful reminder that limits are often linguistic, not real. Reframe impossibility as opportunity."},
-  {"id": 29, "text": "You are never too old to set another goal or to dream a new dream.", "author": "C.S. Lewis", "meaning": "Age is not a barrier to aspiration. Reinvention is always available to those who seek it."},
-  {"id": 30, "text": "The way to get started is to quit talking and begin doing.", "author": "Walt Disney", "meaning": "Talk is cheap. Action is the only currency that converts dreams into reality."},
-  {"id": 31, "text": "If you look at what you have in life, you'll always have more.", "author": "Oprah Winfrey", "meaning": "Gratitude multiplies abundance. Focusing on what you have attracts more goodness."},
-  {"id": 32, "text": "Creativity is intelligence having fun.", "author": "Albert Einstein", "meaning": "Playfulness unlocks genius. When the mind is relaxed and curious, its best ideas emerge."},
-  {"id": 33, "text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.", "author": "Ralph Waldo Emerson", "meaning": "Inner strength outweighs external circumstances. Your character is your greatest asset."},
-  {"id": 34, "text": "We may encounter many defeats but we must not be defeated.", "author": "Maya Angelou", "meaning": "Losing battles is inevitable; losing the war is optional. Stand up one more time than you fall."},
-  {"id": 35, "text": "The best revenge is massive success.", "author": "Frank Sinatra", "meaning": "Let achievement answer your critics. Results speak louder than rebuttals."},
-  {"id": 36, "text": "Life shrinks or expands in proportion to one's courage.", "author": "Anais Nin", "meaning": "Bravery is the multiplier of experience. The more courage you summon, the richer life becomes."},
-  {"id": 37, "text": "You must be the change you wish to see in the world.", "author": "Mahatma Gandhi", "meaning": "Transformation starts with self. Model the behavior you want to see reflected around you."},
-  {"id": 38, "text": "It always seems impossible until it's done.", "author": "Nelson Mandela", "meaning": "Hindsight makes achievement look inevitable. Push through the doubt — the finish line is closer than it feels."},
-  {"id": 39, "text": "Education is the most powerful weapon which you can use to change the world.", "author": "Nelson Mandela", "meaning": "Knowledge is transformative. Invest in learning and you invest in your capacity to make an impact."},
-  {"id": 40, "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.", "author": "Nelson Mandela", "meaning": "Resilience is the true measure of a person. Not the absence of failure, but the response to it."},
-  {"id": 41, "text": "Spread love everywhere you go. Let no one ever come to you without leaving happier.", "author": "Mother Teresa", "meaning": "Be a source of positivity. The ripple effect of kindness transforms every interaction."},
-  {"id": 42, "text": "Don't judge each day by the harvest you reap but by the seeds that you plant.", "author": "Robert Louis Stevenson", "meaning": "Focus on inputs, not outputs. Daily effort compounds into long-term results."},
-  {"id": 43, "text": "The purpose of our lives is to be happy.", "author": "Dalai Lama", "meaning": "Happiness is not selfish — it's the fundamental aim. Prioritize joy as a compass for decisions."},
-  {"id": 44, "text": "Act as if what you do makes a difference. It does.", "author": "William James", "meaning": "Every action has impact, however small. Take responsibility for your contribution."},
-  {"id": 45, "text": "What we achieve inwardly will change outer reality.", "author": "Plutarch", "meaning": "Inner transformation precedes external change. Work on yourself first and the world adjusts."},
-  {"id": 46, "text": "Well done is better than well said.", "author": "Benjamin Franklin", "meaning": "Execution trumps eloquence. Results earned through action beat the most convincing words."},
-  {"id": 47, "text": "Whoever is happy will make others happy too.", "author": "Anne Frank", "meaning": "Happiness is contagious. Your joy doesn't just benefit you — it lifts everyone around you."},
-  {"id": 48, "text": "The only limit to our realization of tomorrow is our doubts of today.", "author": "Franklin D. Roosevelt", "meaning": "Doubt is the ceiling on potential. Lower the doubt and you raise what's possible."},
-  {"id": 49, "text": "In three words I can sum up everything I've learned about life: it goes on.", "author": "Robert Frost", "meaning": "Acceptance of impermanence brings peace. No matter what happens, life continues forward."},
-  {"id": 50, "text": "Start where you are. Use what you have. Do what you can.", "author": "Arthur Ashe", "meaning": "No prerequisites needed. Your current position, resources, and capacity are enough to begin."}
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "meaning": "Passion fuels excellence. When you genuinely enjoy your work, dedication comes naturally and quality follows."
+  },
+  {
+    "id": 2,
+    "text": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "meaning": "Challenges are disguised chances to grow. Every obstacle carries within it the seed of a new beginning."
+  },
+  {
+    "id": 3,
+    "text": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "meaning": "Consistency beats speed. Progress at any pace is still progress — quitting is the only true failure."
+  },
+  {
+    "id": 4,
+    "text": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "meaning": "Vision and belief are prerequisites for achievement. Dare to dream, then dare to pursue it."
+  },
+  {
+    "id": 5,
+    "text": "What you get by achieving your goals is not as important as what you become.",
+    "author": "Zig Ziglar",
+    "meaning": "The journey transforms you more than the destination. Growth happens in the striving."
+  },
+  {
+    "id": 6,
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "meaning": "Self-belief is the foundation of all achievement. Your mindset sets the ceiling for your possibilities."
+  },
+  {
+    "id": 7,
+    "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb",
+    "meaning": "Don't let past inaction paralyze you. Start today regardless of when you should have begun."
+  },
+  {
+    "id": 8,
+    "text": "Your limitation — it's only your imagination.",
+    "author": "Unknown",
+    "meaning": "Most barriers are mental, not physical. The stories you tell yourself about what's possible define your reality."
+  },
+  {
+    "id": 9,
+    "text": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "meaning": "Momentum is everything. Instead of tracking time, use it. Stay in motion and results will follow."
+  },
+  {
+    "id": 10,
+    "text": "Everything you've ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "meaning": "Fear marks the boundary of your comfort zone. Step through it and you'll find what you're looking for."
+  },
+  {
+    "id": 11,
+    "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "meaning": "Neither victory nor defeat is permanent. What matters is the resilience to keep moving forward."
+  },
+  {
+    "id": 12,
+    "text": "Hardships often prepare ordinary people for an extraordinary destiny.",
+    "author": "C.S. Lewis",
+    "meaning": "Struggles are training grounds. The difficulties you face today build the strength you'll need tomorrow."
+  },
+  {
+    "id": 13,
+    "text": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "meaning": "Thoughts shape reality. Cultivate a positive inner dialogue and watch your outer world transform."
+  },
+  {
+    "id": 14,
+    "text": "Strive not to be a success, but rather to be of value.",
+    "author": "Albert Einstein",
+    "meaning": "Impact over status. When you focus on contributing, recognition follows naturally."
+  },
+  {
+    "id": 15,
+    "text": "The only impossible journey is the one you never begin.",
+    "author": "Tony Robbins",
+    "meaning": "Starting is the hardest and most important step. Once in motion, paths reveal themselves."
+  },
+  {
+    "id": 16,
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "meaning": "Be present. The moments you miss while planning the future are the ones you'll wish you had back."
+  },
+  {
+    "id": 17,
+    "text": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "meaning": "Inaction guarantees failure. Take the shot — you can't score from the sidelines."
+  },
+  {
+    "id": 18,
+    "text": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "meaning": "Your beliefs become self-fulfilling prophecies. Choose the belief that empowers you."
+  },
+  {
+    "id": 19,
+    "text": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas Edison",
+    "meaning": "Reframe failure as learning. Each attempt, even unsuccessful, narrows the path to success."
+  },
+  {
+    "id": 20,
+    "text": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "meaning": "Overthinking kills momentum. Begin imperfectly and refine as you go."
+  },
+  {
+    "id": 21,
+    "text": "It is during our darkest moments that we must focus to see the light.",
+    "author": "Aristotle",
+    "meaning": "Hardship demands sharper focus, not surrender. The way forward reveals itself to those who look."
+  },
+  {
+    "id": 22,
+    "text": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "meaning": "Perfect conditions never arrive. Start with your current resources and location — that's enough."
+  },
+  {
+    "id": 23,
+    "text": "Happiness is not something ready-made. It comes from your own actions.",
+    "author": "Dalai Lama",
+    "meaning": "Joy is a verb, not a noun. Create it through intentional choices, not passive waiting."
+  },
+  {
+    "id": 24,
+    "text": "If you want to lift yourself up, lift up someone else.",
+    "author": "Booker T. Washington",
+    "meaning": "Service elevates both giver and receiver. Helping others is the most reliable path to fulfillment."
+  },
+  {
+    "id": 25,
+    "text": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson",
+    "meaning": "You are not defined by circumstances but by choices. Intentional self-creation is your greatest power."
+  },
+  {
+    "id": 26,
+    "text": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+    "author": "Henry David Thoreau",
+    "meaning": "Boldness attracts opportunity. Don't wait for permission to pursue the life you envision."
+  },
+  {
+    "id": 27,
+    "text": "When you reach the end of your rope, tie a knot in it and hang on.",
+    "author": "Franklin D. Roosevelt",
+    "meaning": "Persistence at the edge of quitting is what separates survivors from those who give up."
+  },
+  {
+    "id": 28,
+    "text": "Nothing is impossible, the word itself says 'I'm possible'!",
+    "author": "Audrey Hepburn",
+    "meaning": "A playful reminder that limits are often linguistic, not real. Reframe impossibility as opportunity."
+  },
+  {
+    "id": 29,
+    "text": "You are never too old to set another goal or to dream a new dream.",
+    "author": "C.S. Lewis",
+    "meaning": "Age is not a barrier to aspiration. Reinvention is always available to those who seek it."
+  },
+  {
+    "id": 30,
+    "text": "The way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney",
+    "meaning": "Talk is cheap. Action is the only currency that converts dreams into reality."
+  },
+  {
+    "id": 31,
+    "text": "If you look at what you have in life, you'll always have more.",
+    "author": "Oprah Winfrey",
+    "meaning": "Gratitude multiplies abundance. Focusing on what you have attracts more goodness."
+  },
+  {
+    "id": 32,
+    "text": "Creativity is intelligence having fun.",
+    "author": "Albert Einstein",
+    "meaning": "Playfulness unlocks genius. When the mind is relaxed and curious, its best ideas emerge."
+  },
+  {
+    "id": 33,
+    "text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "author": "Ralph Waldo Emerson",
+    "meaning": "Inner strength outweighs external circumstances. Your character is your greatest asset."
+  },
+  {
+    "id": 34,
+    "text": "We may encounter many defeats but we must not be defeated.",
+    "author": "Maya Angelou",
+    "meaning": "Losing battles is inevitable; losing the war is optional. Stand up one more time than you fall."
+  },
+  {
+    "id": 35,
+    "text": "The best revenge is massive success.",
+    "author": "Frank Sinatra",
+    "meaning": "Let achievement answer your critics. Results speak louder than rebuttals."
+  },
+  {
+    "id": 36,
+    "text": "Life shrinks or expands in proportion to one's courage.",
+    "author": "Anais Nin",
+    "meaning": "Bravery is the multiplier of experience. The more courage you summon, the richer life becomes."
+  },
+  {
+    "id": 37,
+    "text": "You must be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "meaning": "Transformation starts with self. Model the behavior you want to see reflected around you."
+  },
+  {
+    "id": 38,
+    "text": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela",
+    "meaning": "Hindsight makes achievement look inevitable. Push through the doubt — the finish line is closer than it feels."
+  },
+  {
+    "id": 39,
+    "text": "Education is the most powerful weapon which you can use to change the world.",
+    "author": "Nelson Mandela",
+    "meaning": "Knowledge is transformative. Invest in learning and you invest in your capacity to make an impact."
+  },
+  {
+    "id": 40,
+    "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "meaning": "Resilience is the true measure of a person. Not the absence of failure, but the response to it."
+  },
+  {
+    "id": 41,
+    "text": "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
+    "author": "Mother Teresa",
+    "meaning": "Be a source of positivity. The ripple effect of kindness transforms every interaction."
+  },
+  {
+    "id": 42,
+    "text": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
+    "author": "Robert Louis Stevenson",
+    "meaning": "Focus on inputs, not outputs. Daily effort compounds into long-term results."
+  },
+  {
+    "id": 43,
+    "text": "The purpose of our lives is to be happy.",
+    "author": "Dalai Lama",
+    "meaning": "Happiness is not selfish — it's the fundamental aim. Prioritize joy as a compass for decisions."
+  },
+  {
+    "id": 44,
+    "text": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "meaning": "Every action has impact, however small. Take responsibility for your contribution."
+  },
+  {
+    "id": 45,
+    "text": "What we achieve inwardly will change outer reality.",
+    "author": "Plutarch",
+    "meaning": "Inner transformation precedes external change. Work on yourself first and the world adjusts."
+  },
+  {
+    "id": 46,
+    "text": "Well done is better than well said.",
+    "author": "Benjamin Franklin",
+    "meaning": "Execution trumps eloquence. Results earned through action beat the most convincing words."
+  },
+  {
+    "id": 47,
+    "text": "Whoever is happy will make others happy too.",
+    "author": "Anne Frank",
+    "meaning": "Happiness is contagious. Your joy doesn't just benefit you — it lifts everyone around you."
+  },
+  {
+    "id": 48,
+    "text": "The only limit to our realization of tomorrow is our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "meaning": "Doubt is the ceiling on potential. Lower the doubt and you raise what's possible."
+  },
+  {
+    "id": 49,
+    "text": "In three words I can sum up everything I've learned about life: it goes on.",
+    "author": "Robert Frost",
+    "meaning": "Acceptance of impermanence brings peace. No matter what happens, life continues forward."
+  },
+  {
+    "id": 50,
+    "text": "Start where you are. Use what you have. Do what you can.",
+    "author": "Arthur Ashe",
+    "meaning": "No prerequisites needed. Your current position, resources, and capacity are enough to begin."
+  },
+  {
+    "id": 51,
+    "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "meaning": "Self-doubt is the biggest barrier to achievement. Trusting your potential opens the door to what's possible."
+  },
+  {
+    "id": 52,
+    "text": "In every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact.",
+    "author": "Les Brown",
+    "meaning": "Every minute is a fresh chance. Don't waste time regretting the past — use the present moment wisely."
+  },
+  {
+    "id": 53,
+    "text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "author": "Ralph Waldo Emerson",
+    "meaning": "Inner strength surpasses external circumstances. Your character and resilience matter more than your history or fears."
+  },
+  {
+    "id": 54,
+    "text": "The best revenge is massive success.",
+    "author": "Frank Sinatra",
+    "meaning": "Channel negativity into motivation. Your achievements speak louder than any retaliation."
+  },
+  {
+    "id": 55,
+    "text": "Life shrinks or expands in proportion to one's courage.",
+    "author": "Anais Nin",
+    "meaning": "Boldness creates opportunity. Playing it safe leads to a small life; taking risks leads to growth."
+  },
+  {
+    "id": 56,
+    "text": "It is never too late to be what you might have been.",
+    "author": "George Eliot",
+    "meaning": "Past choices don't lock you in. Reinvention is always available to those willing to begin again."
+  },
+  {
+    "id": 57,
+    "text": "The only way to discover the limits of the possible is to go beyond them into the impossible.",
+    "author": "Arthur C. Clarke",
+    "meaning": "Progress requires pushing boundaries. What seems impossible today becomes tomorrow's baseline."
+  },
+  {
+    "id": 58,
+    "text": "You must be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "meaning": "Complaint without action is wasted energy. Model the behavior and values you want to see in others."
+  },
+  {
+    "id": 59,
+    "text": "Well done is better than well said.",
+    "author": "Benjamin Franklin",
+    "meaning": "Execution matters more than promises. Results speak louder than intentions."
+  },
+  {
+    "id": 60,
+    "text": "The future depends on what you do today.",
+    "author": "Mahatma Gandhi",
+    "meaning": "Today's actions shape tomorrow's outcomes. Don't wait for the right moment — create it."
+  },
+  {
+    "id": 61,
+    "text": "Don't count the days, make the days count.",
+    "author": "Muhammad Ali",
+    "meaning": "Quality over quantity. A single purposeful day outweighs a lifetime of unremarkable ones."
+  },
+  {
+    "id": 62,
+    "text": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "meaning": "Every action ripples outward. Never underestimate the impact of small, consistent efforts."
+  },
+  {
+    "id": 63,
+    "text": "What we achieve inwardly will change outer reality.",
+    "author": "Plutarch",
+    "meaning": "Inner transformation precedes external change. Start with your mindset and behavior will follow."
+  },
+  {
+    "id": 64,
+    "text": "The only journey is the journey within.",
+    "author": "Rainer Maria Rilke",
+    "meaning": "Self-knowledge is the ultimate adventure. Understanding yourself unlocks understanding of everything else."
+  },
+  {
+    "id": 65,
+    "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle",
+    "meaning": "Consistency builds character. One-time efforts don't define you — your daily practices do."
+  },
+  {
+    "id": 66,
+    "text": "Knowing yourself is the beginning of all wisdom.",
+    "author": "Aristotle",
+    "meaning": "Self-awareness is the foundation of good decisions. Understand your values and patterns before judging others."
+  },
+  {
+    "id": 67,
+    "text": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "meaning": "Humility is the starting point of learning. Acknowledging ignorance creates space for genuine understanding."
+  },
+  {
+    "id": 68,
+    "text": "Turn your wounds into wisdom.",
+    "author": "Oprah Winfrey",
+    "meaning": "Pain carries lessons. Reflect on hardships not to suffer again, but to grow from the experience."
+  },
+  {
+    "id": 69,
+    "text": "You don't have to be great to start, but you have to start to be great.",
+    "author": "Zig Ziglar",
+    "meaning": "Perfectionism is procrastination in disguise. Begin with what you have and improve along the way."
+  },
+  {
+    "id": 70,
+    "text": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "meaning": "Thoughts shape reality. Cultivate a positive inner dialogue and watch your outer world transform."
+  },
+  {
+    "id": 71,
+    "text": "An unexamined life is not worth living.",
+    "author": "Socrates",
+    "meaning": "Reflection is essential for growth. Without it, you drift through days without direction or purpose."
+  },
+  {
+    "id": 72,
+    "text": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson",
+    "meaning": "Destiny is a choice, not a predetermined path. Take ownership of who you're becoming."
+  },
+  {
+    "id": 73,
+    "text": "Fall seven times, stand up eight.",
+    "author": "Japanese Proverb",
+    "meaning": "Persistence through failure is the essence of resilience. Each comeback strengthens you."
+  },
+  {
+    "id": 74,
+    "text": "Everything has beauty, but not everyone sees it.",
+    "author": "Confucius",
+    "meaning": "Perception shapes experience. Train yourself to notice the good, and you'll find it everywhere."
+  },
+  {
+    "id": 75,
+    "text": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "meaning": "Consistency beats speed. Progress at any pace is still progress — quitting is the only true failure."
+  },
+  {
+    "id": 76,
+    "text": "The only impossible journey is the one you never begin.",
+    "author": "Tony Robbins",
+    "meaning": "Starting is the hardest and most important step. Once in motion, paths reveal themselves."
+  },
+  {
+    "id": 77,
+    "text": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "meaning": "Focus on the work, not the reward. Achievement follows naturally from engaged, purposeful effort."
+  },
+  {
+    "id": 78,
+    "text": "Don't let yesterday take up too much of today.",
+    "author": "Will Rogers",
+    "meaning": "Past regrets consume present energy. Learn from yesterday, then release it and focus on today."
+  },
+  {
+    "id": 79,
+    "text": "You learn more from failure than from success. Don't let it stop you.",
+    "author": "Unknown",
+    "meaning": "Failure builds the skills and resilience that success can't teach. Every setback is curriculum."
+  },
+  {
+    "id": 80,
+    "text": "If you really want to do something, you'll find a way. If you don't, you'll find an excuse.",
+    "author": "Jim Rohn",
+    "meaning": "Commitment eliminates alternatives. When desire is genuine, obstacles become puzzles to solve, not reasons to quit."
+  },
+  {
+    "id": 81,
+    "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "author": "Chinese Proverb",
+    "meaning": "Don't let past inaction paralyze you. Start today regardless of when you should have begun."
+  },
+  {
+    "id": 82,
+    "text": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar",
+    "meaning": "The journey transforms you more than the destination. Growth happens in the striving."
+  },
+  {
+    "id": 83,
+    "text": "You can never cross the ocean until you have the courage to lose sight of the shore.",
+    "author": "Andre Gide",
+    "meaning": "Growth requires leaving comfort behind. The familiar shore must disappear before new horizons emerge."
+  },
+  {
+    "id": 84,
+    "text": "Happiness is not something ready-made. It comes from your own actions.",
+    "author": "Dalai Lama",
+    "meaning": "Joy is a verb, not a noun. Create it through intentional choices, not passive waiting."
+  },
+  {
+    "id": 85,
+    "text": "If you want to lift yourself up, lift up someone else.",
+    "author": "Booker T. Washington",
+    "meaning": "Service elevates both giver and receiver. Helping others is the most reliable path to fulfillment."
+  },
+  {
+    "id": 86,
+    "text": "When you reach the end of your rope, tie a knot in it and hang on.",
+    "author": "Franklin D. Roosevelt",
+    "meaning": "Persistence at the edge of quitting is what separates survivors from those who give up."
+  },
+  {
+    "id": 87,
+    "text": "It is during our darkest moments that we must focus to see the light.",
+    "author": "Aristotle",
+    "meaning": "Hardship demands sharper focus, not surrender. The way forward reveals itself to those who look."
+  },
+  {
+    "id": 88,
+    "text": "Whoever is happy will make others happy too.",
+    "author": "Anne Frank",
+    "meaning": "Joy is contagious. Taking care of your own well-being enables you to uplift those around you."
+  },
+  {
+    "id": 89,
+    "text": "If you look at what you have in life, you'll always have more.",
+    "author": "Oprah Winfrey",
+    "meaning": "Gratitude multiplies what you perceive. Focusing on abundance creates a sense of plenty."
+  },
+  {
+    "id": 90,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "meaning": "Passion fuels excellence. When you genuinely enjoy your work, dedication comes naturally and quality follows."
+  },
+  {
+    "id": 91,
+    "text": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "meaning": "Perfect conditions never arrive. Start with your current resources and location — that's enough."
+  },
+  {
+    "id": 92,
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "meaning": "Self-belief is the foundation of all achievement. Your mindset sets the ceiling for your possibilities."
+  },
+  {
+    "id": 93,
+    "text": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "meaning": "Challenges are disguised chances to grow. Every obstacle carries within it the seed of a new beginning."
+  },
+  {
+    "id": 94,
+    "text": "Hardships often prepare ordinary people for an extraordinary destiny.",
+    "author": "C.S. Lewis",
+    "meaning": "Struggles are training grounds. The difficulties you face today build the strength you'll need tomorrow."
+  },
+  {
+    "id": 95,
+    "text": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "meaning": "Overthinking kills momentum. Begin imperfectly and refine as you go."
+  },
+  {
+    "id": 96,
+    "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "meaning": "Neither victory nor defeat is permanent. What matters is the resilience to keep moving forward."
+  },
+  {
+    "id": 97,
+    "text": "Your time is limited, so don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "meaning": "Authenticity is the ultimate success metric. Living to please others is the greatest waste of the time you have."
+  },
+  {
+    "id": 98,
+    "text": "The way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney",
+    "meaning": "Action cures anxiety. The distance between idea and reality is bridged by doing, not discussing."
+  },
+  {
+    "id": 99,
+    "text": "Creativity is intelligence having fun.",
+    "author": "Albert Einstein",
+    "meaning": "Play and imagination are not the opposite of intelligence — they're its highest expression."
+  },
+  {
+    "id": 100,
+    "text": "What we think, we become.",
+    "author": "Buddha",
+    "meaning": "Mental habits shape destiny. Guard your thoughts carefully, for they become your reality."
+  },
+  {
+    "id": 101,
+    "text": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas Edison",
+    "meaning": "Reframe failure as learning. Each attempt, even unsuccessful, narrows the path to success."
+  },
+  {
+    "id": 102,
+    "text": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "meaning": "Resilience is the mark of greatness. Falling is inevitable; rising again is the achievement."
+  },
+  {
+    "id": 103,
+    "text": "Life is really simple, but we insist on making it complicated.",
+    "author": "Confucius",
+    "meaning": "Most complexity is self-created. Strip away assumptions and focus on what truly matters."
+  },
+  {
+    "id": 104,
+    "text": "Maya Angelou",
+    "author": "Maya Angelou",
+    "meaning": "People forget words and actions, but never forget how you made them feel. Lead with empathy."
+  },
+  {
+    "id": 105,
+    "text": "The purpose of our lives is to be happy.",
+    "author": "Dalai Lama",
+    "meaning": "Happiness isn't selfish — it's the foundation for everything else. Pursue it deliberately and share it freely."
+  },
+  {
+    "id": 106,
+    "text": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "meaning": "Inaction guarantees failure. Take the shot — you can't score from the sidelines."
+  },
+  {
+    "id": 107,
+    "text": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "meaning": "Your beliefs become self-fulfilling prophecies. Choose the belief that empowers you."
+  },
+  {
+    "id": 108,
+    "text": "The most difficult thing is the decision to act, the rest is merely tenacity.",
+    "author": "Amelia Earhart",
+    "meaning": "Starting is the hardest part. Once committed, persistence carries you through the challenges."
+  },
+  {
+    "id": 109,
+    "text": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "meaning": "Be present. The moments you miss while planning the future are the ones you'll wish you had back."
+  },
+  {
+    "id": 110,
+    "text": "Every champion was once a contender that didn't give up.",
+    "author": "Rocky Balboa",
+    "meaning": "Greatness is built on refusal to quit. Every success story starts with someone who kept going."
+  },
+  {
+    "id": 111,
+    "text": "Dream big and dare to fail.",
+    "author": "Norman Vaughan",
+    "meaning": "Ambition requires accepting the possibility of failure. The size of your dreams should match your willingness to risk."
+  },
+  {
+    "id": 112,
+    "text": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela",
+    "meaning": "The gap between impossible and done is persistence. What feels unachievable becomes history once completed."
+  },
+  {
+    "id": 113,
+    "text": "What we achieve inwardly will change outer reality.",
+    "author": "Plutarch",
+    "meaning": "Personal growth precedes external impact. Transform yourself first, then your world follows."
+  },
+  {
+    "id": 114,
+    "text": "Don't watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "meaning": "Momentum is everything. Instead of tracking time, use it. Stay in motion and results will follow."
+  },
+  {
+    "id": 115,
+    "text": "Everything you've ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "meaning": "Fear marks the boundary of your comfort zone. Step through it and you'll find what you're looking for."
+  },
+  {
+    "id": 116,
+    "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+    "author": "Winston Churchill",
+    "meaning": "Enthusiasm through setbacks is the hallmark of resilience. Keep your energy high regardless of outcomes."
+  },
+  {
+    "id": 117,
+    "text": "The only limit to our realization of tomorrow is our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "meaning": "Self-doubt is the biggest barrier to achievement. Trusting your potential opens the door to what's possible."
+  },
+  {
+    "id": 118,
+    "text": "What you do speaks so loudly that I cannot hear what you say.",
+    "author": "Ralph Waldo Emerson",
+    "meaning": "Actions reveal true values. Words are cheap — behavior is the real measure of character."
+  },
+  {
+    "id": 119,
+    "text": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker",
+    "meaning": "Don't wait for things to happen. Take deliberate action to shape the outcomes you want."
+  },
+  {
+    "id": 120,
+    "text": "Small daily improvements over time lead to stunning results.",
+    "author": "Robin Sharma",
+    "meaning": "Consistency compounds. Tiny gains, repeated daily, produce extraordinary outcomes over time."
+  },
+  {
+    "id": 121,
+    "text": "You are braver than you believe, stronger than you seem, and smarter than you think.",
+    "author": "A.A. Milne",
+    "meaning": "Self-assessment often underestimates your true capacity. Trust that you have more in you than you realize."
+  },
+  {
+    "id": 122,
+    "text": "Everything can be improved.",
+    "author": "Elon Musk",
+    "meaning": "Nothing is final. Adopt a mindset of continuous improvement — even the best can get better."
+  },
+  {
+    "id": 123,
+    "text": "The only way out is through.",
+    "author": "Robert Frost",
+    "meaning": "Avoidance prolongs suffering. Face difficulties directly and you'll emerge stronger on the other side."
+  },
+  {
+    "id": 124,
+    "text": "If you're going through hell, keep going.",
+    "author": "Winston Churchill",
+    "meaning": "Stopping in the worst part ensures you stay there. Movement, even painful, is the path out."
+  },
+  {
+    "id": 125,
+    "text": "Be yourself; everyone else is already taken.",
+    "author": "Oscar Wilde",
+    "meaning": "Authenticity is your competitive advantage. The world doesn't need another copy — it needs you."
+  },
+  {
+    "id": 126,
+    "text": "Happiness depends upon ourselves.",
+    "author": "Aristotle",
+    "meaning": "Joy is an inside job. External circumstances influence but don't determine your emotional state."
+  },
+  {
+    "id": 127,
+    "text": "The only impossible journey is the one you never begin.",
+    "author": "Tony Robbins",
+    "meaning": "Starting is the hardest and most important step. Once in motion, paths reveal themselves."
+  },
+  {
+    "id": 128,
+    "text": "We become what we think about most of the time, and that's the strangest secret.",
+    "author": "Earl Nightingale",
+    "meaning": "Dominant thoughts shape destiny. Choose what you dwell on carefully, because you become it."
+  },
+  {
+    "id": 129,
+    "text": "Discipline is the bridge between goals and accomplishment.",
+    "author": "Jim Rohn",
+    "meaning": "Without consistent action, goals are wishes. Discipline transforms intention into reality."
+  },
+  {
+    "id": 130,
+    "text": "Change is the law of life. And those who look only to the past or present are certain to miss the future.",
+    "author": "John F. Kennedy",
+    "meaning": "Adaptation is survival. Clinging to what was ensures you miss what's coming."
+  },
+  {
+    "id": 131,
+    "text": "The greatest wealth is to live content with little.",
+    "author": "Plato",
+    "meaning": "Simplicity reduces desire. Finding satisfaction with less creates freedom from the endless pursuit of more."
+  },
+  {
+    "id": 132,
+    "text": "Not all those who wander are lost.",
+    "author": "J.R.R. Tolkien",
+    "meaning": "Exploration without a fixed destination has value. Wandering can lead to unexpected discoveries."
+  },
+  {
+    "id": 133,
+    "text": "He who has a why to live can bear almost any how.",
+    "author": "Friedrich Nietzsche",
+    "meaning": "Purpose provides resilience. When you know your reason, you can endure any hardship."
+  },
+  {
+    "id": 134,
+    "text": "Nothing in life is to be feared, it is only to be understood.",
+    "author": "Marie Curie",
+    "meaning": "Knowledge replaces fear. Seek understanding and what once terrified you becomes manageable."
+  },
+  {
+    "id": 135,
+    "text": "The journey of a thousand miles begins with one step.",
+    "author": "Lao Tzu",
+    "meaning": "Grand goals require humble beginnings. Don't be overwhelmed by the distance — take the first step."
+  },
+  {
+    "id": 136,
+    "text": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+    "author": "Johann Wolfgang von Goethe",
+    "meaning": "Knowledge without action is wasted. The gap between intention and result is bridged by doing."
+  },
+  {
+    "id": 137,
+    "text": "Nature does not hurry, yet everything is accomplished.",
+    "author": "Lao Tzu",
+    "meaning": "Patience and persistence accomplish more than rushing. Trust the process and keep moving."
+  },
+  {
+    "id": 138,
+    "text": "A person who never made a mistake never tried anything new.",
+    "author": "Albert Einstein",
+    "meaning": "Errors are proof of effort. If you're not failing, you're not pushing beyond your comfort zone."
+  },
+  {
+    "id": 139,
+    "text": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "meaning": "Trailblazing requires courage. Originality creates more value than following established routes."
+  },
+  {
+    "id": 140,
+    "text": "We generate fears while we sit. We overcome them by action.",
+    "author": "Dr. Henry Link",
+    "meaning": "Anxiety thrives in stillness. Movement is the antidote — act your way into confidence."
+  },
+  {
+    "id": 141,
+    "text": "The only thing we have to fear is fear itself.",
+    "author": "Franklin D. Roosevelt",
+    "meaning": "Fear is more dangerous than the thing feared. It paralyzes action and magnifies shadows."
+  },
+  {
+    "id": 142,
+    "text": "You must do the things you think you cannot do.",
+    "author": "Eleanor Roosevelt",
+    "meaning": "Growth lies just beyond perceived limits. Challenge your assumptions about what's possible."
+  },
+  {
+    "id": 143,
+    "text": "The only measure of what you believe is what you do.",
+    "author": "Flannery O'Connor",
+    "meaning": "Convictions without action aren't convictions at all. Your behavior reveals your true beliefs."
+  },
+  {
+    "id": 144,
+    "text": "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.",
+    "author": "Helen Keller",
+    "meaning": "Positive expectation enables action. Without belief in a good outcome, effort dissolves."
+  },
+  {
+    "id": 145,
+    "text": "A day without laughter is a day wasted.",
+    "author": "Charlie Chaplin",
+    "meaning": "Joy is not optional — it's essential. Find humor daily and your burdens lighten."
+  },
+  {
+    "id": 146,
+    "text": "The mind is everything. What you think, you become.",
+    "author": "Buddha",
+    "meaning": "Thoughts are the raw material of reality. Cultivate a positive mindset and watch your world shift."
+  },
+  {
+    "id": 147,
+    "text": "Life isn't about finding yourself. Life is about creating yourself.",
+    "author": "George Bernard Shaw",
+    "meaning": "Identity isn't discovered — it's constructed. Be the architect of who you want to be."
+  },
+  {
+    "id": 148,
+    "text": "Education is the most powerful weapon which you can use to change the world.",
+    "author": "Nelson Mandela",
+    "meaning": "Knowledge empowers transformation. Learning equips you to make meaningful impact."
+  },
+  {
+    "id": 149,
+    "text": "The only real mistake is the one from which we learn nothing.",
+    "author": "Henry Ford",
+    "meaning": "Mistakes are only failures if they teach nothing. Every error carries a lesson."
+  },
+  {
+    "id": 150,
+    "text": "Keep your face always toward the sunshine, and shadows will fall behind you.",
+    "author": "Walt Whitman",
+    "meaning": "Focus on the positive and negativity recedes. Where attention goes, energy flows."
+  },
+  {
+    "id": 151,
+    "text": "Opportunities don't happen. You create them.",
+    "author": "Chris Grosser",
+    "meaning": "Passive waiting yields nothing. Active pursuit creates the conditions for success."
+  },
+  {
+    "id": 152,
+    "text": "Great things never came from comfort zones.",
+    "author": "Neil Strauss",
+    "meaning": "Growth requires discomfort. The zone where you feel safe is the zone where nothing changes."
+  },
+  {
+    "id": 153,
+    "text": "Success is not how high you have climbed, but what impact you have made.",
+    "author": "Roy T. Bennett",
+    "meaning": "Achievement is measured by difference, not distance. Influence matters more than position."
+  },
+  {
+    "id": 154,
+    "text": "I never dreamed about success. I worked for it.",
+    "author": "Estee Lauder",
+    "meaning": "Dreaming without doing is fantasy. Action transforms aspiration into accomplishment."
+  },
+  {
+    "id": 155,
+    "text": "The only person you should try to be better than is the person you were yesterday.",
+    "author": "Unknown",
+    "meaning": "Compare yourself to your past, not to others. Personal growth is the only meaningful competition."
+  },
+  {
+    "id": 156,
+    "text": "Don't let what you cannot do interfere with what you can do.",
+    "author": "John Wooden",
+    "meaning": "Focus on strengths, not limitations. What you can do is always more than what you can't."
+  },
+  {
+    "id": 157,
+    "text": "We may encounter many defeats but we must not be defeated.",
+    "author": "Maya Angelou",
+    "meaning": "Setbacks are events, not identity. Each loss is a lesson, not a final verdict."
+  },
+  {
+    "id": 158,
+    "text": "The only way to achieve the impossible is to believe it is possible.",
+    "author": "Charles Kingsleigh",
+    "meaning": "Belief precedes achievement. The mind must accept possibility before the body can deliver it."
+  },
+  {
+    "id": 159,
+    "text": "What seems to us as bitter trials are often blessings in disguise.",
+    "author": "Oscar Wilde",
+    "meaning": "Hardship carries hidden gifts. The struggles that seem worst often produce the greatest growth."
+  },
+  {
+    "id": 160,
+    "text": "It is our choices that show what we truly are, far more than our abilities.",
+    "author": "J.K. Rowling",
+    "meaning": "Character is revealed by decisions, not talents. What you choose defines you more than what you can do."
+  },
+  {
+    "id": 161,
+    "text": "Tough times never last, but tough people do.",
+    "author": "Robert H. Schuller",
+    "meaning": "Adversity is temporary; resilience is permanent. Hardship passes but strength remains."
+  },
+  {
+    "id": 162,
+    "text": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
+    "author": "Robert Louis Stevenson",
+    "meaning": "Daily progress isn't always visible. Focus on planting seeds — the harvest comes later."
+  },
+  {
+    "id": 163,
+    "text": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+    "author": "Christian D. Larson",
+    "meaning": "Inner strength exceeds outer challenges. Your potential outmatches any barrier you face."
+  },
+  {
+    "id": 164,
+    "text": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "meaning": "Focus on the work, not the reward. Achievement follows naturally from engaged, purposeful effort."
+  },
+  {
+    "id": 165,
+    "text": "The only thing standing between you and your goal is the story you keep telling yourself.",
+    "author": "Jordan Belfort",
+    "meaning": "Self-narrative is the biggest barrier. Change the story you tell yourself and the obstacles shrink."
+  },
+  {
+    "id": 166,
+    "text": "Quality is not an act, it is a habit.",
+    "author": "Aristotle",
+    "meaning": "Excellence comes from consistent practice, not occasional effort. Make quality your default."
+  },
+  {
+    "id": 167,
+    "text": "You are never too old to set another goal or to dream a new dream.",
+    "author": "C.S. Lewis",
+    "meaning": "Age is not a barrier to aspiration. Reinvention is always available to those who seek it."
+  },
+  {
+    "id": 168,
+    "text": "The greatest pleasure in life is doing what people say you cannot do.",
+    "author": "Walter Bagehot",
+    "meaning": "Defying expectations is deeply satisfying. Let doubt fuel your determination."
+  },
+  {
+    "id": 169,
+    "text": "If you can dream it, you can do it.",
+    "author": "Walt Disney",
+    "meaning": "Imagination is the first step to creation. Every achievement started as someone's dream."
+  },
+  {
+    "id": 170,
+    "text": "Action is the foundational key to all success.",
+    "author": "Pablo Picasso",
+    "meaning": "Nothing happens without movement. Ideas without action remain ideas forever."
+  },
+  {
+    "id": 171,
+    "text": "You don't have to be perfect to be amazing.",
+    "author": "Unknown",
+    "meaning": "Excellence doesn't require flawlessness. Imperfect action always beats perfect inaction."
+  },
+  {
+    "id": 172,
+    "text": "The only thing worse than starting late is not starting at all.",
+    "author": "Unknown",
+    "meaning": "Delay is preferable to never beginning. Late starts still finish; no starts never do."
+  },
+  {
+    "id": 173,
+    "text": "Be strong enough to stand alone, smart enough to know when you need help, and brave enough to ask for it.",
+    "author": "Ziad K. Abdelnour",
+    "meaning": "Strength, wisdom, and courage are three separate skills. Master all three."
+  },
+  {
+    "id": 174,
+    "text": "Your positive action combined with positive thinking results in success.",
+    "author": "Shiv Khera",
+    "meaning": "Optimism without action is daydreaming. Action without optimism is exhausting. Together they're unstoppable."
+  },
+  {
+    "id": 175,
+    "text": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+    "author": "Roy T. Bennett",
+    "meaning": "Fear gives instructions; dreams give direction. Follow the compass that points toward growth."
+  },
+  {
+    "id": 176,
+    "text": "Every morning brings new potential, but if you dwell on the misfortunes of the day before, you tend to overlook tremendous opportunities.",
+    "author": "Harvey Mackay",
+    "meaning": "Yesterday's losses blind you to today's possibilities. Each dawn is a clean slate."
+  },
+  {
+    "id": 177,
+    "text": "Success is liking yourself, liking what you do, and liking how you do it.",
+    "author": "Maya Angelou",
+    "meaning": "True success is internal alignment. When self, work, and method are in harmony, you've already won."
+  },
+  {
+    "id": 178,
+    "text": "Work hard in silence. Let your success be your noise.",
+    "author": "Frank Ocean",
+    "meaning": "Results speak louder than announcements. Let achievement do the talking."
+  },
+  {
+    "id": 179,
+    "text": "The only difference between a good day and a bad day is your attitude.",
+    "author": "Dennis S. Brown",
+    "meaning": "External circumstances are neutral; your interpretation makes them positive or negative."
+  },
+  {
+    "id": 180,
+    "text": "What you do today can improve all your tomorrows.",
+    "author": "Ralph Marston",
+    "meaning": "Today's actions compound. Small improvements now create large dividends later."
+  },
+  {
+    "id": 181,
+    "text": "Start where you are. Use what you have. Do what you can.",
+    "author": "Arthur Ashe",
+    "meaning": "Perfect conditions are a myth. Begin with whatever is available and build from there."
+  },
+  {
+    "id": 182,
+    "text": "A diamond is a chunk of coal that did well under pressure.",
+    "author": "Henry Kissinger",
+    "meaning": "Pressure transforms. The same force that crushes can create something extraordinary."
+  },
+  {
+    "id": 183,
+    "text": "Never let the fear of striking out keep you from playing the game.",
+    "author": "Babe Ruth",
+    "meaning": "Fear of failure guarantees you never succeed. Step up to the plate regardless of the odds."
+  },
+  {
+    "id": 184,
+    "text": "Everything you want is out there waiting for you to ask. Everything you want also wants you. But you have to take action to get it.",
+    "author": "Jack Canfield",
+    "meaning": "Desire alone isn't enough. The universe rewards initiative, not wishful thinking."
+  },
+  {
+    "id": 185,
+    "text": "If you're offered a seat on a rocket ship, don't ask what seat! Just get on.",
+    "author": "Sheryl Sandberg",
+    "meaning": "Opportunity doesn't wait for perfect conditions. Take the chance and figure out details later."
+  },
+  {
+    "id": 186,
+    "text": "First, say to yourself what you would be; and then do what you have to do.",
+    "author": "Epictetus",
+    "meaning": "Identity precedes action. Define who you want to become, then act accordingly."
+  },
+  {
+    "id": 187,
+    "text": "What we fear doing most is usually what we most need to do.",
+    "author": "Tim Ferriss",
+    "meaning": "The tasks that terrify you are the ones with the highest growth payoff. Lean into discomfort."
+  },
+  {
+    "id": 188,
+    "text": "You can, you should, and if you're brave enough to start, you will.",
+    "author": "Stephen King",
+    "meaning": "The gap between can and will is courage. Starting is the hardest and most important step."
+  },
+  {
+    "id": 189,
+    "text": "Hustle in silence. Shock them with your results.",
+    "author": "Unknown",
+    "meaning": "Let your output do the marketing. Talk less, produce more."
+  },
+  {
+    "id": 190,
+    "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "meaning": "Self-doubt is the biggest barrier to achievement. Trusting your potential opens the door to what's possible."
+  },
+  {
+    "id": 191,
+    "text": "No one can make you feel inferior without your consent.",
+    "author": "Eleanor Roosevelt",
+    "meaning": "Your self-worth belongs to you alone. Others can only diminish it if you allow them to."
+  },
+  {
+    "id": 192,
+    "text": "Success is not final, failure is not fatal.",
+    "author": "Winston Churchill",
+    "meaning": "No outcome is permanent. What matters is the courage to persist regardless of results."
+  },
+  {
+    "id": 193,
+    "text": "Keep your eyes on the stars, and your feet on the ground.",
+    "author": "Theodore Roosevelt",
+    "meaning": "Balance ambition with realism. Dream big but execute practically."
+  },
+  {
+    "id": 194,
+    "text": "The expert in anything was once a beginner.",
+    "author": "Helen Hayes",
+    "meaning": "Mastery starts at zero. Everyone who excels began as a novice willing to learn."
+  },
+  {
+    "id": 195,
+    "text": "What you get by achieving your goals is not as important as what you become.",
+    "author": "Zig Ziglar",
+    "meaning": "The journey transforms you more than the destination. Growth happens in the striving."
+  },
+  {
+    "id": 196,
+    "text": "Difficulties in life are intended to make us better, not bitter.",
+    "author": "Dan Reeves",
+    "meaning": "Challenges refine character or corrode it. Choose growth over resentment."
+  },
+  {
+    "id": 197,
+    "text": "There is nothing impossible to they who will try.",
+    "author": "Alexander the Great",
+    "meaning": "Attempt is the prerequisite for achievement. Every impossibility yielded to someone who tried."
+  },
+  {
+    "id": 198,
+    "text": "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    "author": "Winston Churchill",
+    "meaning": "Perspective determines outcome. The same situation yields different results based on mindset."
+  },
+  {
+    "id": 199,
+    "text": "If you want something you've never had, you must be willing to do something you've never done.",
+    "author": "Thomas Jefferson",
+    "meaning": "New outcomes require new actions. Comfort zones produce familiar results, not breakthrough ones."
+  },
+  {
+    "id": 200,
+    "text": "I attribute my success to this: I never gave or took any excuse.",
+    "author": "Florence Nightingale",
+    "meaning": "Excuses are the enemy of accountability. Taking full responsibility is the fastest path to results."
+  },
+  {
+    "id": 201,
+    "text": "We may encounter many defeats but we must not be defeated.",
+    "author": "Maya Angelou",
+    "meaning": "Setbacks are events, not identity. Each loss is a lesson, not a final verdict."
+  },
+  {
+    "id": 202,
+    "text": "The only journey is the one within.",
+    "author": "Rainer Maria Rilke",
+    "meaning": "Self-knowledge is the ultimate adventure. Understanding yourself unlocks understanding of everything else."
+  },
+  {
+    "id": 203,
+    "text": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+    "author": "Henry David Thoreau",
+    "meaning": "Boldness attracts opportunity. Don't wait for permission to pursue the life you envision."
+  },
+  {
+    "id": 204,
+    "text": "Life is either a daring adventure or nothing at all.",
+    "author": "Helen Keller",
+    "meaning": "Safety is an illusion. Embrace risk and uncertainty — they're the raw materials of meaning."
+  },
+  {
+    "id": 205,
+    "text": "Do what you feel in your heart to be right — for you'll be criticized anyway.",
+    "author": "Eleanor Roosevelt",
+    "meaning": "Criticism is inevitable regardless of your choice. Follow your conviction and let judgment follow."
+  },
+  {
+    "id": 206,
+    "text": "Strength does not come from winning. Your struggles develop your strengths.",
+    "author": "Arnold Schwarzenegger",
+    "meaning": "Growth comes from resistance. The battles you fight forge the strength you carry forward."
+  },
+  {
+    "id": 207,
+    "text": "A year from now you may wish you had started today.",
+    "author": "Karen Lamb",
+    "meaning": "Delay creates regret. The best time to begin was yesterday; the second best is now."
+  },
+  {
+    "id": 208,
+    "text": "The only real limitation on your abilities is the level of your desires.",
+    "author": "Anonymous",
+    "meaning": "Desire drives capacity. How badly you want something determines how far you'll go to get it."
+  },
+  {
+    "id": 209,
+    "text": "When something is important enough, you do it even if the odds are not in your favor.",
+    "author": "Elon Musk",
+    "meaning": "Purpose overrides probability. If it matters enough, you'll find a way regardless of odds."
+  },
+  {
+    "id": 210,
+    "text": "Don't be afraid to give up the good to go for the great.",
+    "author": "John D. Rockefeller",
+    "meaning": "Satisfaction with adequacy prevents excellence. Let go of good enough to pursue exceptional."
+  },
+  {
+    "id": 211,
+    "text": "It's not the load that breaks you down, it's the way you carry it.",
+    "author": "Lou Holtz",
+    "meaning": "Burden management matters more than burden size. Adjust your approach and the weight shifts."
+  },
+  {
+    "id": 212,
+    "text": "Courage is not the absence of fear, but the triumph over it.",
+    "author": "Nelson Mandela",
+    "meaning": "Bravery doesn't mean fearlessness — it means acting despite fear. Fear is the prerequisite for courage."
+  },
+  {
+    "id": 213,
+    "text": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "meaning": "Vision and belief are prerequisites for achievement. Dare to dream, then dare to pursue it."
+  },
+  {
+    "id": 214,
+    "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle",
+    "meaning": "Consistency builds character. One-time efforts don't define you — your daily practices do."
+  },
+  {
+    "id": 215,
+    "text": "Nothing is impossible. The word itself says 'I'm possible.'",
+    "author": "Audrey Hepburn",
+    "meaning": "A playful reminder that limits are often linguistic, not real. Reframe impossibility as opportunity."
+  },
+  {
+    "id": 216,
+    "text": "Your life is your story. Write well. Edit often.",
+    "author": "Unknown",
+    "meaning": "You are the author of your own narrative. Revise what doesn't serve you and write new chapters."
+  },
+  {
+    "id": 217,
+    "text": "Don't wait for opportunity. Create it.",
+    "author": "George Bernard Shaw",
+    "meaning": "Opportunities aren't found — they're made. Proactive people generate their own luck."
+  },
+  {
+    "id": 218,
+    "text": "When you have a dream, you've got to grab it and never let go.",
+    "author": "Carol Burnett",
+    "meaning": "Tenacity separates dreamers from achievers. Hold on tight and don't let opposition loosen your grip."
+  },
+  {
+    "id": 219,
+    "text": "It's not whether you get knocked down, it's whether you get up.",
+    "author": "Vince Lombardi",
+    "meaning": "Resilience is measured by recovery, not invincibility. Getting back up is what counts."
+  },
+  {
+    "id": 220,
+    "text": "Hard work beats talent when talent doesn't work hard.",
+    "author": "Tim Notke",
+    "meaning": "Effort overcomes gift. Discipline and persistence outperform raw ability every time."
+  },
+  {
+    "id": 221,
+    "text": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
+    "author": "James Cameron",
+    "meaning": "Ambitious targets produce exceptional results even when missed. Aim high and the fall is still above average."
+  },
+  {
+    "id": 222,
+    "text": "The only thing standing between you and your dream is the story you keep telling yourself.",
+    "author": "Jordan Belfort",
+    "meaning": "Self-narrative creates the biggest barriers. Change the story and the obstacles shrink."
+  },
+  {
+    "id": 223,
+    "text": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "meaning": "Every action ripples outward. Never underestimate the impact of small, consistent efforts."
+  },
+  {
+    "id": 224,
+    "text": "The man who moves a mountain begins by carrying away small stones.",
+    "author": "Confucius",
+    "meaning": "Monumental achievements start with tiny steps. Break big goals into manageable actions."
+  },
+  {
+    "id": 225,
+    "text": "Everything is figureoutable.",
+    "author": "Marie Forleo",
+    "meaning": "No problem is unsolvable. With enough creativity and persistence, any challenge can be overcome."
+  },
+  {
+    "id": 226,
+    "text": "If you're not willing to risk the usual, you'll have to settle for the ordinary.",
+    "author": "Jim Rohn",
+    "meaning": "Extraordinary outcomes require extraordinary risk. Safety produces sameness."
+  },
+  {
+    "id": 227,
+    "text": "You don't always get what you wish for; you get what you work for.",
+    "author": "Unknown",
+    "meaning": "Desire without effort yields nothing. The universe rewards labor, not longing."
+  },
+  {
+    "id": 228,
+    "text": "The best view comes after the hardest climb.",
+    "author": "Unknown",
+    "meaning": "Reward is proportional to effort. The most beautiful perspectives require the steepest ascents."
+  },
+  {
+    "id": 229,
+    "text": "Don't compare your beginning to someone else's middle.",
+    "author": "Jon Acuff",
+    "meaning": "Progress is personal. Your chapter one is not meant to look like someone else's chapter ten."
+  },
+  {
+    "id": 230,
+    "text": "You are confined only by the walls you build yourself.",
+    "author": "Andrew Murphy",
+    "meaning": "Most limitations are self-constructed. The barriers that hold you back are often of your own making."
+  },
+  {
+    "id": 231,
+    "text": "The only way to guarantee failure is to quit.",
+    "author": "John C. Maxwell",
+    "meaning": "Persistence is the only sure path to success. Everything else is uncertain; quitting is certain failure."
+  },
+  {
+    "id": 232,
+    "text": "Worrying does not empty tomorrow of its sorrow; it empties today of its strength.",
+    "author": "Corrie ten Boom",
+    "meaning": "Anxiety drains present energy for future problems. Focus your strength on today's actions."
+  },
+  {
+    "id": 233,
+    "text": "One day or day one. You decide.",
+    "author": "Unknown",
+    "meaning": "Starting is a choice. 'One day' is a wish; 'day one' is a commitment."
+  },
+  {
+    "id": 234,
+    "text": "Be not afraid of growing slowly; be afraid only of standing still.",
+    "author": "Chinese Proverb",
+    "meaning": "Slow progress is still progress. Stagnation is the only true danger."
+  },
+  {
+    "id": 235,
+    "text": "What comes easy won't last. What lasts won't come easy.",
+    "author": "Unknown",
+    "meaning": "Durability requires struggle. Quick wins fade; hard-won achievements endure."
+  },
+  {
+    "id": 236,
+    "text": "Success is the sum of small efforts repeated day in and day out.",
+    "author": "Robert Collier",
+    "meaning": "Consistency compounds. Daily small actions accumulate into major achievements over time."
+  },
+  {
+    "id": 237,
+    "text": "Don't wait for the perfect moment. Take the moment and make it perfect.",
+    "author": "Unknown",
+    "meaning": "Perfect timing is a myth. Seize the current moment and shape it through action."
+  },
+  {
+    "id": 238,
+    "text": "The only failure is not to try.",
+    "author": "George Cleaves",
+    "meaning": "Attempt is the only metric that matters. Not trying is the one guaranteed failure."
+  },
+  {
+    "id": 239,
+    "text": "Your past does not equal your future.",
+    "author": "Tony Robbins",
+    "meaning": "History is not destiny. Every day is a chance to write a different story."
+  },
+  {
+    "id": 240,
+    "text": "It takes courage to grow up and become who you really are.",
+    "author": "E.E. Cummings",
+    "meaning": "Authenticity requires bravery. Society pushes conformity; becoming yourself is an act of rebellion."
+  },
+  {
+    "id": 241,
+    "text": "The difference between ordinary and extraordinary is that little extra.",
+    "author": "Jimmy Johnson",
+    "meaning": "Small marginal efforts create large separations. The 'extra' in extraordinary is literal."
+  },
+  {
+    "id": 242,
+    "text": "If you don't design your own life plan, chances are you'll fall into someone else's.",
+    "author": "Jim Rohn",
+    "meaning": "Intentionality is essential. Without your own direction, you become a character in someone else's story."
+  },
+  {
+    "id": 243,
+    "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+    "author": "Winston Churchill",
+    "meaning": "Enthusiasm through setbacks is the hallmark of resilience. Keep your energy high regardless of outcomes."
+  },
+  {
+    "id": 244,
+    "text": "Dream it. Wish it. Do it.",
+    "author": "Unknown",
+    "meaning": "The sequence matters: dream first, then wish, then act. But only the final step produces results."
+  },
+  {
+    "id": 245,
+    "text": "You are stronger than you think.",
+    "author": "Unknown",
+    "meaning": "Self-assessment often underestimates capacity. In the moment of testing, you'll find reserves you didn't know existed."
+  },
+  {
+    "id": 246,
+    "text": "Stop doubting yourself. Work hard, and make it happen.",
+    "author": "Unknown",
+    "meaning": "Self-doubt is wasted energy. Redirect that mental bandwidth into action and let results prove you wrong."
+  },
+  {
+    "id": 247,
+    "text": "The secret of your future is hidden in your daily routine.",
+    "author": "Mike Murdock",
+    "meaning": "Your habits predict your destiny. Change your daily routine and you change your future."
+  },
+  {
+    "id": 248,
+    "text": "Motivation gets you started. Habit keeps you going.",
+    "author": "Jim Ryun",
+    "meaning": "Inspiration is the spark; discipline is the fuel. Build systems that outlast your enthusiasm."
+  },
+  {
+    "id": 249,
+    "text": "Don't stop when you're tired. Stop when you're done.",
+    "author": "Unknown",
+    "meaning": "Fatigue is not a stopping signal. Push through discomfort and finish what you started."
+  },
+  {
+    "id": 250,
+    "text": "Success is not for the lazy.",
+    "author": "Unknown",
+    "meaning": "Achievement demands effort. There are no shortcuts to places worth reaching."
+  },
+  {
+    "id": 251,
+    "text": "Today's efforts are tomorrow's results.",
+    "author": "Unknown",
+    "meaning": "The connection between present action and future outcome is direct. Invest today, harvest tomorrow."
+  },
+  {
+    "id": 252,
+    "text": "Strive for progress, not perfection.",
+    "author": "Unknown",
+    "meaning": "Perfect is the enemy of done. Aim for continuous improvement rather than flawless execution."
+  },
+  {
+    "id": 253,
+    "text": "The harder you work for something, the greater you'll feel when you achieve it.",
+    "author": "Unknown",
+    "meaning": "Effort amplifies satisfaction. Easy wins feel hollow; hard-fought victories are deeply fulfilling."
+  },
+  {
+    "id": 254,
+    "text": "Dream bigger. Do bigger.",
+    "author": "Unknown",
+    "meaning": "Scale your ambition and your action equally. Big dreams need big execution."
+  },
+  {
+    "id": 255,
+    "text": "Don't tell people your plans. Show them your results.",
+    "author": "Unknown",
+    "meaning": "Announcements dilute motivation. Let your completed work do the communicating."
+  },
+  {
+    "id": 256,
+    "text": "When you feel like quitting, think about why you started.",
+    "author": "Unknown",
+    "meaning": "Original motivation is an anchor in tough times. Reconnect with your 'why' when the 'how' gets hard."
+  },
+  {
+    "id": 257,
+    "text": "Good things come to those who hustle while they wait.",
+    "author": "Unknown",
+    "meaning": "Patience without effort is passivity. Use waiting time productively and results accelerate."
+  },
+  {
+    "id": 258,
+    "text": "No pressure, no diamonds.",
+    "author": "Thomas Carlyle",
+    "meaning": "Adversity creates value. The same pressure that crushes can produce brilliance."
+  },
+  {
+    "id": 259,
+    "text": "Your limitation — it's only your imagination.",
+    "author": "Unknown",
+    "meaning": "Most barriers are mental, not physical. The stories you tell yourself about what's possible define your reality."
+  },
+  {
+    "id": 260,
+    "text": "Push yourself, because no one else is going to do it for you.",
+    "author": "Unknown",
+    "meaning": "Self-motivation is the only reliable kind. External pushes fade; internal drive sustains."
+  },
+  {
+    "id": 261,
+    "text": "Great things never come from comfort zones.",
+    "author": "Roy T. Bennett",
+    "meaning": "Growth requires discomfort. The zone where you feel safe is the zone where nothing changes."
+  },
+  {
+    "id": 262,
+    "text": "Dream it. Believe it. Build it.",
+    "author": "Unknown",
+    "meaning": "Three stages: imagination, conviction, execution. Skip any one and the chain breaks."
+  },
+  {
+    "id": 263,
+    "text": "Success doesn't just find you. You have to go out and get it.",
+    "author": "Unknown",
+    "meaning": "Achievement is a pursuit, not a discovery. Active seeking is required."
+  },
+  {
+    "id": 264,
+    "text": "The harder the battle, the sweeter the victory.",
+    "author": "Unknown",
+    "meaning": "Difficulty increases the reward. Struggle is the seasoning that makes success taste good."
+  },
+  {
+    "id": 265,
+    "text": "Don't stop until you're proud.",
+    "author": "Unknown",
+    "meaning": "Set your own standard of completion. Keep going until the result makes you genuinely proud."
+  },
+  {
+    "id": 266,
+    "text": "Work until your idols become your rivals.",
+    "author": "Unknown",
+    "meaning": "Let admiration fuel ambition. Pursue excellence until you're in the same conversation as those you look up to."
+  },
+  {
+    "id": 267,
+    "text": "Every day may not be good, but there is something good in every day.",
+    "author": "Alice Morse Earle",
+    "meaning": "Gratitude requires searching, not receiving. Train yourself to find the positive even on hard days."
+  },
+  {
+    "id": 268,
+    "text": "You are capable of amazing things.",
+    "author": "Unknown",
+    "meaning": "Self-belief is the foundation of all achievement. Your potential far exceeds your assumptions."
+  },
+  {
+    "id": 269,
+    "text": "Be so good they can't ignore you.",
+    "author": "Steve Martin",
+    "meaning": "Excellence is the best marketing. Develop skills so sharp that attention becomes involuntary."
+  },
+  {
+    "id": 270,
+    "text": "Fall seven times, stand up eight.",
+    "author": "Japanese Proverb",
+    "meaning": "Persistence through failure is the essence of resilience. Each comeback strengthens you."
+  },
+  {
+    "id": 271,
+    "text": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela",
+    "meaning": "The gap between impossible and done is persistence. What feels unachievable becomes history once completed."
+  },
+  {
+    "id": 272,
+    "text": "The best revenge is massive success.",
+    "author": "Frank Sinatra",
+    "meaning": "Channel negativity into motivation. Your achievements speak louder than any retaliation."
+  },
+  {
+    "id": 273,
+    "text": "What we think, we become.",
+    "author": "Buddha",
+    "meaning": "Mental habits shape destiny. Guard your thoughts carefully, for they become your reality."
+  },
+  {
+    "id": 274,
+    "text": "In the middle of every difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "meaning": "Challenges are disguised chances to grow. Every obstacle carries within it the seed of a new beginning."
+  },
+  {
+    "id": 275,
+    "text": "Life shrinks or expands in proportion to one's courage.",
+    "author": "Anais Nin",
+    "meaning": "Boldness creates opportunity. Playing it safe leads to a small life; taking risks leads to growth."
+  },
+  {
+    "id": 276,
+    "text": "Your time is limited. Don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "meaning": "Authenticity is the ultimate success metric. Living to please others is the greatest waste of the time you have."
+  },
+  {
+    "id": 277,
+    "text": "What you do today can improve all your tomorrows.",
+    "author": "Ralph Marston",
+    "meaning": "Today's actions compound. Small improvements now create large dividends later."
+  },
+  {
+    "id": 278,
+    "text": "Doubt kills more dreams than failure ever will.",
+    "author": "Suzy Kassem",
+    "meaning": "Self-doubt prevents attempts. Failure at least produces data; doubt produces nothing."
+  },
+  {
+    "id": 279,
+    "text": "Small progress is still progress.",
+    "author": "Unknown",
+    "meaning": "Don't dismiss incremental gains. A tiny step forward is better than standing still."
+  },
+  {
+    "id": 280,
+    "text": "You are the author of your own story.",
+    "author": "Unknown",
+    "meaning": "Take ownership of your narrative. Circumstances provide the setting but you write the plot."
+  },
+  {
+    "id": 281,
+    "text": "Rise above the storm and you will find the sunshine.",
+    "author": "Unknown",
+    "meaning": "Problems are often temporary. Elevate your perspective and you'll see beyond current difficulty."
+  },
+  {
+    "id": 282,
+    "text": "Focus on the step in front of you, not the whole staircase.",
+    "author": "Unknown",
+    "meaning": "Overwhelm comes from seeing everything at once. Concentrate on the next single action."
+  },
+  {
+    "id": 283,
+    "text": "Be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "meaning": "Complaint without action is wasted energy. Model the behavior and values you want to see in others."
+  },
+  {
+    "id": 284,
+    "text": "Everything you need to accomplish your goals is already inside you.",
+    "author": "Unknown",
+    "meaning": "External resources help, but internal drive is the primary fuel. Your determination is your greatest asset."
+  },
+  {
+    "id": 285,
+    "text": "Don't limit your challenges. Challenge your limits.",
+    "author": "Unknown",
+    "meaning": "Boundaries are often self-imposed. Test them regularly and you'll find they're farther than expected."
+  },
+  {
+    "id": 286,
+    "text": "Each day provides its own gifts.",
+    "author": "Marcus Aurelius",
+    "meaning": "Daily life contains hidden blessings. Train yourself to recognize them."
+  },
+  {
+    "id": 287,
+    "text": "Very little is needed to make a happy life.",
+    "author": "Marcus Aurelius",
+    "meaning": "Simplicity breeds contentment. Joy comes from within, not from accumulation."
+  },
+  {
+    "id": 288,
+    "text": "The object of life is not to be on the side of the majority, but to escape finding oneself in the ranks of the insane.",
+    "author": "Marcus Aurelius",
+    "meaning": "Think independently. Popular opinion is not a reliable guide to truth or happiness."
+  },
+  {
+    "id": 289,
+    "text": "When you arise in the morning, think of what a precious privilege it is to be alive.",
+    "author": "Marcus Aurelius",
+    "meaning": "Gratitude starts at dawn. Acknowledging life as a privilege transforms ordinary days."
+  },
+  {
+    "id": 290,
+    "text": "You have power over your mind — not outside events. Realize this, and you will find strength.",
+    "author": "Marcus Aurelius",
+    "meaning": "Control what you can: your reactions. External events are beyond your influence, but your response isn't."
+  },
+  {
+    "id": 291,
+    "text": "Waste no more time arguing about what a good person should be. Be one.",
+    "author": "Marcus Aurelius",
+    "meaning": "Action trumps debate. Define goodness through demonstration, not discussion."
+  },
+  {
+    "id": 292,
+    "text": "The soul becomes dyed with the color of its thoughts.",
+    "author": "Marcus Aurelius",
+    "meaning": "Your dominant mental patterns shape your character. Choose your thoughts deliberately."
+  },
+  {
+    "id": 293,
+    "text": "Accept the things to which fate binds you, and love the people with whom fate brings you together.",
+    "author": "Marcus Aurelius",
+    "meaning": "Embrace your circumstances and cherish your connections. Resistance to reality creates suffering."
+  },
+  {
+    "id": 294,
+    "text": "How long are you going to wait before you demand the best for yourself?",
+    "author": "Epictetus",
+    "meaning": "Settling is a choice. Demand excellence from yourself starting now."
+  },
+  {
+    "id": 295,
+    "text": "It's not what happens to you, but how you react to it that matters.",
+    "author": "Epictetus",
+    "meaning": "Events are neutral; your interpretation makes them positive or negative. Choose your response."
+  },
+  {
+    "id": 296,
+    "text": "No person is free who is not master of themselves.",
+    "author": "Epictetus",
+    "meaning": "True freedom is internal. Without self-discipline, you're a slave to impulses and circumstances."
+  },
+  {
+    "id": 297,
+    "text": "We have two ears and one mouth so that we can listen twice as much as we speak.",
+    "author": "Epictetus",
+    "meaning": "Listening is twice as valuable as talking. Understanding precedes wisdom."
+  },
+  {
+    "id": 298,
+    "text": "He who laughs at himself never runs out of things to laugh at.",
+    "author": "Epictetus",
+    "meaning": "Self-deprecation is healthy humor. Taking yourself too seriously makes life heavier than necessary."
+  },
+  {
+    "id": 299,
+    "text": "If you want to improve, be content to be thought foolish and stupid.",
+    "author": "Epictetus",
+    "meaning": "Growth requires the humility to be a beginner. Don't let fear of looking foolish stop you from learning."
+  },
+  {
+    "id": 300,
+    "text": "First say to yourself what you would be; and then do what you have to do.",
+    "author": "Epictetus",
+    "meaning": "Identity precedes action. Define who you want to become, then act accordingly."
+  }
 ]

@@ -43,6 +43,8 @@ final notificationServiceProvider = Provider<NotificationService>((ref) {
   throw UnimplementedError('NotificationService must be overridden');
 });
 
+final milestoneReachedProvider = StateProvider<int?>((ref) => null);
+
 class StreakNotifier extends StateNotifier<StreakData> {
   final PersistenceService _persistence;
 
@@ -101,6 +103,13 @@ class StreakNotifier extends StateNotifier<StreakData> {
       return true;
     }
     return false;
+  }
+
+  int? checkMilestones() {
+    for (final days in [3, 7, 30]) {
+      if (checkMilestone(days)) return days;
+    }
+    return null;
   }
 
   String _formatDate(DateTime d) =>

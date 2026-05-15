@@ -18,6 +18,58 @@ class HomePage extends ConsumerStatefulWidget {
 
 class _HomePageState extends ConsumerState<HomePage> {
   @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _checkMilestone();
+    });
+  }
+
+  void _checkMilestone() {
+    final milestone = ref.read(streakProvider.notifier).checkMilestones();
+    if (milestone != null && mounted) {
+      ref.read(milestoneReachedProvider.notifier).state = milestone;
+      _showMilestoneDialog(milestone);
+    }
+  }
+
+  void _showMilestoneDialog(int days) {
+    final String title;
+    final String message;
+    switch (days) {
+      case 3:
+        title = 'Week 1 Complete!';
+        message = 'Amazing! You\'ve completed 3 days in a row. Keep the momentum going!';
+      case 7:
+        title = 'Power User!';
+        message = 'Incredible! 7 days of consistency. You\'re building real habits!';
+      case 30:
+        title = 'Master Streak!';
+        message = 'Legendary! 30 days of dedication. You\'re a Daily Reset Master!';
+      default:
+        title = 'Milestone Reached!';
+        message = 'Congratulations on your $days day streak!';
+    }
+
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(title),
+        content: Text(message),
+        actions: [
+          TextButton(
+            onPressed: () {
+              ref.read(milestoneReachedProvider.notifier).state = null;
+              Navigator.of(ctx).pop();
+            },
+            child: const Text('Thanks!'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
     final streakData = ref.watch(streakProvider);
     final progress = ref.watch(dailyProgressProvider);

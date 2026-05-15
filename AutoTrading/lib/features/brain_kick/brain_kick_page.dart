@@ -26,6 +26,9 @@ class _BrainKickPageState extends ConsumerState<BrainKickPage> {
     final alreadyCompleted = progress.contains('brain');
 
     final questions = content.getTriviaForDate(today);
+    // Mark trivia questions as seen when shown (idempotent — Set deduplicates)
+    final questionIds = questions.map((q) => q.id).toList();
+    content.markTriviaSeen(questionIds);
     if (questions.isEmpty) {
       return Scaffold(
         appBar: AppBar(title: const Text('🧠 Brain Kick')),

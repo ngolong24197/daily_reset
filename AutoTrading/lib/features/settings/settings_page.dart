@@ -16,6 +16,7 @@ class SettingsPage extends ConsumerStatefulWidget {
 class _SettingsPageState extends ConsumerState<SettingsPage> {
   bool _isExporting = false;
   bool _isImporting = false;
+  bool _isRefreshing = false;
 
   @override
   Widget build(BuildContext context) {
@@ -90,6 +91,23 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
             subtitle: Text(isPremium ? 'Restore from file' : 'Premium feature'),
             enabled: isPremium && !_isImporting,
             onTap: isPremium ? () => _importBackup(context) : null,
+          ),
+
+          // Content
+          const _SectionHeader(title: 'Content'),
+          ListTile(
+            leading: Icon(isPremium ? Icons.cloud_download : Icons.lock_outline),
+            title: const Text('Refresh Content'),
+            subtitle: Text(
+              isPremium
+                  ? 'Download new quotes and questions'
+                  : 'Premium feature',
+            ),
+            enabled: isPremium && !_isRefreshing,
+            trailing: _isRefreshing
+                ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2))
+                : null,
+            onTap: isPremium ? () => _refreshContent() : null,
           ),
 
           // Misc
@@ -205,6 +223,38 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
     );
     controller.dispose();
     return result;
+  }
+
+  Future<void> _refreshContent() async {
+    setState(() => _isRefreshing = true);
+    try {
+      final content = ref.read(contentProvider);
+      final result = await content.refreshFromRemote();
+
+      if (!mounted) return;
+
+      if (result.totalSuccess) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Content refreshed successfully!')),
+        );
+      } else if (result.partialSuccess) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Content partially refreshed. Some updates failed.')),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Could not reach server. Try again later.')),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Content refresh failed. Try again later.')),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _isRefreshing = false);
+    }
   }
 
   void _clearCache(BuildContext context) {

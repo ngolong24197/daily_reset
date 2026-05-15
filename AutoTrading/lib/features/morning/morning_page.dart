@@ -23,6 +23,9 @@ class _MorningPageState extends ConsumerState<MorningPage> {
     final isCompleted = progress.contains('morning');
 
     final quote = contentAsync.getQuoteForDate(today);
+    // Mark quote as seen when shown (idempotent — Set deduplicates)
+    final content = ref.read(contentProvider);
+    content.markQuoteSeen(quote.id);
     final persistence = ref.read(persistenceProvider);
     final isFavorite = persistence.isQuoteFavorite(quote.id.toString());
 

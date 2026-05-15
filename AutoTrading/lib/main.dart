@@ -5,6 +5,8 @@ import 'core/constants/app_theme.dart';
 import 'core/providers.dart';
 import 'core/services/persistence/persistence_service.dart';
 import 'core/services/content/content_service.dart';
+import 'models/quote.dart';
+import 'models/trivia.dart';
 import 'core/services/ad/ad_service.dart';
 import 'core/services/sound/sound_service.dart';
 import 'core/services/notification/notification_service.dart';
@@ -30,6 +32,33 @@ void main() async {
     notificationService.init(),
     premiumService.init(),
   ]);
+
+  // Load seen content IDs from persistence
+  final seenQuoteIds = persistence.getSeenQuoteIds();
+  final seenTriviaIds = persistence.getSeenTriviaIds();
+  content.loadSeenIds(quoteIds: seenQuoteIds, triviaIds: seenTriviaIds);
+
+  // Load cached remote content
+  final cachedQuotes = persistence.getCachedRemoteQuotes();
+  final cachedTrivia = persistence.getCachedRemoteTrivia();
+  if (cachedQuotes != null) {
+    content.loadRemoteContent(
+      quotes: cachedQuotes.map((e) => Quote.fromJson(e)).toList(),
+    );
+  }
+  if (cachedTrivia != null) {
+    content.loadRemoteContent(
+      trivia: cachedTrivia.map((e) => TriviaQuestion.fromJson(e)).toList(),
+    );
+  }
+
+  // Wire seen-tracking callbacks so items are persisted when marked as seen
+  content.onQuoteSeen = (id) async {
+    await persistence.addSeenQuoteId(id);
+  };
+  content.onTriviaSeen = (ids) async {
+    await persistence.addSeenTriviaIds(ids);
+  };
 
   // Get initial data
   final today = DateTime.now();

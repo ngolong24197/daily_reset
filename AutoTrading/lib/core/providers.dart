@@ -5,7 +5,12 @@ import 'services/content/content_service.dart';
 import 'services/ad/ad_service.dart';
 import 'services/sound/sound_service.dart';
 import 'services/notification/notification_service.dart';
+import 'services/premium/premium_service.dart';
 import '../models/streak.dart';
+
+final premiumServiceProvider = Provider<PremiumService>((ref) {
+  throw UnimplementedError('PremiumService must be overridden');
+});
 
 final persistenceProvider = Provider<PersistenceService>((ref) {
   throw UnimplementedError('PersistenceService must be overridden');

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/providers.dart';
-import '../../core/services/sound/sound_service.dart';
 
 class PremiumPage extends ConsumerStatefulWidget {
   const PremiumPage({super.key});
@@ -73,12 +72,14 @@ class _PremiumPageState extends ConsumerState<PremiumPage> {
   Future<void> _purchase() async {
     setState(() => _purchasing = true);
     try {
-      // In production, this would go through in_app_purchase
-      // For now, directly set premium (store integration requires app store configuration)
-      await ref.read(premiumProvider.notifier).setPremium(true);
-      ref.read(soundServiceProvider).playChime(ChimeLength.long);
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Premium activated!')));
+      final premiumService = ref.read(premiumServiceProvider);
+      await premiumService.purchasePremium();
+      // Give the purchase stream time to process
+      await Future.delayed(const Duration(seconds: 1));
+      // Refresh state from persistence in case stream hasn't fired yet
+      final isPremium = ref.read(persistenceProvider).isPremium();
+      if (isPremium != ref.read(premiumProvider)) {
+        await ref.read(premiumProvider.notifier).setPremium(isPremium);
       }
     } catch (e) {
       if (mounted) {
@@ -91,8 +92,16 @@ class _PremiumPageState extends ConsumerState<PremiumPage> {
 
   Future<void> _restore() async {
     try {
-      // Restore handled by in_app_purchase
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Restoring purchases...')));
+      final premiumService = ref.read(premiumServiceProvider);
+      await premiumService.restorePurchases();
+      await Future.delayed(const Duration(seconds: 1));
+      final isPremium = ref.read(persistenceProvider).isPremium();
+      if (isPremium != ref.read(premiumProvider)) {
+        await ref.read(premiumProvider.notifier).setPremium(isPremium);
+      }
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Purchases restored')));
+      }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Restore failed: $e')));

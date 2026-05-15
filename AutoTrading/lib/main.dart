@@ -46,6 +46,7 @@ void main() async {
       adServiceProvider.overrideWithValue(adService),
       soundServiceProvider.overrideWithValue(soundService),
       notificationServiceProvider.overrideWithValue(notificationService),
+      premiumServiceProvider.overrideWithValue(premiumService),
     ],
     child: const DailyResetApp(),
   ));

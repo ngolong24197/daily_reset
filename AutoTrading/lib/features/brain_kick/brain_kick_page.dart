@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/providers.dart';
 import '../../core/constants/app_theme.dart';
+import '../../core/services/sound/sound_service.dart';
 
 class BrainKickPage extends ConsumerStatefulWidget {
   const BrainKickPage({super.key});
@@ -48,6 +49,7 @@ class _BrainKickPageState extends ConsumerState<BrainKickPage> {
                 if (!alreadyCompleted) ...[
                   FilledButton.icon(
                     onPressed: () {
+                      ref.read(soundServiceProvider).playChime(ChimeLength.short);
                       ref.read(dailyProgressProvider.notifier).markCompleted('brain');
                       ref.read(streakProvider.notifier).updateStreak(today);
                       setState(() {});

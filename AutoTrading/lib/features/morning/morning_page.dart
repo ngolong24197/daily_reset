@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../core/providers.dart';
 import '../../core/constants/app_theme.dart';
+import '../../core/services/sound/sound_service.dart';
 
 class MorningPage extends ConsumerStatefulWidget {
   const MorningPage({super.key});
@@ -110,6 +111,7 @@ class _MorningPageState extends ConsumerState<MorningPage> {
                   const SizedBox(height: 32),
                   FilledButton.icon(
                     onPressed: () {
+                      ref.read(soundServiceProvider).playChime(ChimeLength.short);
                       ref.read(dailyProgressProvider.notifier).markCompleted('morning');
                       ref.read(streakProvider.notifier).updateStreak(today);
                       setState(() {});

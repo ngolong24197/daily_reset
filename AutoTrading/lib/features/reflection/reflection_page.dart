@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 import '../../core/providers.dart';
 import '../../core/constants/app_theme.dart';
+import '../../core/services/sound/sound_service.dart';
 import '../../models/mood.dart';
 import '../../widgets/mood_selector.dart';
 
@@ -185,6 +186,7 @@ class _ReflectionPageState extends ConsumerState<ReflectionPage> {
     await ref.read(persistenceProvider).saveMoodEntry(entry);
     await ref.read(dailyProgressProvider.notifier).markCompleted('reflection');
     ref.read(streakProvider.notifier).updateStreak(today);
+    ref.read(soundServiceProvider).playChime(ChimeLength.short);
 
     // Show templated response
     final isWeekend = today.weekday == DateTime.saturday || today.weekday == DateTime.sunday;

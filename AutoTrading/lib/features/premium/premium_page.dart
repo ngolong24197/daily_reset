@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/providers.dart';
+import '../../core/services/sound/sound_service.dart';
 
 class PremiumPage extends ConsumerStatefulWidget {
   const PremiumPage({super.key});
@@ -75,6 +76,7 @@ class _PremiumPageState extends ConsumerState<PremiumPage> {
       // In production, this would go through in_app_purchase
       // For now, directly set premium (store integration requires app store configuration)
       await ref.read(premiumProvider.notifier).setPremium(true);
+      ref.read(soundServiceProvider).playChime(ChimeLength.long);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Premium activated!')));
       }
